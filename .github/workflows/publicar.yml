@@ -1,0 +1,53 @@
+name: Publicar Post Instagram
+
+on:
+  repository_dispatch:
+    types: [publicar_post]
+  workflow_dispatch:
+    inputs:
+      dia:
+        description: 'Dia do post (número)'
+        required: true
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar dependências (com Puppeteer)
+        run: |
+          cd automacoes
+          npm install
+
+      - name: Instalar dependências do Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libglib2.0-0 libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2
+
+      - name: Renderizar e publicar slides
+        run: |
+          DIA="${{ github.event.client_payload.dia || github.event.inputs.dia }}"
+          cd automacoes && node publicar.js --dia $DIA
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ACTIONS: true
+
+      - name: Commit slides gerados
+        run: |
+          git config user.name "Farma Fácil Bot"
+          git config user.email "bot@farmafacil.com"
+          git add slides/
+          git diff --staged --quiet || git commit -m "auto: slides dia ${{ github.event.client_payload.dia }}"
+          git push

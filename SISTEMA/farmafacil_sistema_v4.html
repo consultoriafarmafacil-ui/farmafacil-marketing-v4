@@ -335,6 +335,22 @@
 </div>
 </div>
 
+<!-- ── GitHub Token (publicação automática) ───────────── -->
+<div class="card" style="margin-top:14px">
+<div style="font-size:15px;font-weight:700;margin-bottom:4px">🔑 GitHub Token — Publicação Automática</div>
+<div style="font-size:12px;color:var(--mut);margin-bottom:12px">Necessário para publicação automática via botão "Aprovar". Ao aprovar um post, o sistema dispara o workflow de publicação no GitHub Actions.</div>
+<div style="margin-bottom:10px">
+<div style="font-size:10px;text-transform:uppercase;color:var(--mut);font-weight:600;margin-bottom:6px">Personal Access Token (Fine-grained)</div>
+<input id="cfg-gh-token" type="password" placeholder="github_pat_..." style="width:100%;border:1px solid var(--bd);border-radius:8px;padding:9px 12px;font-family:inherit;font-size:13px;outline:none"/>
+</div>
+<div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:10px 14px;font-size:12px;color:#1d4ed8;margin-bottom:12px;line-height:1.7">
+<strong>Como criar:</strong> GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens<br>
+Selecione o repositório <strong>farmafacil-marketing-v4</strong> e marque permissão <strong>Contents: write</strong>
+</div>
+<button onclick="salvarGhToken()" class="btn btn-vd" style="width:100%;font-size:14px">💾 Salvar token</button>
+<div id="cfg-gh-status" style="margin-top:8px;font-size:12px;color:var(--mut)"></div>
+</div>
+
 <!-- ── Como funciona ──────────────────────────────────── -->
 <div class="card" style="margin-top:14px">
 <div style="font-size:15px;font-weight:700;margin-bottom:12px">⚙️ Como funciona a v4</div>
@@ -410,7 +426,8 @@ function dlAtual(){if(!curS||!curD)return;var h="<!DOCTYPE html><html><head><met
 function dlViewer(){if(!curS||!curD)return;var btn=document.getElementById("btn-dl");if(btn){btn.disabled=true;btn.textContent="⏳ Preparando...";}var pr=[];pr.push("<!DOCTYPE html><html lang='pt-BR'><head><meta charset='UTF-8'><link href='https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,700;1,700&family=Montserrat:wght@400;500;600;700;800&display=swap' rel='stylesheet'><style>*{box-sizing:border-box;margin:0;padding:0}body{background:#0a0f1a;font-family:Montserrat,sans-serif;padding:24px 16px;display:flex;flex-direction:column;align-items:center}h1{color:#fff;font-size:13px;letter-spacing:.12em;text-transform:uppercase;opacity:.35;margin-bottom:4px;text-align:center}h2{color:#00C9A7;font-size:15px;margin-bottom:20px;text-align:center;font-style:italic;font-family:Tinos,serif}.dla{background:#00C9A7;color:#0D2B3E;border:none;border-radius:10px;padding:12px 28px;font-size:14px;font-weight:800;cursor:pointer;font-family:Montserrat,sans-serif;margin-bottom:20px}.item{text-align:center;margin-bottom:24px;width:100%;max-width:480px}.sl{width:100%;height:0;padding-bottom:125%;position:relative;border-radius:10px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.5);margin-bottom:6px}.si{position:absolute;top:0;left:0;transform-origin:top left;width:1080px;height:1350px}.lbl{color:rgba(255,255,255,.4);font-size:11px;margin-bottom:5px}.dlb{background:#00C9A7;color:#0D2B3E;border:none;border-radius:8px;padding:9px 22px;font-size:13px;font-weight:700;cursor:pointer;font-family:Montserrat,sans-serif}.leg{background:#111827;border-radius:12px;padding:16px;color:rgba(255,255,255,.6);font-size:13px;line-height:1.9;white-space:pre-line;max-width:480px;width:100%;margin-top:8px;text-align:left}</style></head><body>");pr.push("<h1>Farma Fácil · "+curD.dia+" de Abril 2026</h1><h2>"+curD.titulo+"</h2><button class='dla' id='dlall'>⬇ Baixar todos os 6 slides JPEG</button>");for(var i=0;i<curS.length;i++){pr.push("<div class='item'><div class='sl' id='sl"+i+"'><div class='si' id='si"+i+"'>"+curS[i]+"</div></div><div class='lbl'>Slide "+(i+1)+" de 6</div><button class='dlb' onclick='dlOne("+i+")'>⬇ Baixar slide "+(i+1)+"</button></div>");}var lf=(curD.legenda||"")+"\n\n"+(curD.hashtags||"");pr.push("<div class='leg'>"+lf.replace(/</g,"&lt;").replace(/>/g,"&gt;")+"</div>");pr.push("<sc"+"ript src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js'><\/sc"+"ript><sc"+"ript>");pr.push("function esc(){for(var i=0;i<"+curS.length+";i++){var sl=document.getElementById('sl'+i);var si=document.getElementById('si'+i);if(sl&&si){si.style.transform='scale('+sl.offsetWidth/1080+')'}}}window.addEventListener('load',esc);window.addEventListener('resize',esc);setTimeout(esc,200);");pr.push("async function dlOne(idx){var btn=document.querySelectorAll('.dlb')[idx];if(btn){btn.disabled=true;btn.textContent='⏳ Gerando...';}var el=document.getElementById('si'+idx);el.style.transform='none';el.style.width='1080px';el.style.height='1350px';var c=await html2canvas(el,{width:1080,height:1350,scale:1,useCORS:true,allowTaint:true,backgroundColor:null,logging:false});el.style.transform='scale('+document.getElementById('sl'+idx).offsetWidth/1080+')';var a=document.createElement('a');a.download='ff_dia"+curD.dia+"_slide'+(idx+1)+'.jpg';a.href=c.toDataURL('image/jpeg',0.95);a.click();if(btn){btn.disabled=false;btn.textContent='⬇ Baixar slide'+(idx+1);}}");pr.push("document.getElementById('dlall').onclick=async function(){this.disabled=true;this.textContent='⏳ Baixando todos...';for(var i=0;i<"+curS.length+";i++){await dlOne(i);await new Promise(function(r){setTimeout(r,700);})}this.disabled=false;this.textContent='✅ Prontos!';};");pr.push("<\/sc"+"ript></body></html>");var html=pr.join("\n");var a=document.createElement("a");a.download="ff_"+curD.dia+"_abril_"+curD.tipo+".html";a.href=URL.createObjectURL(new Blob([html],{type:"text/html"}));a.click();if(btn){btn.disabled=false;btn.textContent="✅ HTML baixado!";}}
 function renderFoot(d,st){var f=document.getElementById("mfoot");var b="";if(st==="pendente"||st==="reprovado"){b="<button class='btn btn-vd' onclick='aprovar()' style='flex:1'>✅ Aprovar</button><button id='btn-dl' class='btn' onclick='dlViewer()' style='flex:1'>📥 Baixar HTML</button><button class='btn' style='background:#dc2626;padding:10px 14px' onclick='mostrarMot()'>❌</button>";}else if(st==="aprovado"){b="<button id='btn-dl' class='btn btn-vd' onclick='dlViewer()' style='flex:2'>📥 Baixar HTML dos slides</button><button class='btn' style='background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);color:#fff;flex:1' onclick='pubMeta()'>📤 Publicar Meta</button><button class='btn' style='background:#dc2626;padding:10px 14px' onclick='mostrarMot()'>❌</button>";}else{b="<div style='font-size:13px;color:#7c3aed;font-weight:600'>📤 Publicado com sucesso!</div>";}f.innerHTML=b+"<div id='mot-a' style='display:none;width:100%;margin-top:8px'><textarea id='mot-t' style='width:100%;background:#fff;border:1px solid var(--bd);border-radius:8px;font-family:inherit;font-size:13px;padding:9px 12px;min-height:56px;resize:vertical;outline:none;margin-bottom:6px' placeholder='Motivo da reprovação...'></textarea><div style='display:flex;gap:8px'><button class='btn' style='background:#dc2626;flex:1' onclick='reprovar()'>Confirmar reprovação</button><button class='btn btn-s' onclick='document.getElementById(\"mot-a\").style.display=\"none\"'>Cancelar</button></div></div>";}
 function mostrarMot(){document.getElementById("mot-a").style.display="block";}
-function aprovar(){if(!curD)return;ST[curD.dia]="aprovado";sv();renderCal();document.getElementById("m-badge").innerHTML="<span class='sb sb-a'>✅ Aprovado</span>";renderFoot(curD,"aprovado");}
+function notificarAprovacao(dia){var token=localStorage.getItem('ff_gh_token');if(!token)return;var dv=applyOV(DIAS[dia]);var payload={event_type:'publicar_post',client_payload:{dia:dia,titulo:dv.titulo,legenda:(dv.legenda||'')+'\n\n'+(dv.hashtags||''),horario:dv.hora,template:dv.template}};fetch('https://api.github.com/repos/consultoriafarmafacil-ui/farmafacil-marketing-v4/dispatches',{method:'POST',headers:{'Authorization':'Bearer '+token,'Content-Type':'application/json','Accept':'application/vnd.github.v3+json'},body:JSON.stringify(payload)}).then(function(r){if(r.ok)console.log('Publicação agendada para dia '+dia);else r.json().then(function(e){console.warn('Erro dispatch GitHub:',e);});}).catch(function(e){console.error('Falha ao notificar GitHub:',e);});}
+function aprovar(){if(!curD)return;ST[curD.dia]="aprovado";sv();renderCal();document.getElementById("m-badge").innerHTML="<span class='sb sb-a'>✅ Aprovado</span>";renderFoot(curD,"aprovado");notificarAprovacao(curD.dia);}
 function reprovar(){if(!curD)return;var m=document.getElementById("mot-t").value;if(!m){alert("Informe o motivo.");return;}ST[curD.dia]="reprovado";ST[curD.dia+"_mot"]=m;sv();renderCal();fm();}
 function pubMeta(){if(!curD)return;var lf=document.getElementById("lf");if(lf)navigator.clipboard.writeText(lf.textContent).catch(function(){});window.open("https://business.facebook.com/latest/composer/?asset_id=109761077453312&business_id=137336747461436","_blank");ST[curD.dia]="publicado";sv();renderCal();document.getElementById("m-badge").innerHTML="<span class='sb sb-pub'>📤 Publicado</span>";renderFoot(curD,"publicado");}
 function fm(){document.getElementById("mbg").classList.remove("on");curD=null;}
@@ -714,8 +731,9 @@ function gerarRelatorio(){
       "</div>";
   }).join('');
 
-  // Score
-  var score=Math.round((cresceu.length/metInfo.length)*100);
+  // Score — calculado apenas sobre métricas preenchidas
+  var preenchidas=cresceu.length+caiu.length+neutro.length;
+  var score=preenchidas>0?Math.round((cresceu.length/preenchidas)*100):0;
   var scoreClass=score>=70?'sc-ok':score>=40?'sc-w':'sc-e';
   var scoreEmoji=score>=70?'🟢':score>=40?'🟡':'🔴';
 
@@ -880,9 +898,10 @@ function selPreviewS(idx,el){
 }
 
 // Renderizar normas quando aba criar é aberta
+function salvarGhToken(){var inp=document.getElementById('cfg-gh-token');var st=document.getElementById('cfg-gh-status');if(!inp)return;var v=inp.value.trim();if(!v){if(st)st.textContent='⚠️ Digite o token antes de salvar.';return;}localStorage.setItem('ff_gh_token',v);if(st){st.style.color='#16a34a';st.textContent='✅ Token salvo com sucesso!';}setTimeout(function(){if(st)st.textContent='';},3000);}
 function abaHook(id){
   if(id==='criar')setTimeout(renderNormas,50);
-  if(id==='cfg'){setTimeout(function(){renderCfgImgs();renderCfgTpls();},50);}
+  if(id==='cfg'){setTimeout(function(){renderCfgImgs();renderCfgTpls();var inp=document.getElementById('cfg-gh-token');if(inp){var t=localStorage.getItem('ff_gh_token')||'';inp.value=t;}},50);}
 }
 
 

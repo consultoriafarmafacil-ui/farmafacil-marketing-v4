@@ -1,0 +1,41 @@
+name: Atualizar Métricas Instagram (Segunda-feira)
+
+on:
+  schedule:
+    - cron: '0 12 * * 1'  # Segunda-feira 9h Brasil (12h UTC)
+  workflow_dispatch:  # Permite rodar manualmente
+
+jobs:
+  atualizar-metricas:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: automacoes/package.json
+
+      - name: Instalar dependências
+        run: cd automacoes && npm install --only=prod --ignore-scripts
+
+      - name: Atualizar métricas
+        run: cd automacoes && node atualizar_metricas.js
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          GITHUB_ACTIONS: true
+
+      - name: Commit e push
+        run: |
+          git config user.name "Farma Fácil Bot"
+          git config user.email "bot@farmafacil.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "auto: métricas Instagram $(date '+%d/%m/%Y')"
+          git push
