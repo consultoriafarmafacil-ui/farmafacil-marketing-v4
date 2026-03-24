@@ -161,6 +161,7 @@
 <div class="card"><div style="font-size:15px;font-weight:700;margin-bottom:10px">✦ Fila de Aprovação</div><div id="fila-lista"></div></div>
 </div>
 
+<div class="sec" id="s-criar">
 <div class="card" style="margin-top:14px">
 <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
 <div style="font-size:22px">🎬</div>
@@ -189,7 +190,6 @@
 </div>
 <div id="reel-output" style="margin-top:4px"></div>
 </div>
-<div class="sec" id="s-criar">
 <div class="card" id="criar-normas-card">
 <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
 <div style="font-size:15px;font-weight:700">🏛️ Normas ANVISA Recentes</div>
@@ -252,22 +252,108 @@
 </div>
 </div>
 <div class="sec" id="s-cfg">
-<div class="card"><div style="font-size:15px;font-weight:700;margin-bottom:12px">⚙️ Como funciona a v4</div>
+
+<!-- ── Gerenciar Imagens ─────────────────────────────── -->
+<div class="card">
+<div style="font-size:15px;font-weight:700;margin-bottom:4px">🖼️ Gerenciar Imagens</div>
+<div style="font-size:12px;color:var(--mut);margin-bottom:14px">Faça upload de fotos para usar nos slides. As imagens ficam salvas no sistema.</div>
+
+<div style="border:2px dashed var(--bd);border-radius:10px;padding:20px;text-align:center;margin-bottom:14px;cursor:pointer" onclick="document.getElementById('img-upload').click()" id="img-drop-zone">
+<div style="font-size:28px;margin-bottom:6px">📤</div>
+<div style="font-size:13px;font-weight:700;color:#0D2B3E">Clique para selecionar imagens</div>
+<div style="font-size:11px;color:var(--mut);margin-top:4px">JPG, PNG, WEBP — múltiplos arquivos permitidos</div>
+</div>
+<input type="file" id="img-upload" accept="image/*" multiple style="display:none" onchange="uploadImagens(this)"/>
+
+<div style="margin-bottom:12px">
+<div style="font-size:10px;text-transform:uppercase;color:var(--mut);font-weight:600;margin-bottom:8px">Nome da imagem (usado no sistema)</div>
+<input id="img-nome" type="text" placeholder="ex: karine_consultoria, farmacia_nova" style="width:100%;border:1px solid var(--bd);border-radius:8px;padding:9px 12px;font-family:inherit;font-size:13px;outline:none"/>
+<div style="font-size:10px;color:var(--mut);margin-top:4px">Se carregar várias, numeração automática será adicionada (nome_1, nome_2...)</div>
+</div>
+
+<button onclick="salvarImagens()" class="btn btn-vd" style="width:100%;font-size:14px;margin-bottom:14px">💾 Salvar imagens no sistema</button>
+
+<div id="cfg-imgs-preview" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px"></div>
+
+<div style="border-top:1px solid var(--bd);padding-top:12px;margin-top:4px">
+<div style="font-size:10px;text-transform:uppercase;color:var(--mut);font-weight:600;margin-bottom:8px">Imagens salvas no sistema <span id="cfg-count-imgs" style="background:#e2e8f0;padding:2px 8px;border-radius:10px;margin-left:4px">0</span></div>
+<div id="cfg-lista-imgs" style="display:flex;flex-wrap:wrap;gap:6px"></div>
+</div>
+</div>
+
+<!-- ── Templates Canva ────────────────────────────────── -->
+<div class="card" style="margin-top:14px">
+<div style="font-size:15px;font-weight:700;margin-bottom:4px">🎨 Templates Canva</div>
+<div style="font-size:12px;color:var(--mut);margin-bottom:14px">Adicione links de templates do Canva e associe a um pilar. Ficam salvos para usar quando quiser.</div>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">
+<div>
+<div style="font-size:10px;text-transform:uppercase;color:var(--mut);font-weight:600;margin-bottom:5px">Nome do template</div>
+<input id="tpl-nome" type="text" placeholder="ex: Post Venda Novo" style="width:100%;border:1px solid var(--bd);border-radius:8px;padding:9px 12px;font-family:inherit;font-size:13px;outline:none"/>
+</div>
+<div>
+<div style="font-size:10px;text-transform:uppercase;color:var(--mut);font-weight:600;margin-bottom:5px">Pilar / Categoria</div>
+<select id="tpl-pilar" style="width:100%;border:1px solid var(--bd);border-radius:8px;padding:9px 12px;font-family:inherit;font-size:13px;outline:none">
+<option value="atracao">🎯 Atração</option>
+<option value="autoridade">🏆 Autoridade</option>
+<option value="conexao">❤️ Conexão</option>
+<option value="venda">💼 Venda</option>
+<option value="educacao">📚 Educação</option>
+<option value="unico">✨ Publicação única</option>
+</select>
+</div>
+</div>
+
+<div style="margin-bottom:10px">
+<div style="font-size:10px;text-transform:uppercase;color:var(--mut);font-weight:600;margin-bottom:5px">Link do Canva</div>
+<input id="tpl-link" type="url" placeholder="https://www.canva.com/design/..." style="width:100%;border:1px solid var(--bd);border-radius:8px;padding:9px 12px;font-family:inherit;font-size:13px;outline:none"/>
+</div>
+
+<div style="margin-bottom:12px">
+<div style="font-size:10px;text-transform:uppercase;color:var(--mut);font-weight:600;margin-bottom:5px">Descrição (opcional)</div>
+<input id="tpl-desc" type="text" placeholder="ex: Usado para posts de venda de segunda-feira" style="width:100%;border:1px solid var(--bd);border-radius:8px;padding:9px 12px;font-family:inherit;font-size:13px;outline:none"/>
+</div>
+
+<button onclick="salvarTemplate()" class="btn btn-vd" style="width:100%;font-size:14px;margin-bottom:14px">💾 Salvar template</button>
+
+<div style="border-top:1px solid var(--bd);padding-top:12px">
+<div style="font-size:10px;text-transform:uppercase;color:var(--mut);font-weight:600;margin-bottom:8px">Templates salvos <span id="cfg-count-tpls" style="background:#e2e8f0;padding:2px 8px;border-radius:10px;margin-left:4px">0</span></div>
+<div id="cfg-lista-tpls"></div>
+</div>
+</div>
+
+<!-- ── Templates padrão (T1-T6) ──────────────────────── -->
+<div class="card" style="margin-top:14px">
+<div style="font-size:15px;font-weight:700;margin-bottom:12px">📋 Templates padrão (T1–T6)</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+<div style="background:#f8fafc;border-radius:8px;padding:10px"><div style="font-size:11px;font-weight:700">T1 — Escuro</div><div style="font-size:10px;color:var(--mut)">Autoridade</div><a href="https://www.canva.com/design/DAHEmyA0" target="_blank" class="btn btn-s" style="font-size:10px;padding:4px 8px;margin-top:6px;display:inline-block">Abrir Canva ↗</a></div>
+<div style="background:#f8fafc;border-radius:8px;padding:10px"><div style="font-size:11px;font-weight:700">T2 — Claro</div><div style="font-size:10px;color:var(--mut)">Conexão</div><a href="https://www.canva.com/design/DAHEm3frpKM" target="_blank" class="btn btn-s" style="font-size:10px;padding:4px 8px;margin-top:6px;display:inline-block">Abrir Canva ↗</a></div>
+<div style="background:#f8fafc;border-radius:8px;padding:10px"><div style="font-size:11px;font-weight:700">T3 — Bold Split</div><div style="font-size:10px;color:var(--mut)">Atração</div><a href="https://www.canva.com/design/DAHEmyFjCHI" target="_blank" class="btn btn-s" style="font-size:10px;padding:4px 8px;margin-top:6px;display:inline-block">Abrir Canva ↗</a></div>
+<div style="background:#f8fafc;border-radius:8px;padding:10px"><div style="font-size:11px;font-weight:700">T4 — Escuro Edu</div><div style="font-size:10px;color:var(--mut)">Educação</div><a href="https://www.canva.com/design/EAGyDKIibYY" target="_blank" class="btn btn-s" style="font-size:10px;padding:4px 8px;margin-top:6px;display:inline-block">Abrir Canva ↗</a></div>
+<div style="background:#f8fafc;border-radius:8px;padding:10px"><div style="font-size:11px;font-weight:700">T5 — Bold CTA</div><div style="font-size:10px;color:var(--mut)">Venda</div><a href="https://www.canva.com/design/EAGewAIq-V0" target="_blank" class="btn btn-s" style="font-size:10px;padding:4px 8px;margin-top:6px;display:inline-block">Abrir Canva ↗</a></div>
+<div style="background:#f8fafc;border-radius:8px;padding:10px"><div style="font-size:11px;font-weight:700">T6 — Claro CTA</div><div style="font-size:10px;color:var(--mut)">Conexão/Venda</div><a href="https://www.canva.com/design/EAGe6BiE1Qc" target="_blank" class="btn btn-s" style="font-size:10px;padding:4px 8px;margin-top:6px;display:inline-block">Abrir Canva ↗</a></div>
+</div>
+</div>
+
+<!-- ── Como funciona ──────────────────────────────────── -->
+<div class="card" style="margin-top:14px">
+<div style="font-size:15px;font-weight:700;margin-bottom:12px">⚙️ Como funciona a v4</div>
 <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:14px;font-size:13px;color:#166534;line-height:1.9">
-1. Clica em qualquer dia com post → slides gerados com imagens reais do Canva<br>
-2. Cada dia usa um dos 6 templates baseado no pilar correto<br>
-3. Análise automática de score Instagram após gerar<br>
-4. Aprova ✅ ou Reprova ❌ com motivo<br>
-5. Baixa HTML → abre → clica "Baixar JPEG" por slide ou todos de uma vez<br>
-6. Posta no Instagram ou Meta Business Suite<br>
-7. Aba Métricas sempre atualizada com dados reais
+1. Clica em qualquer dia com post → slides gerados com imagens reais<br>
+2. Edite texto e imagem por slide (botão ✏️ no modal)<br>
+3. Aprova ✅ ou Reprova ❌ com motivo<br>
+4. Clique "Preparar para publicar" → abre slide em tela cheia para captura<br>
+5. Posta no Instagram ou Meta Business Suite<br>
+6. Aba Métricas sempre atualizada com dados reais
 </div>
 <div style="margin-top:12px;display:flex;gap:10px;align-items:center">
 <div style="width:44px;height:44px;border-radius:8px;background:#F4F7F9;border:2px solid #e2e8f0"></div>
 <div style="width:44px;height:44px;border-radius:8px;background:#0D2B3E"></div>
 <div style="width:44px;height:44px;border-radius:8px;background:#00C9A7"></div>
-<div style="font-size:12px;color:var(--mut)">Tinos 108px + Montserrat | 1080×1350px | Imagens do Canva embutidas</div>
-</div></div></div>
+<div style="font-size:12px;color:var(--mut)">Tinos 108px + Montserrat | 1080×1350px</div>
+</div>
+</div>
+
 </div>
 <div class="mbg" id="mbg" onclick="fsf(event)"><div class="modal">
 <div class="mhdr"><div><div id="m-tit" style="font-size:17px;font-weight:800;color:#fff"></div><div id="m-sub" style="font-size:12px;color:rgba(255,255,255,.5);margin-top:2px"></div></div>
@@ -329,7 +415,7 @@ function reprovar(){if(!curD)return;var m=document.getElementById("mot-t").value
 function pubMeta(){if(!curD)return;var lf=document.getElementById("lf");if(lf)navigator.clipboard.writeText(lf.textContent).catch(function(){});window.open("https://business.facebook.com/latest/composer/?asset_id=109761077453312&business_id=137336747461436","_blank");ST[curD.dia]="publicado";sv();renderCal();document.getElementById("m-badge").innerHTML="<span class='sb sb-pub'>📤 Publicado</span>";renderFoot(curD,"publicado");}
 function fm(){document.getElementById("mbg").classList.remove("on");curD=null;}
 function fsf(e){if(e.target===document.getElementById("mbg"))fm();}
-function aba(id,el){document.querySelectorAll(".sec").forEach(function(s){s.classList.remove("on");});document.querySelectorAll(".tab").forEach(function(t){t.classList.remove("on");});document.getElementById("s-"+id).classList.add("on");if(el)el.classList.add("on");}
+function aba(id,el){document.querySelectorAll(".sec").forEach(function(s){s.classList.remove("on");});document.querySelectorAll(".tab").forEach(function(t){t.classList.remove("on");});document.getElementById("s-"+id).classList.add("on");if(el)el.classList.add("on");abaHook(id);}
 renderCal();
 
 // ═══════════════════════════════════════════════════════
@@ -756,6 +842,7 @@ function selPreviewS(idx,el){
 // Renderizar normas quando aba criar é aberta
 function abaHook(id){
   if(id==='criar')setTimeout(renderNormas,50);
+  if(id==='cfg'){setTimeout(function(){renderCfgImgs();renderCfgTpls();},50);}
 }
 
 
@@ -928,5 +1015,165 @@ function copiarRoteiro(){
   if(!el)return;
   if(navigator.clipboard)navigator.clipboard.writeText(el.innerText||el.textContent).then(function(){alert('Legenda copiada!');});
 }
+
+
+// ─── GESTÃO DE IMAGENS (Config) ───────────────────────────
+var IMGS_CUSTOM_KEY='ff_imgs_custom';
+var IMGS_PENDING=[];
+
+function carregarImgsCustom(){
+  try{
+    var saved=JSON.parse(localStorage.getItem(IMGS_CUSTOM_KEY)||'{}');
+    Object.assign(IMGS,saved);
+  }catch(e){}
+}
+carregarImgsCustom();
+
+function uploadImagens(input){
+  var files=Array.from(input.files);
+  if(!files.length)return;
+  var prev=document.getElementById('cfg-imgs-preview');
+  if(prev)prev.innerHTML='';
+  IMGS_PENDING=[];
+  var processed=0;
+  files.forEach(function(file,i){
+    var reader=new FileReader();
+    reader.onload=function(e){
+      IMGS_PENDING.push({file:file,data:e.target.result,idx:i});
+      processed++;
+      if(prev){
+        var div=document.createElement('div');
+        div.style.cssText='display:inline-block;border-radius:8px;overflow:hidden;border:2px solid #00C9A7';
+        div.innerHTML='<img src="'+e.target.result+'" style="width:80px;height:100px;object-fit:cover;display:block"/><div style="font-size:9px;text-align:center;padding:2px;background:#f8fafc;color:#64748b">'+file.name.substring(0,12)+'</div>';
+        prev.appendChild(div);
+      }
+      if(processed===files.length){
+        var nomeEl=document.getElementById('img-nome');
+        if(nomeEl&&!nomeEl.value&&files.length===1){
+          nomeEl.value=files[0].name.replace(/\.[^.]+$/,'').replace(/[^a-zA-Z0-9_]/g,'_').toLowerCase();
+        }
+      }
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
+function salvarImagens(){
+  if(!IMGS_PENDING.length){alert('Nenhuma imagem selecionada. Clique na área de upload primeiro.');return;}
+  var nomeBase=document.getElementById('img-nome');
+  var base=nomeBase&&nomeBase.value?nomeBase.value.trim().replace(/[^a-zA-Z0-9_]/g,'_'):'img';
+  try{
+    var saved=JSON.parse(localStorage.getItem(IMGS_CUSTOM_KEY)||'{}');
+    var count=0;
+    IMGS_PENDING.forEach(function(item){
+      var key=IMGS_PENDING.length===1?base:base+'_'+(item.idx+1);
+      saved[key]=item.data;
+      IMGS[key]=item.data;
+      count++;
+    });
+    localStorage.setItem(IMGS_CUSTOM_KEY,JSON.stringify(saved));
+    IMGS_PENDING=[];
+    document.getElementById('cfg-imgs-preview').innerHTML='';
+    if(nomeBase)nomeBase.value='';
+    document.getElementById('img-upload').value='';
+    renderCfgImgs();
+    alert(count+' imagem(ns) salva(s) com sucesso! Já disponível nos seletores de imagem.');
+  }catch(e){alert('Erro ao salvar: '+e.message);}
+}
+
+function renderCfgImgs(){
+  try{
+    var saved=JSON.parse(localStorage.getItem(IMGS_CUSTOM_KEY)||'{}');
+    var keys=Object.keys(saved);
+    var countEl=document.getElementById('cfg-count-imgs');
+    var listEl=document.getElementById('cfg-lista-imgs');
+    if(countEl)countEl.textContent=keys.length;
+    if(!listEl)return;
+    if(!keys.length){listEl.innerHTML='<div style="font-size:12px;color:var(--mut);padding:8px">Nenhuma imagem personalizada ainda.</div>';return;}
+    listEl.innerHTML=keys.map(function(k){
+      return "<div style='display:inline-block;margin:4px;text-align:center;border-radius:8px;overflow:hidden;border:1px solid #e2e8f0;background:#fff'>"+
+        "<img src='"+saved[k]+"' style='width:70px;height:87px;object-fit:cover;display:block'/>"+
+        "<div style='font-size:8px;padding:3px 4px;font-weight:600;color:#0D2B3E;white-space:nowrap;overflow:hidden;max-width:70px'>"+k+"</div>"+
+        "<button onclick='deletarImg(&quot;"+k+"&quot;)' style='border:none;background:#fee2e2;color:#dc2626;font-size:9px;width:100%;padding:2px;cursor:pointer'>✕ remover</button>"+
+        "</div>";
+    }).join('');
+  }catch(e){}
+}
+
+function deletarImg(key){
+  if(!confirm('Remover imagem "'+key+'"?'))return;
+  try{
+    var saved=JSON.parse(localStorage.getItem(IMGS_CUSTOM_KEY)||'{}');
+    delete saved[key];
+    delete IMGS[key];
+    localStorage.setItem(IMGS_CUSTOM_KEY,JSON.stringify(saved));
+    renderCfgImgs();
+  }catch(e){}
+}
+
+// ─── GESTÃO DE TEMPLATES (Config) ─────────────────────────
+var TPLS_CUSTOM_KEY='ff_tpls_custom';
+
+function salvarTemplate(){
+  var nome=document.getElementById('tpl-nome');
+  var pilar=document.getElementById('tpl-pilar');
+  var link=document.getElementById('tpl-link');
+  var desc=document.getElementById('tpl-desc');
+  if(!nome||!nome.value.trim()){alert('Digite o nome do template.');return;}
+  if(!link||!link.value.trim()){alert('Cole o link do Canva.');return;}
+  try{
+    var saved=JSON.parse(localStorage.getItem(TPLS_CUSTOM_KEY)||'[]');
+    saved.push({
+      id:'custom_'+Date.now(),
+      nome:nome.value.trim(),
+      pilar:pilar?pilar.value:'venda',
+      link:link.value.trim(),
+      desc:desc?desc.value.trim():'',
+      criado:new Date().toLocaleDateString('pt-BR')
+    });
+    localStorage.setItem(TPLS_CUSTOM_KEY,JSON.stringify(saved));
+    nome.value='';link.value='';if(desc)desc.value='';
+    renderCfgTpls();
+    alert('Template salvo!');
+  }catch(e){alert('Erro: '+e.message);}
+}
+
+function renderCfgTpls(){
+  try{
+    var saved=JSON.parse(localStorage.getItem(TPLS_CUSTOM_KEY)||'[]');
+    var countEl=document.getElementById('cfg-count-tpls');
+    var listEl=document.getElementById('cfg-lista-tpls');
+    if(countEl)countEl.textContent=saved.length;
+    if(!listEl)return;
+    if(!saved.length){listEl.innerHTML='<div style="font-size:12px;color:var(--mut);padding:8px">Nenhum template adicionado ainda.</div>';return;}
+    var pilarLabel={atracao:'🎯 Atração',autoridade:'🏆 Autoridade',conexao:'❤️ Conexão',venda:'💼 Venda',educacao:'📚 Educação',unico:'✨ Única'};
+    listEl.innerHTML=saved.map(function(t,i){
+      return "<div style='border:1px solid #e2e8f0;border-radius:10px;padding:12px;margin-bottom:8px;background:#fff'>"+
+        "<div style='display:flex;align-items:flex-start;justify-content:space-between;gap:8px'>"+
+        "<div style='flex:1'>"+
+        "<div style='font-size:13px;font-weight:700;color:#0D2B3E'>"+t.nome+"</div>"+
+        "<div style='font-size:11px;color:var(--mut);margin-top:2px'>"+(pilarLabel[t.pilar]||t.pilar)+" · salvo em "+t.criado+"</div>"+
+        (t.desc?"<div style='font-size:11px;color:#64748b;margin-top:4px'>"+t.desc+"</div>":"")+
+        "</div>"+
+        "<div style='display:flex;gap:6px;flex-shrink:0'>"+
+        "<a href='"+t.link+"' target='_blank' class='btn btn-vd' style='font-size:11px;padding:5px 10px'>Abrir ↗</a>"+
+        "<button onclick='deletarTemplate("+i+")' class='btn btn-s' style='font-size:11px;padding:5px 8px;color:#dc2626'>✕</button>"+
+        "</div>"+
+        "</div></div>";
+    }).join('');
+  }catch(e){}
+}
+
+function deletarTemplate(idx){
+  try{
+    var saved=JSON.parse(localStorage.getItem(TPLS_CUSTOM_KEY)||'[]');
+    if(!confirm('Remover template "'+saved[idx].nome+'"?'))return;
+    saved.splice(idx,1);
+    localStorage.setItem(TPLS_CUSTOM_KEY,JSON.stringify(saved));
+    renderCfgTpls();
+  }catch(e){}
+}
+
+// Renderizar config quando a aba abre
 
 </script></body></html>
