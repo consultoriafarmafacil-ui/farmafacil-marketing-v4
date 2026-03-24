@@ -314,16 +314,16 @@ var BASE_MET={mes:'mar/2026',vis:764,alc:142,int:7,seg:28,total:8295,cliques:0};
 // ═══════════════════════════════════════════════════════
 // RENDER EXTRA — troca de imagem e edição de texto no modal
 // ═══════════════════════════════════════════════════════
+function toggleImgSel(btn){var s=document.getElementById('imgsel');var open=s.style.display!=='none';s.style.display=open?'none':'flex';btn.textContent=open?'Ver opções ▼':'Fechar ▲';}
 function renderExtra(d){
   var mb=document.getElementById('mbody');
   if(!mb)return;
   var dv=applyOV(d);
   var hasOV=!!OV[d.dia];
-  // Thumbnails de todas as imagens disponíveis
   var imgThumb=Object.entries(IMGS).map(function(e){
     var k=e[0],v=e[1];
     var sel=(dv.imgKeys&&dv.imgKeys[0]===k);
-    return "<div onclick='setCapaImg(""+k+"")' title='"+k+"' style='display:inline-block;cursor:pointer;margin:3px;border:3px solid "+(sel?'#00C9A7':'#e2e8f0')+";border-radius:6px;overflow:hidden;vertical-align:top'>"+
+    return "<div onclick='setCapaImg(&quot;"+k+"&quot;)' title='"+k+"' style='display:inline-block;cursor:pointer;margin:3px;border:3px solid "+(sel?"#00C9A7":"#e2e8f0")+";border-radius:6px;overflow:hidden;vertical-align:top'>"+
       "<img src='"+v+"' style='width:70px;height:87px;object-fit:cover;display:block'/>"+
       "<div style='font-size:7px;text-align:center;padding:2px 1px;font-weight:600;color:#64748b;white-space:nowrap;overflow:hidden;max-width:70px'>"+k+"</div>"+
       "</div>";
@@ -333,7 +333,7 @@ function renderExtra(d){
     "<div style='margin-top:16px;border-top:2px solid #e8edf0;padding-top:14px'>"+
     "<div style='display:flex;align-items:center;justify-content:space-between;margin-bottom:10px'>"+
     "<div style='font-size:13px;font-weight:700;color:#0D2B3E'>🖼️ Trocar imagem da capa</div>"+
-    "<button onclick='var s=document.getElementById("imgsel");s.style.display=s.style.display==="none"?"flex":"none";this.textContent=s.style.display==="none"?"Ver opções ▼":"Fechar ▲"' class='btn btn-s' style='font-size:11px;padding:5px 12px'>Ver opções ▼</button>"+
+    "<button onclick='toggleImgSel(this)' class='btn btn-s' style='font-size:11px;padding:5px 12px'>Ver opções ▼</button>"+
     "</div>"+
     "<div id='imgsel' style='display:none;flex-wrap:wrap;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:10px;max-height:280px;overflow-y:auto'>"+imgThumb+"</div>"+
     "</div>"+
@@ -359,7 +359,6 @@ function renderExtra(d){
 
   mb.insertAdjacentHTML('beforeend',html);
 }
-
 function setCapaImg(key){
   if(!curD)return;
   var dv=applyOV(curD);
@@ -512,9 +511,7 @@ function gerarRelatorio(){
 function copiarRelatorio(){
   var el=document.getElementById('rel-output');
   if(!el)return;
-  var txt='RELATÓRIO FARMA FÁCIL - '+new Date().toLocaleDateString('pt-BR')+'
-
-'+el.innerText;
+  var txt='RELATÓRIO FARMA FÁCIL - '+new Date().toLocaleDateString('pt-BR')+'\n\n'+el.innerText;
   if(navigator.clipboard)navigator.clipboard.writeText(txt).then(function(){alert('Relatório copiado! Cole no WhatsApp ou e-mail.');});
 }
 
@@ -563,11 +560,7 @@ function usarNorma(idx){
   if(pilarEl)pilarEl.value=n.pilar;
   if(tplEl)tplEl.value=n.template;
   if(titEl)titEl.value=n.angulo.substring(0,80);
-  if(itensEl)itensEl.value='O que mudou com a '+n.id+'
-O que sua drogaria precisa fazer
-Prazo para adequação
-Penalidade pelo descumprimento
-Farma Fácil resolve por você';
+  if(itensEl)itensEl.value='O que mudou com a '+n.id+'\nO que sua drogaria precisa fazer\nPrazo para adequação\nPenalidade pelo descumprimento\nFarma Fácil resolve por você';
   if(ctaEl)ctaEl.value='Sua drogaria está adequada à '+n.id+'? Me chama.';
   // Scroll para o formulário
   document.querySelector('#s-criar .card:last-child').scrollIntoView({behavior:'smooth'});
@@ -580,8 +573,7 @@ function previewPostCriado(){
   var destaque=document.getElementById('cp-destaque').value;
   var cta=document.getElementById('cp-cta').value;
   var itensRaw=document.getElementById('cp-itens').value;
-  var itens=itensRaw.split('
-').filter(function(l){return l.trim();}).slice(0,5);
+  var itens=itensRaw.split('\n').filter(function(l){return l.trim();}).slice(0,5);
   if(!titulo){alert('Preencha pelo menos o título do post.');return;}
   var TIP={atracao:{pilar:'🎯 Atração',e:'🎯'},autoridade:{pilar:'🏆 Autoridade',e:'🏆'},conexao:{pilar:'❤️ Conexão',e:'❤️'},venda:{pilar:'💼 Venda',e:'💼'}};
   var tp=TIP[pilar]||TIP.venda;
