@@ -1,0 +1,31 @@
+{
+  "conta": "@farmafacilassessoria",
+  "asset_id": "109761077453312",
+  "business_id": "137336747461436",
+  "descricao": "Histórico de métricas do Instagram - Sistema V4",
+  "registros": [
+    {
+      "data_coleta": "2026-03-23",
+      "periodo": "23/02/2026 a 22/03/2026",
+      "periodo_dias": 28,
+      "fonte": "Meta Business Suite (coleta manual)",
+      "dados": {
+        "visualizacoes":      { "valor": 764,  "variacao_pct": -80.7 },
+        "alcance":            { "valor": 142,  "variacao_pct": -78.7 },
+        "interacoes":         { "valor": 7,    "variacao_pct": -72.0 },
+        "novos_seguidores":   { "valor": 28,   "variacao_pct": -50.9 },
+        "total_seguidores":   { "valor": 8295, "variacao_pct": null  },
+        "seguidores_pct":     { "valor": 80.1, "unidade": "%" },
+        "nao_seguidores_pct": { "valor": 19.9, "unidade": "%" }
+      },
+      "diagnostico": "Conta postando apenas Stories, sem alcance orgânico de feed ou Reels",
+      "recomendacao_meta": "Reels 1-3x/semana + 1 post feed + 5 stories"
+    }
+  ],
+  "meta_proximos_30_dias": {
+    "visualizacoes_meta":    2000,
+    "alcance_meta":          400,
+    "interacoes_meta":       30,
+    "novos_seguidores_meta": 50
+  }
+}
