@@ -40,7 +40,7 @@ jobs:
           DIA="${{ github.event.client_payload.dia || github.event.inputs.dia }}"
           cd automacoes && node publicar.js --dia $DIA
         env:
-          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_ACTIONS: true
 

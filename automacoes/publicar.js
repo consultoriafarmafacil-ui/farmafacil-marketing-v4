@@ -284,105 +284,45 @@ async function aguardarPages(dia) {
   await sleep(segundos * 1000);
 }
 
-// ─── 6. Publicar carrossel no Instagram ──────────────────────────────────────
+// ─── 6. Enviar webhook para Make.com publicar no Instagram ───────────────────
 async function publicarCarrossel(dia, diaData) {
-  if (!ACCESS_TOKEN) {
-    throw new Error('META_ACCESS_TOKEN não definido.');
-  }
+  const MAKE_WEBHOOK = process.env.MAKE_WEBHOOK_URL;
 
-  const baseUrl    = `https://raw.githubusercontent.com/${REPO}/main/slides`;
+  const baseUrl      = `https://raw.githubusercontent.com/${REPO}/main/slides`;
   const legendaFinal = (diaData.legenda || '') + '\n\n' + (diaData.hashtags || '');
 
-  log('Criando itens do carrossel na API do Instagram...');
-
-  const childIds = [];
-
+  const images = [];
   for (let i = 0; i < 6; i++) {
-    const imageUrl = `${baseUrl}/dia_${dia}_slide_${i}.png`;
-    log('Criando item ' + (i + 1) + ': ' + imageUrl);
-
-    let resp;
-    try {
-      resp = await axios.post(
-        `${GRAPH_BASE}/${API_VERSION}/${ASSET_ID}/media`,
-        null,
-        {
-          params: {
-            image_url: imageUrl,
-            is_carousel_item: 'true',
-            access_token: ACCESS_TOKEN
-          },
-          timeout: 30000
-        }
-      );
-    } catch (e) {
-      const msg = e.response ? JSON.stringify(e.response.data) : e.message;
-      throw new Error('Erro ao criar item ' + i + ' do carrossel: ' + msg);
-    }
-
-    const childId = resp.data && resp.data.id;
-    if (!childId) throw new Error('ID não retornado para item ' + i);
-    childIds.push(childId);
-    log('Item ' + (i + 1) + ' criado: ' + childId);
-
-    // Pequena pausa entre uploads
-    await sleep(1500);
+    images.push(`${baseUrl}/dia_${dia}_slide_${i}.png`);
   }
 
-  // Criar container do carrossel
-  log('Criando container do carrossel...');
-  let containerResp;
+  const payload = {
+    dia:     dia,
+    titulo:  diaData.titulo  || '',
+    pilar:   diaData.pilar   || '',
+    legenda: legendaFinal,
+    images:  images
+  };
+
+  log('Payload para Make.com: ' + JSON.stringify({ dia, imagens: images.length }));
+
+  if (!MAKE_WEBHOOK) {
+    log('[AVISO] MAKE_WEBHOOK_URL não definido — pulando publicação.');
+    log('Slides gerados e commitados. Publique manualmente usando as imagens em /slides/');
+    return null;
+  }
+
+  log('Enviando webhook para Make.com...');
   try {
-    containerResp = await axios.post(
-      `${GRAPH_BASE}/${API_VERSION}/${ASSET_ID}/media`,
-      null,
-      {
-        params: {
-          media_type: 'CAROUSEL',
-          children: childIds.join(','),
-          caption: legendaFinal,
-          access_token: ACCESS_TOKEN
-        },
-        timeout: 30000
-      }
-    );
+    const resp = await axios.post(MAKE_WEBHOOK, payload, { timeout: 30000 });
+    log('Make.com respondeu: ' + resp.status + ' ' + JSON.stringify(resp.data));
   } catch (e) {
     const msg = e.response ? JSON.stringify(e.response.data) : e.message;
-    throw new Error('Erro ao criar container do carrossel: ' + msg);
+    throw new Error('Erro ao enviar webhook para Make.com: ' + msg);
   }
 
-  const containerId = containerResp.data && containerResp.data.id;
-  if (!containerId) throw new Error('Container ID não retornado.');
-  log('Container criado: ' + containerId);
-
-  // Aguarda processamento do container
-  log('Aguardando processamento do container (10s)...');
-  await sleep(10000);
-
-  // Publicar
-  log('Publicando carrossel...');
-  let pubResp;
-  try {
-    pubResp = await axios.post(
-      `${GRAPH_BASE}/${API_VERSION}/${ASSET_ID}/media_publish`,
-      null,
-      {
-        params: {
-          creation_id: containerId,
-          access_token: ACCESS_TOKEN
-        },
-        timeout: 30000
-      }
-    );
-  } catch (e) {
-    const msg = e.response ? JSON.stringify(e.response.data) : e.message;
-    throw new Error('Erro ao publicar carrossel: ' + msg);
-  }
-
-  const postId = pubResp.data && pubResp.data.id;
-  log('=== PUBLICADO COM SUCESSO! Post ID: ' + postId + ' ===');
-
-  return postId;
+  log('=== Webhook enviado com sucesso! Make.com publicará no Instagram. ===');
+  return images;
 }
 
 // ─── Main ────────────────────────────────────────────────────────────────────
@@ -413,7 +353,7 @@ async function main() {
     // 4. Aguardar indexação do GitHub Pages
     await aguardarPages(dia);
 
-    // 5. Publicar carrossel no Instagram
+    // 5. Enviar webhook para Make.com → publica no Instagram
     await publicarCarrossel(dia, diaData);
 
     log('=== Publicação concluída! ===');
