@@ -301,7 +301,12 @@ async function publicarCarrossel(dia, diaData) {
     titulo:  diaData.titulo  || '',
     pilar:   diaData.pilar   || '',
     legenda: legendaFinal,
-    images:  images
+    image1:  images[0],
+    image2:  images[1],
+    image3:  images[2],
+    image4:  images[3],
+    image5:  images[4],
+    image6:  images[5]
   };
 
   log('Payload para Make.com: ' + JSON.stringify({ dia, imagens: images.length }));
