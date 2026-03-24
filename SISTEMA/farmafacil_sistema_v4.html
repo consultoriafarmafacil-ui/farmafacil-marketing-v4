@@ -752,12 +752,52 @@ function copiarRelatorio(){
 // NORMAS ANVISA E CRIAR POST
 // ═══════════════════════════════════════════════════════
 var NORMAS=[
-  {id:'RDC 786/2023',titulo:'Boas Práticas para Serviços de Saúde',desc:'Atualiza requisitos de boas práticas para drogarias, incluindo POPs, armazenamento e documentação.',angulo:'A RDC 786 exige que sua drogaria atualize todos os POPs. Você está em conformidade?',pilar:'autoridade',template:'T1',tag:'Autoridade'},
-  {id:'Portaria SVS 344 — Atualização 2024',titulo:'Novas listas de substâncias sujeitas a controle',desc:'Atualização nas listas de substâncias psicoativas e entorpecentes que impactam a dispensação.',angulo:'A lista de controlados mudou em 2024. Sua drogaria já atualizou o protocolo de dispensação?',pilar:'atracao',template:'T3',tag:'Atenção'},
-  {id:'RDC 843/2024',titulo:'Requisitos para renovação de alvarás sanitários',desc:'Novos critérios e documentação exigida para renovação de alvarás de funcionamento de farmácias.',angulo:'Alvará vai vencer? A RDC 843 mudou os requisitos de renovação — saiba o que preparar.',pilar:'venda',template:'T5',tag:'Venda'},
-  {id:'Resolução CFF 764/2024',titulo:'Serviços farmacêuticos clínicos em drogarias',desc:'O CFF amplia as possibilidades de serviços clínicos em drogarias, incluindo rastreamento e monitoramento.',angulo:'Sua drogaria pode oferecer medição de pressão e glicemia com cobrança. A Resolução CFF 764 permite!',pilar:'atracao',template:'T3',tag:'Oportunidade'},
-  {id:'Instrução Normativa ANVISA 171/2024',titulo:'SNGPC — novas diretrizes de transmissão',desc:'Atualiza as regras de transmissão eletrônica de dados para drogarias com medicamentos controlados.',angulo:'O SNGPC mudou em 2024. Sua drogaria está transmitindo corretamente? Erros geram multa automática.',pilar:'autoridade',template:'T4',tag:'Urgente'},
-];
+  {
+    id:'Lei 15.357/2026 — 23/03/2026',
+    titulo:'Farmácias e drogarias autorizadas a funcionar dentro de supermercados',
+    desc:'Sancionada em 23/03/2026, altera a Lei 5.991/1973. Autoriza a instalação de farmácias e drogarias na área de venda de supermercados, com exigências técnicas e sanitárias completas.',
+    angulo:'A Lei 15.357/26 cria nova concorrência para drogarias independentes. O que vai diferenciar a sua? Explore esse tema com conteúdo de autoridade antes da concorrência.',
+    pilar:'venda',
+    template:'T5',
+    tag:'Urgente'
+  },
+  {
+    id:'Lei 15.357/2026 — Consultório Farmacêutico',
+    titulo:'Consultório farmacêutico: de diferencial a exigência legal',
+    desc:'A Lei 15.357/26 exige estrutura de consultório farmacêutico, dimensionamento físico adequado, controle de temperatura e RT presente em todo horário de funcionamento.',
+    angulo:'Consultório farmacêutico agora é obrigação legal — não diferencial. Sua drogaria tem essa estrutura? A Farma Fácil verifica e regulariza por você.',
+    pilar:'autoridade',
+    template:'T1',
+    tag:'Urgente'
+  },
+  {
+    id:'RDC 1.015/2026 — ANVISA 02/02/2026',
+    titulo:'Cannabis medicinal: nova regulamentação para dispensação em drogarias',
+    desc:'Estabelece marco regulatório completo para dispensação de produtos à base de cannabis para uso humano. Vigência a partir de maio/2026. Dispensação exclusiva por farmacêutico com registro no SNGPC.',
+    angulo:'A partir de maio/2026, dispensar cannabis medicinal sem farmacêutico e sem SNGPC correto gera autuação. Sua drogaria vai oferecer esse serviço? Prepare-se agora.',
+    pilar:'autoridade',
+    template:'T4',
+    tag:'Urgente'
+  },
+  {
+    id:'RDC 1.000/2025 — vigência 13/02/2026',
+    titulo:'Novos modelos de receituário obrigatórios desde fevereiro de 2026',
+    desc:'Desde 13/02/2026, os novos modelos de receita da RDC 1.000/2025 são obrigatórios para medicamentos controlados. Receitas nos modelos antigos não devem mais ser aceitas.',
+    angulo:'Desde 13/02/2026 sua equipe deve conhecer os novos receituários. Aceitar receita no modelo errado é infração. Você treinou sua equipe para isso?',
+    pilar:'autoridade',
+    template:'T2',
+    tag:'Atenção'
+  },
+  {
+    id:'Lei 15.357/2026 — RT em tempo integral',
+    titulo:'RT obrigatório em tempo integral — lei reforça exigência para todas as drogarias',
+    desc:'A Lei 15.357/26 reforça que o Responsável Técnico deve estar presente durante todo o horário de funcionamento — regra que vale para todas as drogarias, não só as de supermercado.',
+    angulo:'A nova lei deixou explícito: RT em tempo integral é obrigação legal. Você sabe se o seu RT está habilitado, presente e com CRF em dia conforme exige a legislação?',
+    pilar:'venda',
+    template:'T6',
+    tag:'Atenção'
+  }
+]
 
 function renderNormas(){
   var c=document.getElementById('lista-normas');
