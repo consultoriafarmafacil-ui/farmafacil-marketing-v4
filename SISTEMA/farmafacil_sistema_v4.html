@@ -161,18 +161,46 @@
 <div class="card"><div style="font-size:15px;font-weight:700;margin-bottom:10px">✦ Fila de Aprovação</div><div id="fila-lista"></div></div>
 </div>
 
+<div class="card" style="margin-top:14px">
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+<div style="font-size:22px">🎬</div>
+<div>
+<div style="font-size:15px;font-weight:700">Gerador de Roteiro para Reels</div>
+<div style="font-size:11px;color:var(--mut)">Hook 3s · Desenvolvimento · CTA · Legenda pronta</div>
+</div>
+</div>
+<div style="margin-bottom:10px">
+<div style="font-size:10px;text-transform:uppercase;color:var(--mut);font-weight:600;margin-bottom:8px">Temas sugeridos (clique para selecionar)</div>
+<div id="reel-temas" style="display:flex;flex-wrap:wrap;gap:6px">
+<button onclick="selecionarTema(this,'SNGPC — o erro silencioso que gera multa automática')" class="btn btn-s" style="font-size:11px">SNGPC</button>
+<button onclick="selecionarTema(this,'5 irregularidades que fecham drogarias')" class="btn btn-s" style="font-size:11px">5 irregularidades</button>
+<button onclick="selecionarTema(this,'RT Responsável Técnico: obrigação legal, não opção')" class="btn btn-s" style="font-size:11px">RT Obrigatório</button>
+<button onclick="selecionarTema(this,'Alvará vencido: o que acontece quando o fiscal bate na porta')" class="btn btn-s" style="font-size:11px">Alvará</button>
+<button onclick="selecionarTema(this,'Por que 80% das drogarias têm inconsistências sem saber')" class="btn btn-s" style="font-size:11px">Inconsistências</button>
+<button onclick="selecionarTema(this,'PGRSS: o documento que a maioria ignora e o fiscal não')" class="btn btn-s" style="font-size:11px">PGRSS</button>
+</div>
+</div>
+<div style="margin-bottom:12px">
+<div style="font-size:10px;text-transform:uppercase;color:var(--mut);font-weight:600;margin-bottom:6px">Ou digite seu próprio tema</div>
+<div style="display:flex;gap:8px">
+<input id="reel-tema-custom" type="text" placeholder="Ex: Como funciona a dispensação de antibióticos" style="flex:1;border:1px solid var(--bd);border-radius:8px;padding:9px 12px;font-family:inherit;font-size:14px;outline:none"/>
+<button onclick="gerarRoteiro()" class="btn btn-vd" style="white-space:nowrap">🎬 Gerar Roteiro</button>
+</div>
+</div>
+<div id="reel-output" style="margin-top:4px"></div>
+</div>
 <div class="sec" id="s-criar">
 <div class="card" id="criar-normas-card">
 <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
 <div style="font-size:15px;font-weight:700">🏛️ Normas ANVISA Recentes</div>
 <span id="badge-normas" style="background:#dc2626;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">🔔 5 novas</span>
 </div>
-<div style="font-size:12px;color:var(--mut);margin-bottom:14px">Saia na frente: transforme novas regulamentações em conteúdo de autoridade antes da concorrência.</div>
-<div id="lista-normas"></div>
+<div style="font-size:12px;color:var(--mut);margin-bottom:14px">Clique em uma norma para gerar sugestão de post automaticamente.</div>
+<div id="lista-normas"><div style="text-align:center;padding:20px;color:var(--mut);font-size:13px">Carregando normas...</div></div>
 </div>
 <div class="card">
 <div style="font-size:15px;font-weight:700;margin-bottom:12px">✏️ Criar Post Personalizado</div>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">
 <div>
 <div style="font-size:10px;text-transform:uppercase;color:var(--mut);font-weight:600;margin-bottom:6px">Pilar</div>
 <select id="cp-pilar" style="width:100%;border:1px solid var(--bd);border-radius:8px;padding:9px 12px;font-family:inherit;font-size:13px;outline:none">
@@ -206,9 +234,18 @@
 <div style="font-size:10px;text-transform:uppercase;color:var(--mut);font-weight:600;margin-bottom:6px">Itens do post (um por linha, até 5)</div>
 <textarea id="cp-itens" placeholder="Erro 1: Manual desatualizado&#10;Erro 2: POPs incompletos&#10;Erro 3: SNGPC irregular&#10;..." style="width:100%;border:1px solid var(--bd);border-radius:8px;padding:9px 12px;font-family:inherit;font-size:13px;outline:none;min-height:90px;resize:vertical"></textarea>
 </div>
-<div style="margin-bottom:12px">
+<div style="margin-bottom:10px">
 <div style="font-size:10px;text-transform:uppercase;color:var(--mut);font-weight:600;margin-bottom:6px">CTA (chamada final)</div>
 <input id="cp-cta" type="text" placeholder="Ex: Me chama antes que o fiscal chegue primeiro." style="width:100%;border:1px solid var(--bd);border-radius:8px;padding:9px 12px;font-family:inherit;font-size:14px;outline:none"/>
+</div>
+<div style="margin-bottom:10px">
+<div style="font-size:10px;text-transform:uppercase;color:var(--mut);font-weight:600;margin-bottom:6px">Imagem da capa</div>
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+<button onclick="toggleCpImgs()" class="btn btn-s" style="font-size:11px;padding:5px 12px" id="btn-cp-imgs">Ver imagens ▼</button>
+<span id="cp-imagem-label" style="font-size:12px;color:var(--mut)">Nenhuma selecionada (usa padrão do template)</span>
+</div>
+<div id="cp-imagens" style="display:none;flex-wrap:wrap;background:#f8fafc;border:1px solid var(--bd);border-radius:10px;padding:10px;max-height:240px;overflow-y:auto"></div>
+<input type="hidden" id="cp-imagem" value=""/>
 </div>
 <button onclick="previewPostCriado()" class="btn btn-vd" style="width:100%;font-size:14px">👁️ Preview dos Slides</button>
 <div id="preview-criado" style="margin-top:14px"></div>
@@ -318,46 +355,156 @@ function toggleImgSel(btn){var s=document.getElementById('imgsel');var open=s.st
 function renderExtra(d){
   var mb=document.getElementById('mbody');
   if(!mb)return;
+  curRSlide=0;
+  renderExtraSlide(d,0);
+}
+
+function renderExtraSlide(d,slideIdx){
+  var mb=document.getElementById('mbody');
+  if(!mb)return;
   var dv=applyOV(d);
   var hasOV=!!OV[d.dia];
+  var imgKeys=dv.imgKeys||[];
+
+  // Nomes e campos por slide
+  var slideMeta=[
+    {nome:'Capa',    fields:[{id:'e-titulo',label:'Título',val:dv.titulo||''},{id:'e-destaque',label:'Destaque',val:dv.destaque||''}]},
+    {nome:'Slide 2', fields:[{id:'e-t2',label:'Título do slide',val:dv.t2||''},{id:'e-i2',label:'Itens (um por linha)',val:(dv.i2||[]).join('\n'),area:true}]},
+    {nome:'Slide 3', fields:[{id:'e-t3',label:'Título do slide',val:dv.t3||''},{id:'e-l3',label:'Itens (um por linha)',val:(dv.l3||[]).join('\n'),area:true}]},
+    {nome:'Slide 4', fields:[{id:'e-t4',label:'Título do slide',val:dv.t4||''},{id:'e-it4',label:'Itens (um por linha)',val:(dv.it4||[]).join('\n'),area:true}]},
+    {nome:'Slide 5', fields:[{id:'e-t5',label:'Título do slide',val:dv.t5||''},{id:'e-ck',label:'Checklist (um por linha)',val:(dv.ck||[]).join('\n'),area:true}]},
+    {nome:'CTA',     fields:[{id:'e-cta',label:'Chamada final',val:dv.cta||''}]}
+  ];
+
+  var selImgKey=imgKeys[slideIdx]||'';
   var imgThumb=Object.entries(IMGS).map(function(e){
     var k=e[0],v=e[1];
-    var sel=(dv.imgKeys&&dv.imgKeys[0]===k);
-    return "<div onclick='setCapaImg(&quot;"+k+"&quot;)' title='"+k+"' style='display:inline-block;cursor:pointer;margin:3px;border:3px solid "+(sel?"#00C9A7":"#e2e8f0")+";border-radius:6px;overflow:hidden;vertical-align:top'>"+
-      "<img src='"+v+"' style='width:70px;height:87px;object-fit:cover;display:block'/>"+
-      "<div style='font-size:7px;text-align:center;padding:2px 1px;font-weight:600;color:#64748b;white-space:nowrap;overflow:hidden;max-width:70px'>"+k+"</div>"+
+    var sel=(k===selImgKey);
+    return "<div onclick='setSlideImg("+slideIdx+",&quot;"+k+"&quot;)' title='"+k+"' style='display:inline-block;cursor:pointer;margin:3px;border:3px solid "+(sel?"#00C9A7":"#e2e8f0")+";border-radius:6px;overflow:hidden;vertical-align:top'>"+
+      "<img src='"+v+"' style='width:60px;height:75px;object-fit:cover;display:block'/>"+
+      "<div style='font-size:7px;text-align:center;padding:2px 1px;font-weight:600;color:#64748b;white-space:nowrap;overflow:hidden;max-width:60px'>"+k+"</div>"+
       "</div>";
   }).join('');
 
-  var html=
+  var sm=slideMeta[slideIdx];
+  var fieldsHtml=sm.fields.map(function(f){
+    var ctrl=f.area
+      ? "<textarea id='"+f.id+"' style='width:100%;border:1px solid #e2e8f0;border-radius:8px;padding:9px 12px;font-family:inherit;font-size:13px;outline:none;min-height:80px;resize:vertical'>"+f.val+"</textarea>"
+      : "<div id='"+f.id+"' contenteditable='true' style='border:1px solid #e2e8f0;border-radius:8px;padding:9px 12px;font-size:14px;font-weight:700;min-height:38px;outline:none;font-family:inherit'>"+f.val+"</div>";
+    return "<div style='margin-bottom:10px'><div style='font-size:10px;text-transform:uppercase;color:#64748b;font-weight:600;margin-bottom:5px'>"+f.label+"</div>"+ctrl+"</div>";
+  }).join('');
+
+  var navHtml=slideMeta.map(function(s,i){
+    var active=i===slideIdx;
+    return "<div onclick='trocarSlide("+i+")' style='cursor:pointer;padding:6px 10px;border-radius:8px;font-size:11px;font-weight:700;background:"+(active?"#0D2B3E":"#f1f5f9")+";color:"+(active?"#fff":"#64748b")+";white-space:nowrap'>"+s.nome+"</div>";
+  }).join('');
+
+  // Remove existing extra panel and rebuild
+  var existing=document.getElementById('extra-panel');
+  if(existing)existing.parentNode.removeChild(existing);
+
+  var panel=document.createElement('div');
+  panel.id='extra-panel';
+  panel.innerHTML=
     "<div style='margin-top:16px;border-top:2px solid #e8edf0;padding-top:14px'>"+
-    "<div style='display:flex;align-items:center;justify-content:space-between;margin-bottom:10px'>"+
-    "<div style='font-size:13px;font-weight:700;color:#0D2B3E'>🖼️ Trocar imagem da capa</div>"+
-    "<button onclick='toggleImgSel(this)' class='btn btn-s' style='font-size:11px;padding:5px 12px'>Ver opções ▼</button>"+
-    "</div>"+
-    "<div id='imgsel' style='display:none;flex-wrap:wrap;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:10px;max-height:280px;overflow-y:auto'>"+imgThumb+"</div>"+
-    "</div>"+
-    "<div style='margin-top:14px;border-top:2px solid #e8edf0;padding-top:14px'>"+
-    "<div style='font-size:13px;font-weight:700;color:#0D2B3E;margin-bottom:12px'>✏️ Editar textos</div>"+
-    "<div style='margin-bottom:10px'>"+
-    "<div style='font-size:10px;text-transform:uppercase;color:#64748b;font-weight:600;margin-bottom:5px'>Título (capa)</div>"+
-    "<div id='e-titulo' contenteditable='true' style='border:1px solid #e2e8f0;border-radius:8px;padding:9px 12px;font-size:15px;font-weight:700;min-height:38px;outline:none;font-family:inherit'>"+dv.titulo+"</div>"+
-    "</div>"+
-    "<div style='margin-bottom:10px'>"+
-    "<div style='font-size:10px;text-transform:uppercase;color:#64748b;font-weight:600;margin-bottom:5px'>Destaque (badge colorido)</div>"+
-    "<div id='e-destaque' contenteditable='true' style='border:1px solid #e2e8f0;border-radius:8px;padding:9px 12px;font-size:14px;min-height:38px;outline:none;font-family:inherit'>"+dv.destaque+"</div>"+
-    "</div>"+
+    "<div style='font-size:13px;font-weight:700;color:#0D2B3E;margin-bottom:10px'>✏️ Editar por slide</div>"+
+    "<div style='display:flex;gap:6px;overflow-x:auto;padding-bottom:6px;margin-bottom:14px'>"+navHtml+"</div>"+
+    fieldsHtml+
     "<div style='margin-bottom:12px'>"+
-    "<div style='font-size:10px;text-transform:uppercase;color:#64748b;font-weight:600;margin-bottom:5px'>CTA (último slide)</div>"+
-    "<div id='e-cta' contenteditable='true' style='border:1px solid #e2e8f0;border-radius:8px;padding:9px 12px;font-size:14px;min-height:38px;outline:none;font-family:inherit'>"+dv.cta+"</div>"+
+    "<div style='font-size:10px;text-transform:uppercase;color:#64748b;font-weight:600;margin-bottom:6px'>🖼️ Imagem — "+sm.nome+(selImgKey?" (atual: "+selImgKey+")":"")+"</div>"+
+    "<div style='display:flex;align-items:center;gap:8px;margin-bottom:6px'>"+
+    "<button onclick='toggleSlideImgs()' class='btn btn-s' style='font-size:11px;padding:5px 12px' id='btn-slide-imgs'>Ver imagens ▼</button>"+
+    "</div>"+
+    "<div id='slide-imgsel' style='display:none;flex-wrap:wrap;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:10px;max-height:240px;overflow-y:auto'>"+imgThumb+"</div>"+
     "</div>"+
     "<div style='display:flex;gap:8px'>"+
-    "<button onclick='aplicarEdits()' class='btn btn-vd' style='flex:2'>✅ Aplicar e regerar slides</button>"+
-    (hasOV?"<button onclick='resetEdits()' class='btn btn-s' style='flex:1'>🔄 Restaurar</button>":"")+
+    "<button onclick='aplicarEditsSlide("+slideIdx+")' class='btn btn-vd' style='flex:2'>✅ Aplicar neste slide</button>"+
+    (hasOV?"<button onclick='resetEdits()' class='btn btn-s' style='flex:1'>🔄 Restaurar tudo</button>":"")+
+    "</div>"+
+    "<div style='margin-top:10px'>"+
+    "<button onclick='prepararPublicacao()' class='btn' style='width:100%;background:#E1306C;color:#fff;font-size:13px'>📲 Preparar para publicar no Instagram</button>"+
     "</div>"+
     "</div>";
 
-  mb.insertAdjacentHTML('beforeend',html);
+  mb.appendChild(panel);
+}
+
+function trocarSlide(idx){
+  curRSlide=idx;
+  renderExtraSlide(curD,idx);
+}
+
+function toggleSlideImgs(){
+  var s=document.getElementById('slide-imgsel');
+  var btn=document.getElementById('btn-slide-imgs');
+  if(!s)return;
+  var open=s.style.display!=='none';
+  s.style.display=open?'none':'flex';
+  if(btn)btn.textContent=open?'Ver imagens ▼':'Fechar ▲';
+}
+
+function setSlideImg(slideIdx,key){
+  if(!curD)return;
+  var dv=applyOV(curD);
+  var keys=(dv.imgKeys||[]).slice();
+  while(keys.length<6)keys.push('');
+  keys[slideIdx]=key;
+  OV[curD.dia]=OV[curD.dia]||{};
+  OV[curD.dia].imgKeys=keys;
+  saveOV();
+  renderExtraSlide(curD,slideIdx);
+  var dv2=applyOV(curD);
+  curS=gt(dv2);
+  renderModal(curD,ST[curD.dia]||'pendente');
+  // Re-attach panel after renderModal clears mbody
+  setTimeout(function(){renderExtraSlide(curD,slideIdx);},10);
+}
+
+function aplicarEditsSlide(slideIdx){
+  if(!curD)return;
+  OV[curD.dia]=OV[curD.dia]||{};
+  var ov=OV[curD.dia];
+  var sm=[
+    ['titulo','e-titulo','destaque','e-destaque'],
+    ['t2','e-t2','i2','e-i2'],
+    ['t3','e-t3','l3','e-l3'],
+    ['t4','e-t4','it4','e-it4'],
+    ['t5','e-t5','ck','e-ck'],
+    ['cta','e-cta']
+  ];
+  var fields=sm[slideIdx];
+  for(var i=0;i<fields.length;i+=2){
+    var key=fields[i];
+    var elId=fields[i+1];
+    var el=document.getElementById(elId);
+    if(!el)continue;
+    var val=el.tagName==='TEXTAREA'?el.value:el.innerText.trim();
+    if(key==='i2'||key==='l3'||key==='it4'||key==='ck'){
+      ov[key]=val.split('\n').map(function(s){return s.trim();}).filter(function(s){return s;});
+    }else{
+      ov[key]=val;
+    }
+  }
+  saveOV();
+  var dv=applyOV(curD);
+  curS=gt(dv);
+  renderModal(curD,ST[curD.dia]||'pendente');
+  setTimeout(function(){renderExtraSlide(curD,slideIdx);},10);
+}
+
+function prepararPublicacao(){
+  var dv=applyOV(curD);
+  var slides=curS||gt(dv);
+  var sIdx=curRSlide||0;
+  var slideHtml=slides[sIdx]||slides[0];
+  // Abrir em nova janela para captura
+  var win=window.open('','_blank','width=1080,height=1350');
+  if(!win)return;
+  win.document.write('<html><head><style>*{margin:0;padding:0;box-sizing:border-box;}body{width:1080px;height:1350px;overflow:hidden;font-family:Montserrat,sans-serif;}@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Tinos:ital,wght@1,700&display=swap");</style></head><body>');
+  win.document.write(slideHtml);
+  win.document.write('<div style="position:fixed;bottom:0;left:0;right:0;background:rgba(0,0,0,.8);padding:10px;text-align:center;font-family:sans-serif"><span style="color:#fff;font-size:13px">📸 Tire um screenshot desta janela · </span><button onclick="window.print()" style="background:#00C9A7;color:#0D2B3E;border:none;padding:8px 16px;border-radius:6px;font-weight:700;cursor:pointer;font-size:13px">🖨️ Imprimir / Salvar como PDF</button><a href="instagram://" style="background:#E1306C;color:#fff;text-decoration:none;padding:8px 16px;border-radius:6px;font-weight:700;font-size:13px;margin-left:8px">📲 Abrir Instagram</a></div>');
+  win.document.write('</body></html>');
+  win.document.close();
 }
 function setCapaImg(key){
   if(!curD)return;
@@ -586,7 +733,7 @@ function previewPostCriado(){
     t4:titulo.substring(0,60),it4:itens.slice(0,3),
     t5:'Checklist',ck:itens,
     cta:cta||'Me chama no WhatsApp.',
-    imgKeys:['farmaceutica_alvara','karine1','fiscalizacao','farmaceutico_fiscal','simbolo_anvisa','karine2']
+    imgKeys:(function(){var k=document.getElementById('cp-imagem');var sel=k&&k.value?k.value:'farmaceutica_alvara';return [sel,'karine1','fiscalizacao','farmaceutico_fiscal','simbolo_anvisa','karine2'];})()
   };
   var slides=gt(dummy);
   var prev=document.getElementById('preview-criado');
@@ -609,6 +756,177 @@ function selPreviewS(idx,el){
 // Renderizar normas quando aba criar é aberta
 function abaHook(id){
   if(id==='criar')setTimeout(renderNormas,50);
+}
+
+
+// ─── variáveis globais adicionais ─────────────────────────────────
+var curRSlide=0;
+
+// ─── toggleCpImgs (aba criar post) ────────────────────────────────
+function toggleCpImgs(){
+  var s=document.getElementById('cp-imagens');
+  var btn=document.getElementById('btn-cp-imgs');
+  if(!s)return;
+  var open=s.style.display!=='none';
+  if(!open&&s.innerHTML===''){
+    s.innerHTML=Object.entries(IMGS).map(function(e){
+      var k=e[0],v=e[1];
+      return "<div onclick='selecionarCpImg(this,&quot;"+k+"&quot;)' title='"+k+"' style='display:inline-block;cursor:pointer;margin:3px;border:3px solid #e2e8f0;border-radius:6px;overflow:hidden;vertical-align:top'>"+
+        "<img src='"+v+"' style='width:60px;height:75px;object-fit:cover;display:block'/>"+
+        "<div style='font-size:7px;text-align:center;padding:2px 1px;font-weight:600;color:#64748b;white-space:nowrap;overflow:hidden;max-width:60px'>"+k+"</div>"+
+        "</div>";
+    }).join('');
+  }
+  s.style.display=open?'none':'flex';
+  if(btn)btn.textContent=open?'Ver imagens ▼':'Fechar ▲';
+}
+
+function selecionarCpImg(el,key){
+  document.querySelectorAll('#cp-imagens>div').forEach(function(d){d.style.borderColor='#e2e8f0';});
+  el.style.borderColor='#00C9A7';
+  var inp=document.getElementById('cp-imagem');
+  var lbl=document.getElementById('cp-imagem-label');
+  if(inp)inp.value=key;
+  if(lbl)lbl.textContent='Selecionada: '+key;
+}
+
+// ─── Roteiro Reels ─────────────────────────────────────────────────
+var SCRIPTS_REEL={
+  'SNGPC — o erro silencioso que gera multa automática':{
+    hook:'Sua drogaria vai tomar multa automática e você nem sabe. 🚨',
+    dev:['O SNGPC precisa ser transmitido em até 10 dias após a dispensação de controlados','Mas a maioria das drogarias acumula atrasos sem perceber','A ANVISA não manda aviso — ela simplesmente autua','E a multa começa em R$ 2.000 por infração identificada'],
+    detalhe:'Um único mês de atraso pode virar uma série de autuações — porque cada transmissão atrasada conta separado.',
+    cta:'Se você não sabe se seu SNGPC está em dia, me chama agora. A Farma Fácil verifica gratuitamente.',
+    legenda:'Você sabia que o SNGPC pode gerar multa automática? Comenta aqui: sua drogaria transmite em dia? 👇'
+  },
+  '5 irregularidades que fecham drogarias':{
+    hook:'5 coisas que fecham drogarias — e a maioria dos donos não sabe que tem. 😰',
+    dev:['RT ausente ou com CRF vencido — interdição imediata','SNGPC com inconsistências graves — embargo de controlados','Alvará vencido — operação ilegal','PGRSS sem implantação real — multa ambiental + sanitária'],
+    detalhe:'A 5ª irregularidade é a mais perigosa porque é invisível: documentação que parece ok mas está desatualizada.',
+    cta:'Quantas dessas você tem agora? Me chama para um diagnóstico gratuito antes que o fiscal chegue.',
+    legenda:'Quantas dessas 5 irregularidades você tem hoje? Conta nos comentários. 👇'
+  },
+  'RT Responsável Técnico: obrigação legal, não opção':{
+    hook:'Você sabia que operar sem RT é ilegal — e você pode não saber que está irregular? ⚠️',
+    dev:['Toda drogaria precisa de um Responsável Técnico com CRF ativo','O RT precisa estar habilitado junto ao Conselho Regional de Farmácia','Sem RT ativo: interdição imediata na primeira fiscalização','Contratar um RT não é gasto — é proteção jurídica'],
+    detalhe:'O fiscal verifica o RT antes de qualquer coisa. É o primeiro item da planilha de inspeção.',
+    cta:'Sua drogaria tem RT habilitado? Se não sabe, me chama — a Farma Fácil resolve essa situação por você.',
+    legenda:'Sabia que operar sem RT é infração gravíssima? Compartilha com donos de drogaria que precisam saber. 👇'
+  },
+  'Alvará vencido: o que acontece quando o fiscal bate na porta':{
+    hook:'O fiscal bateu na porta. O alvará venceu há 3 meses. O que acontece agora? 🚪',
+    dev:['Alvará vencido = operação ilegal — mesmo que você esteja funcionando normalmente','O fiscal pode interditar na hora — sem prazo para regularização','A multa por alvará vencido começa em R$ 5.000','E o processo de regularização pode levar meses — tempo sem funcionar'],
+    detalhe:'A boa notícia: quando renovado antes do vencimento, o processo é simples. A Farma Fácil monitora o prazo por você.',
+    cta:'Quando vence o alvará da sua drogaria? Me chama e eu monitoro por você — sem surpresas.',
+    legenda:'Alvará vencido é um dos motivos mais comuns de interdição. Você sabe quando vence o seu? 👇'
+  },
+  'Por que 80% das drogarias têm inconsistências sem saber':{
+    hook:'80% das drogarias têm alguma irregularidade — e a maioria não sabe. Será que você é um deles? 🤔',
+    dev:['Pesquisa da ANVISA mostra que 8 em 10 drogarias apresentam alguma não conformidade','Os mais comuns: documentação desatualizada, SNGPC com pequenos erros e POPs não implantados','Pequenas inconsistências viram grandes problemas na hora da fiscalização','O que parece irrelevante para você é item obrigatório na planilha do fiscal'],
+    detalhe:'Inconsistência não significa que você está agindo de má fé — significa que você precisa de suporte técnico especializado.',
+    cta:'Quer saber se a sua drogaria está entre os 20% que estão em conformidade? Me chama — diagnóstico gratuito.',
+    legenda:'Você faz parte dos 20% ou dos 80%? Comenta aqui. 👇'
+  },
+  'PGRSS: o documento que a maioria ignora e o fiscal não':{
+    hook:'Tem um documento obrigatório na sua drogaria que 9 em 10 donos nunca ouviram falar. 📄',
+    dev:['PGRSS: Plano de Gerenciamento de Resíduos dos Serviços de Saúde','Obrigatório para todas as drogarias que manipulam ou descartam medicamentos','Sem PGRSS implantado: multa ambiental + sanitária simultâneas','Não é só ter o documento — precisa estar implantado e funcionando'],
+    detalhe:'O PGRSS é auditado tanto pela Vigilância Sanitária quanto pelo órgão ambiental — são duas fiscalizações diferentes.',
+    cta:'Sua drogaria tem PGRSS implantado? Me chama — a Farma Fácil elabora e implanta por você.',
+    legenda:'PGRSS: você conhecia essa obrigação? Conta nos comentários se sua drogaria tem. 👇'
+  }
+};
+
+var temaAtual='';
+
+function selecionarTema(btn,tema){
+  temaAtual=tema;
+  document.querySelectorAll('#reel-temas .btn').forEach(function(b){b.style.background='';b.style.color='';});
+  btn.style.background='#0D2B3E';
+  btn.style.color='#fff';
+  var inp=document.getElementById('reel-tema-custom');
+  if(inp)inp.value=tema;
+  gerarRoteiro();
+}
+
+function gerarRoteiro(){
+  var inp=document.getElementById('reel-tema-custom');
+  var tema=inp?inp.value.trim():'';
+  if(!tema){alert('Digite ou selecione um tema para o roteiro.');return;}
+  temaAtual=tema;
+  var script=SCRIPTS_REEL[tema];
+  var out=document.getElementById('reel-output');
+  if(!out)return;
+
+  var html_out;
+  if(script){
+    var devItems=script.dev.map(function(d,i){
+      return "<div style='display:flex;gap:10px;margin-bottom:8px'><div style='background:#00C9A7;color:#0D2B3E;font-weight:700;font-size:12px;min-width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center'>"+(i+1)+"</div><div style='font-size:13px;color:#334155'>"+d+"</div></div>";
+    }).join('');
+    html_out=
+      "<div style='background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;padding:16px'>"+
+      "<div style='font-size:13px;font-weight:800;color:#0D2B3E;margin-bottom:14px'>🎬 "+tema+"</div>"+
+      "<div style='margin-bottom:12px'>"+
+      "<div style='font-size:10px;font-weight:700;color:#dc2626;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px'>⚡ HOOK (0–3 segundos)</div>"+
+      "<div style='background:#fff;border:2px solid #dc2626;border-radius:10px;padding:12px;font-size:14px;font-weight:700;color:#0D2B3E'>"+script.hook+"</div>"+
+      "</div>"+
+      "<div style='margin-bottom:12px'>"+
+      "<div style='font-size:10px;font-weight:700;color:#0D2B3E;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px'>📖 DESENVOLVIMENTO (3–40 segundos)</div>"+
+      "<div style='background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:12px'>"+devItems+"</div>"+
+      "</div>"+
+      "<div style='margin-bottom:12px'>"+
+      "<div style='font-size:10px;font-weight:700;color:#7c3aed;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px'>💡 DETALHE DIFERENCIAL (40–50 segundos)</div>"+
+      "<div style='background:#faf5ff;border:1px solid #e9d5ff;border-radius:10px;padding:12px;font-size:13px;color:#4c1d95'>"+script.detalhe+"</div>"+
+      "</div>"+
+      "<div style='margin-bottom:14px'>"+
+      "<div style='font-size:10px;font-weight:700;color:#16a34a;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px'>📲 CTA (50–60 segundos)</div>"+
+      "<div style='background:#f0fdf4;border:2px solid #00C9A7;border-radius:10px;padding:12px;font-size:14px;font-weight:700;color:#0D2B3E'>"+script.cta+"</div>"+
+      "</div>"+
+      "<div style='border-top:1px solid #e2e8f0;padding-top:12px'>"+
+      "<div style='font-size:10px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px'>📝 LEGENDA SUGERIDA</div>"+
+      "<div id='reel-legenda' style='background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:12px;font-size:13px;color:#334155;white-space:pre-wrap'>"+script.legenda+" #farmaceutica #drogaria #farmafacilassessoria #vigilanciasanitaria #anvisa #farmacia #regulatoriofarmaceutico</div>"+
+      "</div>"+
+      "<button onclick='copiarRoteiro()' class='btn btn-s' style='width:100%;margin-top:10px;font-size:12px'>📋 Copiar legenda</button>"+
+      "</div>";
+  }else{
+    // Template genérico para tema customizado
+    html_out=
+      "<div style='background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;padding:16px'>"+
+      "<div style='font-size:13px;font-weight:800;color:#0D2B3E;margin-bottom:14px'>🎬 "+tema+"</div>"+
+      "<div style='margin-bottom:12px'>"+
+      "<div style='font-size:10px;font-weight:700;color:#dc2626;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px'>⚡ HOOK (0–3 segundos)</div>"+
+      "<div style='background:#fff;border:2px solid #dc2626;border-radius:10px;padding:12px;font-size:14px;font-weight:700;color:#0D2B3E'>Você sabia que "+tema.toLowerCase()+" pode impactar diretamente o funcionamento da sua drogaria? 🚨</div>"+
+      "</div>"+
+      "<div style='margin-bottom:12px'>"+
+      "<div style='font-size:10px;font-weight:700;color:#0D2B3E;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px'>📖 DESENVOLVIMENTO (3–40 segundos)</div>"+
+      "<div style='background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:12px'>"+
+      "<div style='font-size:13px;color:#334155;margin-bottom:8px'>1. O que é "+tema+" e por que é importante</div>"+
+      "<div style='font-size:13px;color:#334155;margin-bottom:8px'>2. O que a legislação exige sobre esse tema</div>"+
+      "<div style='font-size:13px;color:#334155;margin-bottom:8px'>3. As consequências de não estar em conformidade</div>"+
+      "<div style='font-size:13px;color:#334155'>4. Como a Farma Fácil resolve por você</div>"+
+      "</div>"+
+      "</div>"+
+      "<div style='margin-bottom:12px'>"+
+      "<div style='font-size:10px;font-weight:700;color:#7c3aed;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px'>💡 DETALHE DIFERENCIAL (40–50 segundos)</div>"+
+      "<div style='background:#faf5ff;border:1px solid #e9d5ff;border-radius:10px;padding:12px;font-size:13px;color:#4c1d95'>Traga um dado, número ou caso real que mostre o impacto desse tema na prática do dia a dia.</div>"+
+      "</div>"+
+      "<div style='margin-bottom:14px'>"+
+      "<div style='font-size:10px;font-weight:700;color:#16a34a;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px'>📲 CTA (50–60 segundos)</div>"+
+      "<div style='background:#f0fdf4;border:2px solid #00C9A7;border-radius:10px;padding:12px;font-size:14px;font-weight:700;color:#0D2B3E'>Quer saber se sua drogaria está regular nesse ponto? Me chama no WhatsApp — diagnóstico gratuito.</div>"+
+      "</div>"+
+      "<div style='border-top:1px solid #e2e8f0;padding-top:12px'>"+
+      "<div style='font-size:10px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px'>📝 LEGENDA SUGERIDA</div>"+
+      "<div id='reel-legenda' style='background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:12px;font-size:13px;color:#334155'>Você sabe como "+tema.toLowerCase()+" afeta sua drogaria? Comenta aqui. 👇 #farmaceutica #drogaria #farmafacilassessoria #vigilanciasanitaria #anvisa</div>"+
+      "</div>"+
+      "<button onclick='copiarRoteiro()' class='btn btn-s' style='width:100%;margin-top:10px;font-size:12px'>📋 Copiar legenda</button>"+
+      "</div>";
+  }
+  out.innerHTML=html_out;
+}
+
+function copiarRoteiro(){
+  var el=document.getElementById('reel-legenda');
+  if(!el)return;
+  if(navigator.clipboard)navigator.clipboard.writeText(el.innerText||el.textContent).then(function(){alert('Legenda copiada!');});
 }
 
 </script></body></html>
