@@ -415,7 +415,7 @@ function analisar(d){var ch=[],sc=0,tot=0;function ok(t){ch.push({s:"ok",t:t});s
 function renderAnalise(d){var r=analisar(d);var h="<div class='analise'><h4>📊 Análise Score Instagram</h4><span class='score "+r.cls+"'>"+r.em+" Score: "+r.pct+"/100</span>";r.ch.forEach(function(c){h+="<div class='ci'><span class='ci-"+(c.s==="ok"?"ok":c.s==="w"?"w":"e")+"'>"+(c.s==="ok"?"✓":c.s==="w"?"⚠":"✗")+"</span><span>"+c.t+"</span></div>";});h+="</div>";return h;}
 var ORDEM=[];for(var i=0;i<3;i++)ORDEM.push(null);for(var d=1;d<=30;d++)ORDEM.push(DIAS[d]?Object.assign({},DIAS[d],{dia:d}):d);
 var TI={atracao:{cls:"p-at",e:"🎯",l:"Atração"},autoridade:{cls:"p-au",e:"🏆",l:"Autoridade"},conexao:{cls:"p-cx",e:"❤️",l:"Conexão"},venda:{cls:"p-vd",e:"💼",l:"Venda"},reel:{cls:"p-rl",e:"🎬",l:"Reel"},story:{cls:"p-st",e:"📱",l:"Story"}};
-if(!localStorage.getItem('ff_gh_token')){localStorage.setItem('ff_gh_token','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');}
+
 var SK="ff_v4",ST={};try{ST=JSON.parse(localStorage.getItem(SK)||"{}");}catch(e){}
 function sv(){try{localStorage.setItem(SK,JSON.stringify(ST));}catch(e){}}
 var curD=null,curS=null,curIdx=0;
