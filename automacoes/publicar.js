@@ -86,7 +86,7 @@ function extrairDadosDia(dia) {
   // Localiza o objeto do dia específico
   // ex: 1:{titulo:'...',pilar:'...',tipo:'...',hora:'...',template:'...',legenda:'...',hashtags:'...'}
   const regexEntry = new RegExp(
-    '(?:^|,)\\s*' + dia + '\\s*:\\s*(\\{[^{}]*\\})',
+    '(?:^|,)\\s*"?' + dia + '"?\\s*:\\s*(\\{[^{}]*\\})',
     'm'
   );
   const matchEntry = diaBloco.match(regexEntry);
