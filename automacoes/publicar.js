@@ -33,7 +33,7 @@ const GRAPH_BASE   = 'https://graph.facebook.com';
 const API_VERSION  = 'v20.0';
 
 const ROOT_DIR     = path.join(__dirname, '..');
-const HTML_PATH    = path.join(ROOT_DIR, 'sistema', 'farmafacil_sistema_v4.html');
+const HTML_PATH    = path.join(ROOT_DIR, 'SISTEMA', 'farmafacil_sistema_v4.html');
 const SLIDES_DIR   = path.join(ROOT_DIR, 'slides');
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
