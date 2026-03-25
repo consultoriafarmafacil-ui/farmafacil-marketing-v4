@@ -195,7 +195,7 @@ async function capturarSlides(dia, diaData) {
   const tmpDir = path.join(os.tmpdir(), 'slides');
   if (!fs.existsSync(tmpDir)) fs.mkdirSync(tmpDir, { recursive: true });
 
-  const browser = await puppeteer.launch({
+  const launchOpts = {
     headless: 'new',
     args: [
       '--no-sandbox',
@@ -203,7 +203,12 @@ async function capturarSlides(dia, diaData) {
       '--disable-dev-shm-usage',
       '--disable-gpu'
     ]
-  });
+  };
+  if (process.env.PUPPETEER_EXECUTABLE_PATH) {
+    launchOpts.executablePath = process.env.PUPPETEER_EXECUTABLE_PATH;
+    log('Usando Chrome do sistema: ' + launchOpts.executablePath);
+  }
+  const browser = await puppeteer.launch(launchOpts);
 
   const caminhos = [];
 

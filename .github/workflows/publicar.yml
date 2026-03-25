@@ -12,6 +12,7 @@ on:
 jobs:
   publicar:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     permissions:
       contents: write
     steps:
@@ -25,15 +26,14 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Instalar dependências (com Puppeteer)
+      - name: Instalar Chrome
+        uses: browser-actions/setup-chrome@v1
+        id: setup-chrome
+
+      - name: Instalar dependências (sem baixar Chromium)
         run: |
           cd automacoes
-          npm install
-
-      - name: Instalar dependências do Chrome
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libglib2.0-0 libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2
+          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm install
 
       - name: Renderizar e publicar slides
         run: |
@@ -43,6 +43,7 @@ jobs:
           MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_ACTIONS: true
+          PUPPETEER_EXECUTABLE_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
 
       - name: Commit slides gerados
         run: |
