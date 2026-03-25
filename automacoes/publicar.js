@@ -68,57 +68,50 @@ function extrairDadosDia(dia) {
   log('Lendo HTML para extrair dados do dia ' + dia + '...');
 
   const html = fs.readFileSync(HTML_PATH, 'utf8');
+  const vm   = require('vm');
 
-  // Extrair bloco DIAS usando regex (sem eval)
-  // Formato: var DIAS={1:{...},2:{...},...};
-  const matchDias = html.match(/var DIAS=(\{[\s\S]*?\});[\s\n]*var /);
-  if (!matchDias) {
-    throw new Error('Não foi possível localizar "var DIAS={...}" no HTML.');
+  // Extrai bloco var DIAS={...} usando contagem de chaves
+  const diasIdx = html.indexOf('var DIAS=');
+  if (diasIdx < 0) throw new Error('Não foi possível localizar "var DIAS=" no HTML.');
+
+  let depth = 0, start = html.indexOf('{', diasIdx), i = start, diasStr = '';
+  for (; i < html.length; i++) {
+    if (html[i] === '{') depth++;
+    else if (html[i] === '}') { depth--; if (depth === 0) { diasStr = html.substring(start, i + 1); break; } }
+  }
+  if (!diasStr) throw new Error('Não foi possível extrair bloco DIAS.');
+
+  // Avalia o objeto DIAS em sandbox
+  const ctx = {};
+  try {
+    vm.runInNewContext('var DIAS=' + diasStr + ';', ctx);
+  } catch(e) {
+    throw new Error('Erro ao avaliar DIAS: ' + e.message);
   }
 
-  // Extrair apenas a entrada do dia específico usando regex mais precisa
-  // Procura pelo padrão: "dia": {...}
-  const regexDia = new RegExp('"?' + dia + '"?:\\s*\\{([^}]*(?:\\{[^}]*\\}[^}]*)*)\\}', 'g');
-
-  // Extração segura de campos do dia via regex campo a campo
-  const diaBloco = matchDias[1];
-
-  // Localiza o objeto do dia específico
-  // ex: 1:{titulo:'...',pilar:'...',tipo:'...',hora:'...',template:'...',legenda:'...',hashtags:'...'}
-  const regexEntry = new RegExp(
-    '(?:^|,)\\s*"?' + dia + '"?\\s*:\\s*(\\{[^{}]*\\})',
-    'm'
-  );
-  const matchEntry = diaBloco.match(regexEntry);
-
-  if (!matchEntry) {
-    throw new Error('Dia ' + dia + ' não encontrado em DIAS.');
-  }
-
-  const entryStr = matchEntry[1];
-
-  // Extrai campos individuais com regex
-  function extrairCampo(str, campo) {
-    // Tenta aspas simples e duplas
-    const re = new RegExp(campo + "\\s*:\\s*'([^']*)'");
-    const re2 = new RegExp(campo + '\\s*:\\s*"([^"]*)"');
-    const m = str.match(re) || str.match(re2);
-    return m ? m[1] : '';
-  }
+  const entry = ctx.DIAS[dia] || ctx.DIAS[String(dia)];
+  if (!entry) throw new Error('Dia ' + dia + ' não encontrado em DIAS.');
 
   const d = {
     dia:      dia,
-    titulo:   extrairCampo(entryStr, 'titulo'),
-    pilar:    extrairCampo(entryStr, 'pilar'),
-    tipo:     extrairCampo(entryStr, 'tipo'),
-    hora:     extrairCampo(entryStr, 'hora'),
-    template: extrairCampo(entryStr, 'template'),
-    legenda:  extrairCampo(entryStr, 'legenda'),
-    hashtags: extrairCampo(entryStr, 'hashtags'),
-    story:    extrairCampo(entryStr, 'story')
+    titulo:   entry.titulo   || '',
+    pilar:    entry.pilar    || '',
+    tipo:     entry.tipo     || '',
+    hora:     entry.hora     || '',
+    template: entry.template || '',
+    legenda:  entry.legenda  || '',
+    hashtags: entry.hashtags || '',
+    story:    entry.story    || '',
+    imgKeys:  entry.imgKeys  || [],
+    destaque: entry.destaque || '',
+    t2: entry.t2 || '', i2: entry.i2 || [],
+    t3: entry.t3 || '', l3: entry.l3 || [],
+    t4: entry.t4 || '', it4: entry.it4 || [],
+    t5: entry.t5 || '', ck: entry.ck  || [],
+    cta: entry.cta || ''
   };
 
-  log('Dados do dia: ' + JSON.stringify({ titulo: d.titulo, pilar: d.pilar, template: d.template }));
+  log('Dados do dia: titulo="' + d.titulo + '" template=' + d.template + ' imgKeys=' + d.imgKeys.length);
   return d;
 }
 
@@ -139,7 +132,7 @@ body { width: 1080px; height: 1350px; overflow: hidden; }
 <body>
 <script>
 // Dados do dia injetados
-var IMGS = {};
+var IMGS = ${extrairIMGS(htmlCompleto, diaData.imgKeys)};
 var d = ${JSON.stringify(diaData)};
 </script>
 <script>
@@ -176,6 +169,31 @@ function extrairFuncoesSlide(html) {
     }
   }
   return '';
+}
+
+// Extrai apenas as imagens necessárias do bloco IMGS do HTML
+function extrairIMGS(html, imgKeys) {
+  const idx = html.indexOf('var IMGS=');
+  if (idx < 0) return '{}';
+  let depth = 0, start = html.indexOf('{', idx), i = start, imgsStr = '';
+  for (; i < html.length; i++) {
+    if (html[i] === '{') depth++;
+    else if (html[i] === '}') { depth--; if (depth === 0) { imgsStr = html.substring(start, i + 1); break; } }
+  }
+  if (!imgsStr) return '{}';
+  // Avalia o objeto IMGS e extrai apenas as chaves necessárias
+  try {
+    const vm = require('vm');
+    const ctx = {};
+    vm.runInNewContext('var IMGS=' + imgsStr + ';', ctx);
+    const result = {};
+    (imgKeys || []).forEach(function(k) { if (ctx.IMGS[k]) result[k] = ctx.IMGS[k]; });
+    log('Imagens extraídas: ' + Object.keys(result).length + ' de ' + (imgKeys || []).length);
+    return JSON.stringify(result);
+  } catch(e) {
+    log('[AVISO] Não foi possível extrair IMGS: ' + e.message);
+    return '{}';
+  }
 }
 
 // ─── 3. Capturar screenshots com Puppeteer ───────────────────────────────────
