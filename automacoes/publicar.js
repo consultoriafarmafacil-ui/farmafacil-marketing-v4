@@ -171,29 +171,26 @@ function extrairFuncoesSlide(html) {
   return '';
 }
 
-// Extrai apenas as imagens necessárias do bloco IMGS do HTML
+// Extrai apenas as imagens necessárias do bloco IMGS do HTML (por chave, sem eval)
 function extrairIMGS(html, imgKeys) {
-  const idx = html.indexOf('var IMGS=');
-  if (idx < 0) return '{}';
-  let depth = 0, start = html.indexOf('{', idx), i = start, imgsStr = '';
-  for (; i < html.length; i++) {
-    if (html[i] === '{') depth++;
-    else if (html[i] === '}') { depth--; if (depth === 0) { imgsStr = html.substring(start, i + 1); break; } }
-  }
-  if (!imgsStr) return '{}';
-  // Avalia o objeto IMGS e extrai apenas as chaves necessárias
-  try {
-    const vm = require('vm');
-    const ctx = {};
-    vm.runInNewContext('var IMGS=' + imgsStr + ';', ctx);
-    const result = {};
-    (imgKeys || []).forEach(function(k) { if (ctx.IMGS[k]) result[k] = ctx.IMGS[k]; });
-    log('Imagens extraídas: ' + Object.keys(result).length + ' de ' + (imgKeys || []).length);
-    return JSON.stringify(result);
-  } catch(e) {
-    log('[AVISO] Não foi possível extrair IMGS: ' + e.message);
-    return '{}';
-  }
+  const result = {};
+  (imgKeys || []).forEach(function(key) {
+    // Procura pelo padrão: "key":"data:...
+    const marker = '"' + key + '":"';
+    const start  = html.indexOf(marker);
+    if (start < 0) { log('[AVISO] Imagem não encontrada: ' + key); return; }
+    const valStart = start + marker.length;
+    // Avança até encontrar o fim da string (aspas não escapadas)
+    let i = valStart, val = '';
+    while (i < html.length) {
+      if (html[i] === '\\') { val += html[i] + html[i+1]; i += 2; continue; }
+      if (html[i] === '"')  { break; }
+      val += html[i]; i++;
+    }
+    if (val.length > 100) result[key] = val;
+  });
+  log('Imagens extraídas: ' + Object.keys(result).length + ' de ' + (imgKeys || []).length);
+  return JSON.stringify(result);
 }
 
 // ─── 3. Capturar screenshots com Puppeteer ───────────────────────────────────
