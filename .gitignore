@@ -1,0 +1,6 @@
+*_backup*.html
+*_broken_backup*.html
+*_pre_patch_*.html
+*.html.backup
+*.pyc
+__pycache__/
