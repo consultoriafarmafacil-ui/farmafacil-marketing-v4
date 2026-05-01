@@ -93,6 +93,35 @@
 .rot-dia{font-size:10px;font-weight:700;background:var(--az);color:#fff;border-radius:6px;padding:4px 8px;white-space:nowrap;flex-shrink:0}
 .rot-tipo{font-size:10px;font-weight:700;padding:4px 8px;border-radius:6px;flex-shrink:0}
 .rot-txt{font-size:12px;color:var(--txt);line-height:1.5}
+/* ── RELATÓRIO SEMANAL ── */
+.rel-section-title{font-size:12px;font-weight:700;color:var(--az);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--bd);display:flex;align-items:center;gap:8px}
+.rel-kpi-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-bottom:14px}
+.rel-kpi{background:var(--lt);border-radius:10px;padding:14px;text-align:center}
+.rel-kpi-val{font-size:26px;font-weight:800;line-height:1;color:var(--az)}
+.rel-kpi-label{font-size:10px;color:var(--mut);text-transform:uppercase;margin-top:4px;letter-spacing:.04em}
+.rel-kpi-var{font-size:11px;font-weight:600;margin-top:3px}
+.rel-post-card{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--bd);align-items:flex-start}
+.rel-post-rank{font-size:20px;font-weight:800;color:var(--vd);min-width:28px;text-align:center;flex-shrink:0}
+.rel-post-caption{font-size:12px;color:var(--txt);margin-bottom:6px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.rel-post-tags{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.rel-script-box{background:var(--az);color:#fff;border-radius:12px;padding:16px;margin-bottom:12px}
+.rel-script-title{font-size:11px;font-weight:700;color:rgba(255,255,255,.5);text-transform:uppercase;margin-bottom:6px}
+.rel-script-hook{font-size:15px;font-weight:700;color:var(--vd);margin-bottom:10px;line-height:1.4}
+.rel-script-body{font-size:13px;line-height:1.6;color:rgba(255,255,255,.9);margin-bottom:10px}
+.rel-script-cta{background:var(--vd);color:var(--az);border-radius:8px;padding:8px 14px;font-size:12px;font-weight:700;display:inline-block}
+.rel-inp-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
+.rel-inp-grp{display:flex;flex-direction:column;gap:4px}
+.rel-inp-grp label{font-size:11px;font-weight:700;color:var(--mut);text-transform:uppercase}
+.rel-inp-grp input{border:1px solid var(--bd);border-radius:8px;padding:8px 12px;font-family:inherit;font-size:13px;outline:none}
+.rel-inp-grp input:focus{border-color:var(--vd)}
+.rel-bar-wrap{height:10px;background:var(--lt);border-radius:5px;overflow:hidden;margin-top:4px}
+.rel-bar{height:100%;border-radius:5px;transition:width .6s}
+.rel-source-row{display:flex;align-items:center;gap:10px;margin-bottom:10px;font-size:13px}
+.rel-source-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.rel-source-label{flex:1;font-weight:600}
+.rel-source-val{font-weight:700;color:var(--az)}
+.rel-rec-item{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--bd);align-items:flex-start;font-size:13px;line-height:1.5}
+.rel-rec-icon{font-size:18px;flex-shrink:0;margin-top:1px}
 </style></head><body>
 <div class="hdr">
 <div class="logo">Farma<span>Fácil</span> <span style="color:rgba(255,255,255,.4);font-weight:400;font-size:13px">· Marketing v4</span></div>
@@ -104,7 +133,7 @@
 <button class="tab" onclick="aba('metricas',this)">📊 Métricas IG</button>
 <button class="tab" onclick="aba('estrategia',this)">🎯 Estratégia</button>
 <button class="tab" onclick="aba('fila',this)" id="tab-fila">✦ Aprovação</button>
-<button class="tab" onclick="aba('criar',this)" id="tab-criar">➕ Criar Post</button><button class="tab" onclick="aba('stories',this)" id="tab-stories">📱 Stories</button><button class="tab" onclick="aba('cfg',this)">⚙️ Config</button>
+<button class="tab" onclick="aba('criar',this)" id="tab-criar">➕ Criar Post</button><button class="tab" onclick="aba('stories',this)" id="tab-stories">📱 Stories</button><button class="tab" onclick="aba('relatorio',this)" id="tab-relatorio">📋 Relatório</button><button class="tab" onclick="aba('cfg',this)">⚙️ Config</button>
 </div>
 <div class="main">
 <div class="sec on" id="s-cal">
@@ -486,6 +515,96 @@ Selecione o repositório <strong>farmafacil-marketing-v4</strong> e marque permi
 </div>
 
 </div>
+
+<!-- ── RELATÓRIO SEMANAL ── -->
+<div class="sec" id="s-relatorio">
+
+<!-- Painel de coleta de dados -->
+<div class="card" id="rel-painel">
+<div style="font-size:15px;font-weight:700;margin-bottom:4px">📋 Relatório Semanal — Farma Fácil</div>
+<div style="font-size:12px;color:var(--mut);margin-bottom:16px">Centraliza Instagram + Analytics + GMB · Gera roteiros de Reels · Analisa origem de leads · Emitido toda sexta-feira</div>
+
+<div class="analise" style="margin-bottom:12px">
+<h4>📸 Instagram — Automático via API</h4>
+<div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:8px">
+<div id="rel-ig-status" style="font-size:12px;color:var(--mut);flex:1">Token: verificando...</div>
+<button class="btn btn-vd" onclick="relCarregarIG()" style="font-size:12px;padding:7px 16px">🔄 Carregar dados IG</button>
+</div>
+<div id="rel-ig-preview" style="font-size:12px;margin-top:8px;line-height:1.8"></div>
+</div>
+
+<div class="analise" style="margin-bottom:12px">
+<h4>📊 Google Analytics — últimos 7 dias <a href="https://analytics.google.com/analytics/web/#/p535551125/reports/reportinghub" target="_blank" style="font-size:10px;color:var(--vd);font-weight:600;text-decoration:none;margin-left:8px">Abrir GA4 →</a></h4>
+<div class="rel-inp-row" style="margin-top:10px">
+<div class="rel-inp-grp"><label>Sessões</label><input type="number" id="rel-ga-sessions" placeholder="ex: 245" min="0"></div>
+<div class="rel-inp-grp"><label>Usuários</label><input type="number" id="rel-ga-users" placeholder="ex: 198" min="0"></div>
+<div class="rel-inp-grp"><label>Visualizações de página</label><input type="number" id="rel-ga-pageviews" placeholder="ex: 412" min="0"></div>
+<div class="rel-inp-grp"><label>Conversões / formulários</label><input type="number" id="rel-ga-conversions" placeholder="ex: 8" min="0"></div>
+</div>
+</div>
+
+<div class="analise" style="margin-bottom:12px">
+<h4>📍 Google Meu Negócio — últimos 7 dias</h4>
+<div class="rel-inp-row" style="margin-top:10px">
+<div class="rel-inp-grp"><label>Pesquisas no Google</label><input type="number" id="rel-gmb-searches" placeholder="ex: 89" min="0"></div>
+<div class="rel-inp-grp"><label>Ligações</label><input type="number" id="rel-gmb-calls" placeholder="ex: 12" min="0"></div>
+<div class="rel-inp-grp"><label>Visitas ao site via GMB</label><input type="number" id="rel-gmb-site" placeholder="ex: 34" min="0"></div>
+<div class="rel-inp-grp"><label>Pedidos de rota</label><input type="number" id="rel-gmb-routes" placeholder="ex: 5" min="0"></div>
+</div>
+</div>
+
+<div class="analise" style="margin-bottom:16px">
+<h4>🤖 Claude AI — roteiros automáticos <span style="font-size:10px;font-weight:500;color:var(--mut)">(opcional)</span></h4>
+<div style="display:flex;gap:8px;align-items:center;margin-top:8px">
+<input type="password" id="rel-claude-key" placeholder="sk-ant-api03-..." style="flex:1;border:1px solid var(--bd);border-radius:8px;padding:8px 12px;font-family:inherit;font-size:13px" oninput="relSalvarKey(this.value)">
+<span id="rel-key-status" style="font-size:11px;min-width:60px"></span>
+</div>
+<div style="font-size:11px;color:var(--mut);margin-top:4px">Se preenchida, gera roteiros personalizados via IA. Salvo localmente — não enviado a terceiros.</div>
+</div>
+
+<button class="btn btn-vd" onclick="relGerar()" style="width:100%;font-size:14px;padding:14px;border-radius:10px">📋 Gerar Relatório Semanal</button>
+</div>
+
+<!-- Relatório gerado -->
+<div id="rel-output" style="display:none">
+
+<div class="card" style="background:var(--az);color:#fff">
+<div style="font-size:18px;font-weight:800;margin-bottom:4px">📋 Relatório Semanal</div>
+<div id="rel-periodo" style="font-size:12px;color:rgba(255,255,255,.65);margin-bottom:10px"></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap">
+<button onclick="relImprimir()" style="background:rgba(255,255,255,.15);color:#fff;border:none;border-radius:8px;padding:7px 14px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit">🖨️ Imprimir</button>
+<button onclick="relNovoRelatorio()" style="background:rgba(255,255,255,.15);color:#fff;border:none;border-radius:8px;padding:7px 14px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit">← Nova coleta</button>
+</div>
+</div>
+
+<div class="card">
+<div class="rel-section-title">📊 Métricas da Semana</div>
+<div class="rel-kpi-grid" id="rel-kpis"></div>
+</div>
+
+<div class="card">
+<div class="rel-section-title">🏆 Top Posts da Semana</div>
+<div id="rel-top-posts"><div style="font-size:12px;color:var(--mut);padding:12px 0">Nenhum post da última semana encontrado.</div></div>
+</div>
+
+<div class="card">
+<div class="rel-section-title">🎬 Roteiros de Reels — Próxima Semana</div>
+<div id="rel-scripts"><div class="spin" style="margin-top:8px"></div></div>
+</div>
+
+<div class="card">
+<div class="rel-section-title">🎯 Análise de Origem dos Leads</div>
+<div id="rel-leads"></div>
+</div>
+
+<div class="card">
+<div class="rel-section-title">💡 Recomendações para Próxima Semana</div>
+<div id="rel-recs"></div>
+</div>
+
+</div><!-- /rel-output -->
+</div><!-- /s-relatorio -->
+
 <!-- ZOOM MODAL -->
 <div id="zoom-bg" onclick="zoomClose(event)">
 <div id="zoom-close" onclick="zoomHide()">✕</div>
@@ -2670,6 +2789,7 @@ function regerarSlidesPendentesUI(){
 function abaHook(id){if(id==='stories'){setTimeout(initStories,50);return;}if(id==='cfg'){var t=localStorage.getItem('ff_ig_token');if(t&&document.getElementById('cfg-ig-token'))document.getElementById('cfg-ig-token').value=t;setTimeout(testarIgToken,200);return;}
   if(id==='criar')setTimeout(renderNormas,50);
   if(id==='cfg'){setTimeout(function(){renderCfgImgs();renderCfgTpls();var inp=document.getElementById('cfg-gh-token');if(inp){var t=localStorage.getItem('ff_gh_token')||'';inp.value=t;}},50);}
+  if(id==='relatorio')setTimeout(relInit,80);
 }
 
 
@@ -3218,5 +3338,358 @@ function testarIgToken(){
     .catch(function(e){ if(el) el.innerHTML='<span style="color:#dc2626">Erro de rede.</span>'; });
 }
 function getIgToken(){ return localStorage.getItem('ff_ig_token') || ''; }
+
+// ══════════════════════════════════════════════════════
+// RELATÓRIO SEMANAL
+// ══════════════════════════════════════════════════════
+
+var REL = { igData: null, weekPosts: [] };
+var IG_ID = '17841415773297230';
+
+function relInit() {
+  // Restore Claude key
+  var k = localStorage.getItem('ff_claude_key') || '';
+  var inp = document.getElementById('rel-claude-key');
+  if (inp && k) { inp.value = k; relKeyStatus(k); }
+
+  // Restore GA4/GMB fields from localStorage
+  ['ga-sessions','ga-users','ga-pageviews','ga-conversions','gmb-searches','gmb-calls','gmb-site','gmb-routes'].forEach(function(f) {
+    var el = document.getElementById('rel-' + f);
+    var saved = localStorage.getItem('ff_rel_' + f);
+    if (el && saved) el.value = saved;
+  });
+
+  // Check IG token
+  var t = getIgToken();
+  var st = document.getElementById('rel-ig-status');
+  if (st) st.textContent = t ? '✅ Token disponível — clique em Carregar dados IG' : '⚠️ Token não configurado — vá em ⚙️ Config para salvar';
+}
+
+function relSalvarKey(v) {
+  localStorage.setItem('ff_claude_key', v);
+  relKeyStatus(v);
+}
+
+function relKeyStatus(v) {
+  var el = document.getElementById('rel-key-status');
+  if (!el) return;
+  if (!v) { el.textContent = ''; return; }
+  el.textContent = v.startsWith('sk-ant-') ? '✅ OK' : '⚠️ Inválida';
+  el.style.color = v.startsWith('sk-ant-') ? '#16a34a' : '#dc2626';
+}
+
+function relCarregarIG() {
+  var token = getIgToken();
+  var st = document.getElementById('rel-ig-status');
+  var prev = document.getElementById('rel-ig-preview');
+  if (!token) { if (st) st.innerHTML = '<span style="color:#dc2626">⚠️ Configure o token em ⚙️ Config primeiro.</span>'; return; }
+  if (st) st.innerHTML = '<span style="color:var(--mut)">Carregando...</span>';
+  if (prev) prev.innerHTML = '<div class="spin" style="margin:8px auto;width:20px;height:20px;border-width:2px"></div>';
+
+  var since = Math.floor((Date.now() - 7 * 86400000) / 1000);
+  var until = Math.floor(Date.now() / 1000);
+
+  Promise.all([
+    fetch('https://graph.facebook.com/v22.0/' + IG_ID + '?fields=followers_count,media_count&access_token=' + token).then(function(r){return r.json();}),
+    fetch('https://graph.facebook.com/v22.0/' + IG_ID + '/media?fields=id,caption,media_type,timestamp,like_count,comments_count,insights.metric(reach,saved,follows,total_interactions)&limit=30&access_token=' + token).then(function(r){return r.json();})
+  ]).then(function(results) {
+    var profile = results[0];
+    var media = results[1];
+    if (profile.error) { if (st) st.innerHTML = '<span style="color:#dc2626">❌ ' + profile.error.message + '</span>'; if(prev) prev.innerHTML=''; return; }
+
+    var cutoff = Date.now() - 7 * 86400000;
+    var weekPosts = (media.data || []).filter(function(p){ return new Date(p.timestamp).getTime() > cutoff; });
+
+    REL.igData = profile;
+    REL.weekPosts = weekPosts;
+    REL.allPosts = media.data || [];
+
+    if (st) st.innerHTML = '<span style="color:#16a34a">✅ ' + profile.followers_count.toLocaleString('pt-BR') + ' seguidores · ' + profile.media_count + ' posts totais</span>';
+
+    if (prev) {
+      if (weekPosts.length === 0) {
+        prev.innerHTML = '<span style="color:var(--mut)">Nenhum post publicado nos últimos 7 dias.</span>';
+      } else {
+        var totalReach = weekPosts.reduce(function(acc,p){ return acc + relInsight(p,'reach'); }, 0);
+        var totalLikes = weekPosts.reduce(function(acc,p){ return acc + (p.like_count||0); }, 0);
+        prev.innerHTML = '<strong>' + weekPosts.length + ' posts</strong> esta semana · Alcance total: <strong>' + totalReach.toLocaleString('pt-BR') + '</strong> · Curtidas: <strong>' + totalLikes + '</strong>';
+      }
+    }
+  }).catch(function(e) {
+    if (st) st.innerHTML = '<span style="color:#dc2626">Erro de rede: ' + e.message + '</span>';
+    if (prev) prev.innerHTML = '';
+  });
+}
+
+function relInsight(post, metric) {
+  if (!post.insights || !post.insights.data) return 0;
+  var m = post.insights.data.find(function(d){ return d.name === metric; });
+  return m ? (m.values ? m.values[0].value : (m.total_value ? m.total_value.value : 0)) : 0;
+}
+
+function relGerar() {
+  // Save GA4/GMB inputs to localStorage
+  ['ga-sessions','ga-users','ga-pageviews','ga-conversions','gmb-searches','gmb-calls','gmb-site','gmb-routes'].forEach(function(f) {
+    var el = document.getElementById('rel-' + f);
+    if (el) localStorage.setItem('ff_rel_' + f, el.value || '');
+  });
+
+  var gaData = {
+    sessions: parseInt(document.getElementById('rel-ga-sessions').value) || 0,
+    users: parseInt(document.getElementById('rel-ga-users').value) || 0,
+    pageviews: parseInt(document.getElementById('rel-ga-pageviews').value) || 0,
+    conversions: parseInt(document.getElementById('rel-ga-conversions').value) || 0
+  };
+  var gmbData = {
+    searches: parseInt(document.getElementById('rel-gmb-searches').value) || 0,
+    calls: parseInt(document.getElementById('rel-gmb-calls').value) || 0,
+    site: parseInt(document.getElementById('rel-gmb-site').value) || 0,
+    routes: parseInt(document.getElementById('rel-gmb-routes').value) || 0
+  };
+
+  // Show output panel
+  document.getElementById('rel-painel').style.display = 'none';
+  document.getElementById('rel-output').style.display = 'block';
+
+  // Period label
+  var now = new Date();
+  var desde = new Date(now.getTime() - 7*86400000);
+  document.getElementById('rel-periodo').textContent =
+    'Semana de ' + desde.toLocaleDateString('pt-BR') + ' a ' + now.toLocaleDateString('pt-BR') +
+    ' · Gerado em ' + now.toLocaleString('pt-BR',{hour:'2-digit',minute:'2-digit'});
+
+  relRenderKPIs(gaData, gmbData);
+  relRenderTopPosts();
+  relRenderLeads(gaData, gmbData);
+  relRenderRecs(gaData, gmbData);
+  relGerarRoteiros();
+}
+
+function relRenderKPIs(gaData, gmbData) {
+  var el = document.getElementById('rel-kpis');
+  if (!el) return;
+  var ig = REL.igData;
+  var weekPosts = REL.weekPosts;
+  var totalReach = weekPosts.reduce(function(acc,p){ return acc + relInsight(p,'reach'); },0);
+  var totalLikes = weekPosts.reduce(function(acc,p){ return acc + (p.like_count||0); },0);
+  var totalSaves = weekPosts.reduce(function(acc,p){ return acc + relInsight(p,'saved'); },0);
+  var totalComments = weekPosts.reduce(function(acc,p){ return acc + (p.comments_count||0); },0);
+
+  var kpis = [
+    {label:'Seguidores', val: ig ? ig.followers_count.toLocaleString('pt-BR') : '—', color:'#7c3aed'},
+    {label:'Posts esta semana', val: weekPosts.length || '—', color:'var(--az)'},
+    {label:'Alcance semanal IG', val: totalReach ? totalReach.toLocaleString('pt-BR') : '—', color:'var(--az)'},
+    {label:'Curtidas', val: totalLikes || '—', color:'#be185d'},
+    {label:'Salvamentos', val: totalSaves || '—', color:'#d97706'},
+    {label:'Comentários', val: totalComments || '—', color:'#16a34a'},
+    {label:'Sessões GA4', val: gaData.sessions || '—', color:'var(--az)'},
+    {label:'Conversões GA4', val: gaData.conversions || '—', color:'var(--vd)'},
+    {label:'Buscas no Google', val: gmbData.searches || '—', color:'var(--az)'},
+    {label:'Ligações via GMB', val: gmbData.calls || '—', color:'#16a34a'},
+  ];
+
+  el.innerHTML = kpis.map(function(k){
+    return '<div class="rel-kpi"><div class="rel-kpi-val" style="color:'+k.color+'">'+k.val+'</div><div class="rel-kpi-label">'+k.label+'</div></div>';
+  }).join('');
+}
+
+function relRenderTopPosts() {
+  var el = document.getElementById('rel-top-posts');
+  if (!el) return;
+  var posts = REL.weekPosts.length > 0 ? REL.weekPosts : REL.allPosts.slice(0, 10);
+  if (!posts || posts.length === 0) { el.innerHTML = '<div style="font-size:12px;color:var(--mut);padding:12px 0">Carregue os dados do Instagram primeiro.</div>'; return; }
+
+  // Score: reach*2 + saves*5 + likes + comments*2
+  var scored = posts.map(function(p){
+    var score = relInsight(p,'reach')*2 + relInsight(p,'saved')*5 + (p.like_count||0) + (p.comments_count||0)*2;
+    return Object.assign({}, p, {_score: score});
+  }).sort(function(a,b){ return b._score - a._score; }).slice(0,5);
+
+  el.innerHTML = scored.map(function(p, i){
+    var reach = relInsight(p,'reach');
+    var saves = relInsight(p,'saved');
+    var caption = (p.caption || '(sem legenda)').substring(0,180);
+    var dt = new Date(p.timestamp).toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'});
+    var medals = ['🥇','🥈','🥉','4º','5º'];
+    return '<div class="rel-post-card">' +
+      '<div class="rel-post-rank">' + medals[i] + '</div>' +
+      '<div style="flex:1">' +
+        '<div class="rel-post-caption">' + caption + '</div>' +
+        '<div class="rel-post-tags">' +
+          '<span class="sb sb-pub">' + dt + '</span>' +
+          (reach ? '<span class="sb sb-a">👁 '+reach.toLocaleString('pt-BR')+' alcance</span>' : '') +
+          '<span class="sb sb-p">❤️ '+(p.like_count||0)+'</span>' +
+          (saves ? '<span class="sb sb-pub">🔖 '+saves+' saves</span>' : '') +
+          '<span style="font-size:10px;color:var(--mut)">Pontuação: '+p._score+'</span>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
+  }).join('');
+}
+
+function relGerarRoteiros() {
+  var el = document.getElementById('rel-scripts');
+  if (!el) return;
+  var key = localStorage.getItem('ff_claude_key') || '';
+  var posts = (REL.weekPosts.length > 0 ? REL.weekPosts : REL.allPosts).slice(0,5);
+
+  if (key && key.startsWith('sk-ant-')) {
+    el.innerHTML = '<div style="text-align:center;padding:20px;color:var(--mut)"><div class="spin"></div><div style="margin-top:8px;font-size:12px">Gerando roteiros com Claude AI...</div></div>';
+    relChamarClaude(posts, key, el);
+  } else {
+    relScriptsTemplate(posts, el);
+  }
+}
+
+function relChamarClaude(posts, key, el) {
+  var temas = posts.slice(0,3).map(function(p,i){
+    return (i+1) + '. ' + (p.caption || '').substring(0,120).replace(/\n/g,' ');
+  }).join('\n');
+
+  fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'x-api-key': key,
+      'anthropic-version': '2023-06-01',
+      'content-type': 'application/json',
+      'anthropic-dangerous-direct-browser-access': 'true'
+    },
+    body: JSON.stringify({
+      model: 'claude-haiku-4-5-20251001',
+      max_tokens: 1500,
+      messages: [{role:'user', content:
+        'Você é especialista em marketing farmacêutico para Instagram.\n' +
+        'Para cada tema abaixo (posts mais engajados da semana), crie um roteiro de Reel curto (30-45s) com:\n' +
+        '🪝 HOOK (3 segundos): frase de impacto que faz parar de rolar o feed\n' +
+        '📝 CONTEÚDO: desenvolvimento direto e educativo em 3-4 frases\n' +
+        '📣 CTA: chamada clara (comentar, salvar, WhatsApp)\n\n' +
+        'Temas da semana:\n' + temas + '\n\n' +
+        'Responda APENAS em JSON: {"roteiros":[{"tema":"...","hook":"...","conteudo":"...","cta":"..."}]}'
+      }]
+    })
+  }).then(function(r){return r.json();}).then(function(data){
+    try {
+      var text = data.content[0].text;
+      var m = text.match(/\{[\s\S]*\}/);
+      var parsed = m ? JSON.parse(m[0]) : null;
+      if (parsed && parsed.roteiros) { relRenderRoteiros(parsed.roteiros, el, true); return; }
+    } catch(e){}
+    relScriptsTemplate(posts, el);
+  }).catch(function(){
+    relScriptsTemplate(posts, el);
+  });
+}
+
+function relRenderRoteiros(roteiros, el, isAI) {
+  var badge = isAI ? '<span style="background:var(--vd);color:var(--az);font-size:10px;font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px">✨ IA</span>' : '';
+  el.innerHTML = roteiros.map(function(r, i){
+    return '<div class="rel-script-box">' +
+      '<div class="rel-script-title">Reel ' + (i+1) + badge + '</div>' +
+      '<div style="font-size:11px;color:rgba(255,255,255,.5);margin-bottom:8px">Tema: ' + r.tema + '</div>' +
+      '<div class="rel-script-title" style="margin-top:4px">🪝 Hook — 3 segundos</div>' +
+      '<div class="rel-script-hook">' + r.hook + '</div>' +
+      '<div class="rel-script-title">📝 Desenvolvimento</div>' +
+      '<div class="rel-script-body">' + r.conteudo + '</div>' +
+      '<div class="rel-script-title">📣 CTA</div>' +
+      '<div class="rel-script-cta">' + r.cta + '</div>' +
+    '</div>';
+  }).join('');
+}
+
+function relScriptsTemplate(posts, el) {
+  var temas = [
+    {
+      tema: posts[0] ? (posts[0].caption||'').substring(0,60)+'...' : 'Regularização farmacêutica',
+      hook: 'Você sabia que 70% das farmácias estão irregulares sem saber? Veja agora.',
+      conteudo: 'A ANVISA exige documentação específica para cada tipo de estabelecimento. Muitos proprietários acreditam que estão em dia, mas pequenos detalhes podem gerar multas de até R$ 1,5 milhão. Eu já vi isso acontecer — e sei como evitar.',
+      cta: '💬 Comente AUDITORIA e eu te mando o checklist gratuito'
+    },
+    {
+      tema: posts[1] ? (posts[1].caption||'').substring(0,60)+'...' : 'AFE e licenças',
+      hook: 'Abrir uma drogaria sem esse documento é crime. Você tem o seu?',
+      conteudo: 'A AFE — Autorização de Funcionamento de Empresa — é obrigatória pela ANVISA antes de qualquer outra licença. Sem ela, você não pode funcionar. O processo tem etapas específicas que a maioria não conhece.',
+      cta: '📩 Salve esse Reel e chame no WhatsApp para não errar no seu processo'
+    },
+    {
+      tema: posts[2] ? (posts[2].caption||'').substring(0,60)+'...' : 'Vigilância Sanitária',
+      hook: 'O fiscal da VISA pode chegar amanhã. Sua farmácia está pronta?',
+      conteudo: 'Fui fiscal da VISA/GO por anos. Sei exatamente o que eles verificam e como aplicam multas. Hoje uso esse conhecimento para proteger quem tem farmácia — não para fiscalizar, mas para blindar o seu negócio.',
+      cta: '🔍 Comente BLINDA e eu te explico como funciona a auditoria prévia'
+    }
+  ];
+
+  relRenderRoteiros(temas.slice(0, Math.max(1, Math.min(3, posts.length || 3))), el, false);
+  el.innerHTML += '<div style="font-size:11px;color:var(--mut);margin-top:10px;text-align:center">💡 Configure a chave Claude AI no painel para roteiros personalizados nos seus temas da semana.</div>';
+}
+
+function relRenderLeads(gaData, gmbData) {
+  var el = document.getElementById('rel-leads');
+  if (!el) return;
+
+  var weekPosts = REL.weekPosts;
+  var igFollows = weekPosts.reduce(function(acc,p){ return acc + relInsight(p,'follows'); },0);
+  var igDirect = Math.max(0, (REL.igData ? 0 : 0)); // DMs são manuais
+
+  var sources = [
+    {label:'Instagram (posts + seguimento)', val: igFollows || gaData.conversions || 0, color:'#e1306c', pct:0},
+    {label:'Google (busca orgânica GA4)', val: gaData.users || 0, color:'#4285f4', pct:0},
+    {label:'Google Meu Negócio', val: gmbData.searches || 0, color:'#34a853', pct:0},
+    {label:'Ligações (GMB)', val: gmbData.calls || 0, color:'#fbbc04', pct:0},
+  ];
+
+  var total = sources.reduce(function(acc,s){ return acc + s.val; }, 0) || 1;
+  sources.forEach(function(s){ s.pct = Math.round(s.val / total * 100); });
+  sources.sort(function(a,b){ return b.val - a.val; });
+
+  el.innerHTML = sources.map(function(s){
+    return '<div class="rel-source-row">' +
+      '<div class="rel-source-dot" style="background:'+s.color+'"></div>' +
+      '<div class="rel-source-label">'+s.label+'</div>' +
+      '<div class="rel-source-val">'+s.pct+'%</div>' +
+    '</div>' +
+    '<div class="rel-bar-wrap"><div class="rel-bar" style="width:'+s.pct+'%;background:'+s.color+'"></div></div>';
+  }).join('') +
+  '<div style="font-size:11px;color:var(--mut);margin-top:12px;padding:10px;background:var(--lt);border-radius:8px">' +
+    '💡 Para ver quais posts geraram DMs diretos: verifique o Instagram Insights → Atividade → Contatos' +
+  '</div>';
+}
+
+function relRenderRecs(gaData, gmbData) {
+  var el = document.getElementById('rel-recs');
+  if (!el) return;
+  var posts = REL.weekPosts;
+  var recs = [];
+
+  if (posts.length < 3) recs.push({icon:'⚠️', txt:'Menos de 3 posts publicados esta semana. Aumente para 4-5 posts/semana conforme a estratégia v4.'});
+  else recs.push({icon:'✅', txt:posts.length + ' posts publicados. Mantenha esse ritmo — consistência é o principal fator de crescimento.'});
+
+  var totalSaves = posts.reduce(function(acc,p){ return acc + relInsight(p,'saved'); },0);
+  if (totalSaves > 50) recs.push({icon:'🔖', txt:totalSaves+' salvamentos esta semana — conteúdo educativo funcionando. Repita os formatos dos posts com mais saves.'});
+  else recs.push({icon:'💡', txt:'Aumente salvamentos: use listas, checklists e passos numerados. Salvar = o algoritmo entende que o conteúdo tem valor.'});
+
+  if (gaData.conversions >= 5) recs.push({icon:'🎯', txt:gaData.conversions+' conversões via site — ótimo! Identifique qual página gerou mais contatos e replique o CTA.'});
+  else if (gaData.conversions > 0) recs.push({icon:'📊', txt:'Site com '+gaData.sessions+' sessões mas apenas '+gaData.conversions+' conversões. Revise o CTA da página de contato.'});
+
+  if (gmbData.calls >= 3) recs.push({icon:'📞', txt:gmbData.calls+' ligações via GMB — Google Meu Negócio gerando contatos. Adicione fotos e posts semanais no perfil para ampliar.'});
+
+  recs.push({icon:'🎬', txt:'Poste 1 Reel esta semana — veja os 3 roteiros gerados acima. Reels têm alcance orgânico 3× maior que posts estáticos.'});
+  recs.push({icon:'📱', txt:'Meta: 5 Stories/semana com pelo menos 2 enquetes. Enquetes dobram o alcance do Stories no algoritmo do Instagram.'});
+
+  var bestPost = posts.sort(function(a,b){ return relInsight(b,'reach') - relInsight(a,'reach'); })[0];
+  if (bestPost) recs.push({icon:'♻️', txt:'Seu post mais alcançado: "' + (bestPost.caption||'').substring(0,80) + '..." — transforme esse tema em Reel para maximizar o alcance.'});
+
+  el.innerHTML = recs.map(function(r){
+    return '<div class="rel-rec-item"><div class="rel-rec-icon">'+r.icon+'</div><div>'+r.txt+'</div></div>';
+  }).join('');
+}
+
+function relNovoRelatorio() {
+  document.getElementById('rel-painel').style.display = 'block';
+  document.getElementById('rel-output').style.display = 'none';
+}
+
+function relImprimir() {
+  window.print();
+}
 
 </script></body></html>
