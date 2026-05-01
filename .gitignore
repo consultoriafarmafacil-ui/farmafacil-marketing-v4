@@ -1,6 +1,21 @@
+# Credenciais — NUNCA subir pro GitHub
+.instagram_token
+*.env
+*.token
+
+# Backups locais
 *_backup*.html
 *_broken_backup*.html
 *_pre_patch_*.html
 *.html.backup
+
+# Python
 *.pyc
 __pycache__/
+
+# Scripts de patch temporários
+scripts/add_*.js
+scripts/fix_*.js
+
+# Pastas de debug
+prints de erros/

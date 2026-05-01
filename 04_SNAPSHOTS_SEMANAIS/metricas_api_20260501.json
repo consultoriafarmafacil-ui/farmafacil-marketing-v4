@@ -1,0 +1,87 @@
+{
+  "coletado_em": "2026-05-01",
+  "fonte": "Meta Graph API v22.0",
+  "ig_user_id": "17841415773297230",
+  "username": "farmafacilassessoria",
+  "perfil": {
+    "followers_count": 8720,
+    "follows_count": 7308,
+    "media_count": 233,
+    "biography": "Sua ponte com a vigilância sanitária 🛡️\nRegularizo drogarias, clínicas e distribuidoras\nAFE · CRF · SNGPC · POPs · Abertura\n⬇️ WhatsApp direto"
+  },
+  "insights_28d": {
+    "alcance_total": 14863,
+    "novos_seguidores_total": 439,
+    "periodo": "2026-04-03 a 2026-05-01"
+  },
+  "seguidores_por_dia": [
+    {"data": "2026-04-04", "novos": 7},
+    {"data": "2026-04-05", "novos": 4},
+    {"data": "2026-04-06", "novos": 6},
+    {"data": "2026-04-07", "novos": 3},
+    {"data": "2026-04-08", "novos": 2},
+    {"data": "2026-04-09", "novos": 1},
+    {"data": "2026-04-10", "novos": 1},
+    {"data": "2026-04-11", "novos": 2},
+    {"data": "2026-04-12", "novos": 3},
+    {"data": "2026-04-13", "novos": 2},
+    {"data": "2026-04-14", "novos": 1},
+    {"data": "2026-04-15", "novos": 2},
+    {"data": "2026-04-16", "novos": 7},
+    {"data": "2026-04-17", "novos": 48},
+    {"data": "2026-04-18", "novos": 23},
+    {"data": "2026-04-19", "novos": 4},
+    {"data": "2026-04-20", "novos": 7},
+    {"data": "2026-04-21", "novos": 9},
+    {"data": "2026-04-22", "novos": 36},
+    {"data": "2026-04-23", "novos": 41},
+    {"data": "2026-04-24", "novos": 33},
+    {"data": "2026-04-25", "novos": 42},
+    {"data": "2026-04-26", "novos": 33},
+    {"data": "2026-04-27", "novos": 21},
+    {"data": "2026-04-28", "novos": 24},
+    {"data": "2026-04-29", "novos": 19},
+    {"data": "2026-04-30", "novos": 58},
+    {"data": "2026-05-01", "novos": 0}
+  ],
+  "posts_recentes": [
+    {"data": "2026-05-01", "tipo": "CAROUSEL_ALBUM", "likes": 107, "comments": 5, "reach": 4891, "saved": 72, "follows": 15, "hook": "Você sabe a história da farmacêutica que quase perdeu o CRF por não saber disso?"},
+    {"data": "2026-04-30", "tipo": "CAROUSEL_ALBUM", "likes": 193, "comments": 0, "reach": 6755, "saved": 119, "follows": 60, "hook": "Você sabe o que a vigilância sanitária consegue consultar SEM ir até sua drogaria?"},
+    {"data": "2026-04-29", "tipo": "CAROUSEL_ALBUM", "likes": 11, "comments": 0, "reach": 616, "saved": 2, "follows": 0, "hook": "—"},
+    {"data": "2026-04-28", "tipo": "CAROUSEL_ALBUM", "likes": 40, "comments": 0, "reach": 1468, "saved": 30, "follows": 7, "hook": "Você sabe o que o fiscal olha nos primeiros 5 minutos dentro da drogaria?"},
+    {"data": "2026-04-27", "tipo": "CAROUSEL_ALBUM", "likes": 12, "comments": 0, "reach": 601, "saved": 7, "follows": 0, "hook": "—"},
+    {"data": "2026-04-24", "tipo": "CAROUSEL_ALBUM", "likes": 8, "comments": 0, "reach": 557, "saved": 3, "follows": 0, "hook": "—"},
+    {"data": "2026-04-23", "tipo": "CAROUSEL_ALBUM", "likes": 5, "comments": 0, "reach": 233, "saved": 1, "follows": 1, "hook": "—"},
+    {"data": "2026-04-22", "tipo": "CAROUSEL_ALBUM", "likes": 104, "comments": 3, "reach": 3549, "saved": 92, "follows": 34, "hook": "Você sabe o que acontece quando a vigilância pede o PGRSS?"},
+    {"data": "2026-04-21", "tipo": "CAROUSEL_ALBUM", "likes": 216, "comments": 3, "reach": 5517, "saved": 202, "follows": 157, "hook": "Você sabe a diferença entre AFE e Licença Sanitária?"},
+    {"data": "2026-04-20", "tipo": "CAROUSEL_ALBUM", "likes": 7, "comments": 0, "reach": 409, "saved": 1, "follows": 0, "hook": "—"},
+    {"data": "2026-04-19", "tipo": "IMAGE", "likes": 26, "comments": 0, "reach": 737, "saved": 1, "follows": 3, "hook": "—"},
+    {"data": "2026-04-19", "tipo": "CAROUSEL_ALBUM", "likes": 10, "comments": 0, "reach": 295, "saved": 3, "follows": 1, "hook": "—"},
+    {"data": "2026-04-17", "tipo": "CAROUSEL_ALBUM", "likes": 57, "comments": 0, "reach": 1177, "saved": 45, "follows": 9, "hook": "—"},
+    {"data": "2026-04-16", "tipo": "CAROUSEL_ALBUM", "likes": 10, "comments": 0, "reach": 288, "saved": 3, "follows": 0, "hook": "—"},
+    {"data": "2026-04-15", "tipo": "CAROUSEL_ALBUM", "likes": 231, "comments": 0, "reach": 5719, "saved": 157, "follows": 142, "hook": "O que a vigilância sanitária verifica primeiro quando entra na sua drogaria?"}
+  ],
+  "analise": {
+    "top3_posts": [
+      {"data": "2026-04-21", "follows": 157, "reach": 5517, "likes": 216, "saved": 202, "destaque": "Diferença AFE vs Licença — comparação que gera medo de estar errado"},
+      {"data": "2026-04-15", "follows": 142, "reach": 5719, "likes": 231, "saved": 157, "destaque": "O que verificam primeiro — insider knowledge do fiscal"},
+      {"data": "2026-04-30", "follows": 60, "reach": 6755, "likes": 193, "saved": 119, "destaque": "Vigilância consulta SEM visitar — fator surpresa/revelação"}
+    ],
+    "baseline_posts": {
+      "reach_medio": 350,
+      "likes_medio": 8,
+      "follows_medio": 0
+    },
+    "multiplicadores": {
+      "reach": "15-20x baseline",
+      "likes": "25-30x baseline",
+      "follows": "100-160x baseline"
+    },
+    "padrao_hooks_vencedores": [
+      "Comparação direta (A vs B) → medo de confundir",
+      "Revelação surpreendente (o que X faz SEM Y) → choque",
+      "Insider knowledge (o que verificam PRIMEIRO) → urgência de saber"
+    ],
+    "nota_29abr": "Post 29/04 teve reach=616 (baixo) apesar do hook parecido — investigar se imagem/horário causou queda"
+  }
+}

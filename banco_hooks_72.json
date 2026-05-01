@@ -1,0 +1,4050 @@
+{
+  "versao": "v5.0-onda1",
+  "data": "2026-05-01",
+  "total": 88,
+  "stats": {
+    "S": 32,
+    "A": 42,
+    "B": 10,
+    "C": 4
+  },
+  "hooks": [
+    {
+      "num": 1,
+      "tier": "S",
+      "autor": "KC",
+      "pilar": "atracao",
+      "tema": "Vigilância",
+      "hook": "Você sabe o que o fiscal olha nos primeiros 5 minutos dentro da drogaria?",
+      "sub": "não é o que você imagina",
+      "cena": "Fiscal de uniforme entrando + farmacêutico nervoso ao fundo, suando",
+      "slides": {
+        "t2": "Os 5 primeiros minutos definem TUDO",
+        "i2": [
+          "O fiscal escaneia o ambiente em segundos",
+          "Postura, identificação e organização contam",
+          "Se algo crítico falhar, ele já anota",
+          "Você nem termina de cumprimentar"
+        ],
+        "t3": "Os 4 pontos que ele OLHA antes de você notar",
+        "l3": [
+          "RT identificado (avental + crachá visível)",
+          "Geladeira de termolábeis com termômetro registrando",
+          "Manual de Boas Práticas acessível no balcão",
+          "Lixeira PGRSS sinalizada e separada"
+        ],
+        "t4": "Por que esses 5 minutos custam caro",
+        "it4": [
+          "🚨 Notificação imediata se algo crítico falhar",
+          "💸 Multa de R$ 5.000 a R$ 50.000 dependendo da gravidade",
+          "✅ Com checklist Farma Fácil, você passa fácil"
+        ],
+        "t5": "Sua drogaria passa nos primeiros 5 minutos?",
+        "ck": [
+          "RT identificado e visível no balcão",
+          "Geladeira com temperatura registrada hoje",
+          "Balcão limpo e organizado",
+          "Manual BPF acessível",
+          "PGRSS implementado e sinalizado"
+        ],
+        "cta": "Quer um diagnóstico dos seus primeiros 5 minutos? Me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "22s",
+        "s0_3": "Karine olha câmera: \"Você sabe o que o fiscal olha nos primeiros 5 minutos dentro da drogaria?\"",
+        "s3_8": "Corte rápido: texto na tela \"RT identificado? Geladeira registrada? Manual no balcão?\"",
+        "s8_17": "Karine: \"O fiscal escaneia tudo em 5 minutos. Se um falhar, já anotou. E a multa pode passar de R$ 5.000.\"",
+        "s17_22": "CTA: \"Salva esse vídeo e vai conferir agora na sua drogaria.\"",
+        "trilha": "Suspense leve / silêncio + batida",
+        "cta_tela": "📋 Checklist grátis: link na bio"
+      }
+    },
+    {
+      "num": 2,
+      "tier": "A",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Vigilância",
+      "hook": "Você sabe quais documentos o fiscal pede primeiro quando entra na farmácia?",
+      "sub": "se faltar 1, é multa",
+      "cena": "Fiscal com checklist + farmacêutico desesperado revirando arquivo",
+      "slides": {
+        "t2": "Os primeiros documentos saem do balcão em 30 segundos",
+        "i2": [
+          "Fiscal pede o que o farmacêutico tem em mãos",
+          "Sem hesitar — testa sua organização",
+          "Faltou um? Já entra em notificação",
+          "É a triagem mais rápida da fiscalização"
+        ],
+        "t3": "Os 4 documentos que o fiscal pede PRIMEIRO",
+        "l3": [
+          "AFE atualizada (ANVISA) com razão social atual",
+          "Licença Sanitária dentro do prazo",
+          "Identificação do RT no balcão (nome + CRF)",
+          "Manual de Boas Práticas acessível"
+        ],
+        "t4": "O que acontece se faltar 1 só desses",
+        "it4": [
+          "🚨 Notificação imediata de irregularidade",
+          "💸 Multa de R$ 2.000 a R$ 15.000 já no 1º item",
+          "✅ Com a Farma Fácil, todo documento fica em pasta única"
+        ],
+        "t5": "Sua drogaria entrega esses 4 em 30 segundos?",
+        "ck": [
+          "AFE atualizada e à mão",
+          "Licença Sanitária visível",
+          "RT identificado no balcão",
+          "Manual BPF acessível",
+          "Pasta de documentos organizada"
+        ],
+        "cta": "Quer um checklist completo dos documentos? Me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 3,
+      "tier": "S",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Vigilância",
+      "hook": "Você sabe se a sua drogaria seria aprovada em uma fiscalização surpresa hoje?",
+      "sub": "85% reprovaria",
+      "cena": "Fiscal abrindo a porta de surpresa + farmacêutico paralisado segurando café",
+      "slides": {
+        "t2": "A fiscalização surpresa não avisa",
+        "i2": [
+          "85% das drogarias não passariam HOJE",
+          "O fiscal pode chegar em qualquer hora",
+          "Não importa se você está com cliente",
+          "Não tem 'depois eu arrumo'"
+        ],
+        "t3": "Os 4 itens que reprovam mais",
+        "l3": [
+          "Documentos desatualizados (AFE) ou vencidos (Licença, CRF)",
+          "SNGPC desatualizado ou com inconsistência",
+          "POPs incompletos ou copia-cola sem revisão",
+          "Equipe sem treinamento documentado"
+        ],
+        "t4": "O que acontece se reprovar HOJE",
+        "it4": [
+          "🚨 Auto de infração na hora",
+          "💸 Multa que pode passar de R$ 30.000",
+          "🔒 Risco real de interdição"
+        ],
+        "t5": "Sua drogaria passaria AGORA?",
+        "ck": [
+          "Todos os documentos vigentes",
+          "SNGPC sem inconsistência",
+          "POPs revisados e aplicados",
+          "Equipe com treinamento ativo",
+          "RT presente nos horários obrigatórios"
+        ],
+        "cta": "Diagnóstico relâmpago grátis: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "20s",
+        "s0_3": "Karine: \"85% das drogarias reprovaria em uma fiscalização surpresa. A sua está nessa estatística?\"",
+        "s3_8": "Corte: texto \"SNGPC atrasado? POPs sem revisão? Equipe sem treinamento documentado?\"",
+        "s8_15": "Karine: \"O fiscal não avisa. Pode chegar hoje. E a sua drogaria está pronta ou está na esperança?\"",
+        "s15_20": "CTA: \"Comenta aqui: PRONTA ou NA ESPERANÇA.\"",
+        "trilha": "Suspense / urgência",
+        "cta_tela": "🔴 Diagnóstico gratuito: link na bio"
+      }
+    },
+    {
+      "num": 4,
+      "tier": "A",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Vigilância",
+      "hook": "Você sabe qual irregularidade faz o fiscal VOLTAR na sua drogaria?",
+      "sub": "ele marca cada erro",
+      "cena": "Fiscal saindo escrevendo no tablet + farmacêutico aliviado mas Karine seria ao fundo",
+      "slides": {
+        "t2": "Quando o fiscal volta, ele já vem com objetivo",
+        "i2": [
+          "Ele anotou tudo na 1ª visita",
+          "A volta não é avaliação — é punição",
+          "O prazo de adequação foi ignorado",
+          "A 2ª autuação custa MUITO mais"
+        ],
+        "t3": "Os 4 motivos que fazem o fiscal voltar",
+        "l3": [
+          "Prazo de adequação não cumprido",
+          "Mesmo problema reincidente em 6 meses",
+          "Denúncia anônima sobre item não corrigido",
+          "Documentação prometida e não entregue"
+        ],
+        "t4": "O que muda na 2ª visita",
+        "it4": [
+          "🚨 Multa pode dobrar ou triplicar",
+          "💸 Risco de interdição imediata",
+          "✅ Com acompanhamento Farma Fácil: ele não volta"
+        ],
+        "t5": "Sua drogaria está te chamando o fiscal de volta?",
+        "ck": [
+          "Prazos de adequação cumpridos",
+          "Itens da última visita resolvidos",
+          "Sem reincidência nos últimos 6 meses",
+          "Documentos entregues conforme acordado",
+          "Acompanhamento técnico ativo"
+        ],
+        "cta": "Auditoria pós-fiscalização: me chama no WhatsApp pra evitar a 2ª visita."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 5,
+      "tier": "S",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Vigilância",
+      "hook": "Você sabe o que a vigilância sanitária consegue consultar SEM ir até sua drogaria?",
+      "sub": "ela já está te olhando",
+      "cena": "Fiscal em escritório com telão + foto da fachada da drogaria sendo monitorada",
+      "slides": {
+        "t2": "A vigilância já está te olhando",
+        "i2": [
+          "O sistema da ANVISA é ONLINE e integrado",
+          "Eles veem suas transmissões SNGPC em tempo real",
+          "Veem AFE desatualizada e Licenças vencidas",
+          "Veem reclamações em redes sociais e Reclame Aqui"
+        ],
+        "t3": "Os 4 dados que eles consultam ANTES de visitar",
+        "l3": [
+          "Status de transmissão SNGPC (atrasos, falhas)",
+          "Conformidade da AFE e vencimento da Licença Sanitária",
+          "Histórico de denúncias e reclamações públicas",
+          "Cadastro do RT no CRF (ativo, anotado)"
+        ],
+        "t4": "Por que essa consulta importa",
+        "it4": [
+          "🚨 Se algo desses está errado, eles JÁ sabem",
+          "💸 A visita só vem pra confirmar a multa",
+          "✅ Com a Farma Fácil você fica limpo no sistema deles"
+        ],
+        "t5": "Você está limpo no sistema da ANVISA?",
+        "ck": [
+          "SNGPC transmitido sem atraso este mês",
+          "AFE atualizada (sem alteração pendente)",
+          "Licença Sanitária vigente",
+          "RT ativo e anotado no CRF",
+          "Sem denúncia pública pendente"
+        ],
+        "cta": "Auditoria do seu status na ANVISA: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "20s",
+        "s0_3": "Karine: \"A vigilância sanitária está te olhando AGORA. Sem sair do escritório dela.\"",
+        "s3_8": "Corte: texto \"Transmissão SNGPC em atraso? AFE desatualizada? Denúncia no Reclame Aqui?\"",
+        "s8_15": "Karine: \"O sistema deles é online. Eles veem tudo antes de ir até você. A visita só confirma a multa.\"",
+        "s15_20": "CTA: \"Você está limpa no sistema deles? Me chama no WhatsApp — eu verifico pra você.\"",
+        "trilha": "Suspense tecnológico",
+        "cta_tela": "🔍 Auditoria ANVISA: link na bio"
+      }
+    },
+    {
+      "num": 6,
+      "tier": "S",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Vigilância",
+      "hook": "Você sabe por que algumas drogarias recebem auto de infração mesmo estando 'organizadas'?",
+      "sub": "a aparência engana",
+      "cena": "Drogaria limpa + fiscal entregando notificação + farmacêutico chocado",
+      "slides": {
+        "t2": "Aparência limpa NÃO é proteção legal",
+        "i2": [
+          "O fiscal olha documentos, não decoração",
+          "Vitrine bonita não substitui POP atualizado",
+          "Equipe educada não substitui treinamento documentado",
+          "Loja organizada visualmente pode estar irregular"
+        ],
+        "t3": "Os 4 erros INVISÍVEIS que pegam drogarias 'limpas'",
+        "l3": [
+          "POPs sem revisão anual (mesmo que existam)",
+          "Treinamentos sem registro em ata",
+          "Geladeira de termolábil sem mapa de temperatura",
+          "Receitas controladas sem inventário mensal"
+        ],
+        "t4": "Por que organização visual engana",
+        "it4": [
+          "🚨 Fiscal não compra 'mas tá bonita' como argumento",
+          "💸 Multa vem mesmo se a loja é Instagram-perfeita",
+          "✅ Organização REAL é documental, não visual"
+        ],
+        "t5": "Sua organização é REAL ou só visual?",
+        "ck": [
+          "POPs com revisão anual documentada",
+          "Treinamentos em ata e assinados",
+          "Mapa de temperatura mensal arquivado",
+          "Inventário de controlados mensal",
+          "Lista mestra de documentos atualizada"
+        ],
+        "cta": "Auditoria documental gratuita: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "18s",
+        "s0_3": "Karine: \"Drogaria limpa, organizada, bonita. E levou multa. Por quê?\"",
+        "s3_8": "Corte: \"POPs sem revisão anual. Treinamento sem ata. Mapa de temperatura no chute.\"",
+        "s8_15": "Karine: \"Fiscal não compra aparência. Ele olha o que você assinou e o que você não assinou.\"",
+        "s15_18": "CTA: \"Sua organização é real ou só visual? Me conta nos comentários.\"",
+        "trilha": "Surpresa / revelação",
+        "cta_tela": "📋 Auditoria documental: link na bio"
+      }
+    },
+    {
+      "num": 7,
+      "tier": "S",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Vigilância",
+      "hook": "Você sabe o erro silencioso que farmacêuticos só descobrem quando o fiscal CHEGA?",
+      "sub": "anos passando despercebido",
+      "cena": "Farmacêutico de boca aberta apontando para arquivo antigo + fiscal segurando documento",
+      "slides": {
+        "t2": "Existem erros que ninguém ensina a procurar",
+        "i2": [
+          "Você herda procedimentos do antigo dono",
+          "Ninguém revisa periodicamente o que está em prática",
+          "O erro fica anos despercebido",
+          "Até o dia do fiscal abrir a pasta"
+        ],
+        "t3": "Os 4 erros silenciosos mais COMUNS",
+        "l3": [
+          "RT cadastrado mas nunca atualizado no CRF",
+          "POPs com nome do antigo proprietário",
+          "Notas fiscais arquivadas fora da ordem legal",
+          "Mapa de temperatura preenchido com 'norma' (chute)"
+        ],
+        "t4": "Por que você não vê esses erros sozinho",
+        "it4": [
+          "🚨 Você confia no que herdou da gestão anterior",
+          "💸 Multa por descuido custa igual ou mais",
+          "✅ Auditoria externa enxerga o que você não vê"
+        ],
+        "t5": "Você sabe quais erros silenciosos tem AÍ?",
+        "ck": [
+          "RT confirmado e atualizado no CRF",
+          "POPs com seu nome e data atual",
+          "Notas fiscais em ordem cronológica",
+          "Mapa de temperatura medido (não chutado)",
+          "Documentação de troca de gestão"
+        ],
+        "cta": "Diagnóstico de erros silenciosos: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "20s",
+        "s0_3": "Karine: \"O erro mais perigoso na sua drogaria é aquele que você nem sabe que existe.\"",
+        "s3_8": "Corte: \"RT nunca atualizado no CRF. POPs com nome do antigo dono. Mapa de temperatura chutado.\"",
+        "s8_15": "Karine: \"Você herdou esses erros de quem veio antes. E pode pagar por eles com multa.\"",
+        "s15_20": "CTA: \"Já teve um erro silencioso assim? Comenta aqui sem medo.\"",
+        "trilha": "Mistério / revelação",
+        "cta_tela": "🔍 Diagnóstico de erros silenciosos: link na bio"
+      }
+    },
+    {
+      "num": 8,
+      "tier": "A",
+      "autor": "C",
+      "pilar": "atracao",
+      "tema": "Vigilância",
+      "hook": "Você sabe o que a vigilância olha PRIMEIRO no seu balcão?",
+      "sub": "não é o que você imagina",
+      "cena": "Fiscal apontando dedo para o balcão + farmacêutico nervoso de mãos frias",
+      "slides": {
+        "t2": "O balcão é o cartão de visita pro fiscal",
+        "i2": [
+          "É o primeiro ambiente que ele vê",
+          "Ele lê tudo em 5 segundos: limpeza + documentos + pessoas",
+          "Detalhe pequeno fica gigante na inspeção",
+          "É onde mora 70% da reprovação"
+        ],
+        "t3": "Os 4 itens que o fiscal escaneia PRIMEIRO",
+        "l3": [
+          "Identificação visível do RT (avental + crachá)",
+          "Termômetro de geladeira com leitura registrada",
+          "Receituário de controlado guardado fora do balcão",
+          "Caixas de venda livre sem amostras grátis misturadas"
+        ],
+        "t4": "Por que o balcão pesa tanto",
+        "it4": [
+          "🚨 Achou erro no balcão: presume erro no resto",
+          "💸 Autuação imediata, sem aviso",
+          "✅ Balcão limpo na Farma Fácil = inspeção tranquila"
+        ],
+        "t5": "Seu balcão passa nos 5 primeiros segundos?",
+        "ck": [
+          "RT identificado no avental",
+          "Termômetro com leitura registrada hoje",
+          "Controlados guardados longe do balcão",
+          "Sem amostras grátis misturadas",
+          "Layout organizado e visível"
+        ],
+        "cta": "Diagnóstico do seu balcão em 30min: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 9,
+      "tier": "A",
+      "autor": "C",
+      "pilar": "atracao",
+      "tema": "Vigilância",
+      "hook": "Você sabe quem PODE denunciar sua drogaria pra vigilância?",
+      "sub": "talvez você não imagine",
+      "cena": "Farmacêutico aterrorizado lendo carta de denúncia + fiscal na porta",
+      "slides": {
+        "t2": "Você não imagina quantas portas estão abertas",
+        "i2": [
+          "Denúncia anônima vale como gatilho oficial",
+          "A vigilância é OBRIGADA a investigar",
+          "Não precisa prova — só indício",
+          "Visita vem em até 30 dias"
+        ],
+        "t3": "Os 4 perfis que MAIS denunciam drogarias",
+        "l3": [
+          "Ex-funcionário insatisfeito (#1 em volume)",
+          "Cliente que não conseguiu medicamento controlado",
+          "Concorrente do bairro disputando posição",
+          "Vizinho incomodado com lixo hospitalar"
+        ],
+        "t4": "Por que denúncia é tão perigosa",
+        "it4": [
+          "🚨 Você não sabe que está sendo investigado",
+          "💸 A multa vem por algo que o fiscal escolhe",
+          "✅ Auditoria preventiva blinda contra denúncia"
+        ],
+        "t5": "Sua drogaria está pronta pra uma denúncia?",
+        "ck": [
+          "RH em dia (sem pendências com ex-funcionários)",
+          "Atendimento de controlado documentado",
+          "Lixo hospitalar com PGRSS implementado",
+          "Saída e entrada de funcionários registrada",
+          "Auditoria preventiva feita"
+        ],
+        "cta": "Auditoria preventiva contra denúncias: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 10,
+      "tier": "S",
+      "autor": "C",
+      "pilar": "atracao",
+      "tema": "Vigilância",
+      "hook": "Você sabe que a vigilância pode usar denúncia ANÔNIMA para te interditar?",
+      "sub": "e usa sem aviso",
+      "cena": "Farmacêutico aterrorizado lendo papel + fiscal de costas escrevendo auto",
+      "slides": {
+        "t2": "Denúncia anônima vale como gatilho oficial",
+        "i2": [
+          "Qualquer pessoa pode denunciar sem se identificar",
+          "A vigilância é OBRIGADA a investigar",
+          "Não precisa ter prova — só indício",
+          "A visita vem em até 30 dias"
+        ],
+        "t3": "Quem MAIS denúncia drogarias (você não imagina)",
+        "l3": [
+          "Ex-funcionário insatisfeito",
+          "Cliente que não conseguiu medicamento controlado",
+          "Concorrente do bairro",
+          "Vizinho incomodado com lixo hospitalar"
+        ],
+        "t4": "Por que denúncia anônima é tão perigosa",
+        "it4": [
+          "🚨 Você NÃO sabe que está sendo investigado",
+          "💸 A multa vem por 'algo' que o fiscal escolhe",
+          "🔒 Pode virar interdição sem aviso prévio"
+        ],
+        "t5": "Você está protegido contra denúncia anônima?",
+        "ck": [
+          "Documentação 100% em dia",
+          "SNGPC sem atraso",
+          "Equipe sem queixas formais",
+          "Lixo hospitalar com PGRSS correto",
+          "Atendimento de controlados conforme RDC"
+        ],
+        "cta": "Auditoria preventiva contra denúncias: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "22s",
+        "s0_3": "Karine: \"Alguém pode denunciar sua drogaria pra vigilância HOJE. Anonimamente. Sem prova.\"",
+        "s3_8": "Corte: \"Ex-funcionário insatisfeito. Concorrente do bairro. Cliente que não conseguiu controlado.\"",
+        "s8_17": "Karine: \"A vigilância é OBRIGADA a investigar qualquer denúncia. A visita vem em até 30 dias.\"",
+        "s17_22": "CTA: \"Você está protegida ou está na mão de quem quiser te denunciar?\"",
+        "trilha": "Suspense / alerta",
+        "cta_tela": "🛡️ Auditoria preventiva: link na bio"
+      }
+    },
+    {
+      "num": 11,
+      "tier": "S",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Interdição",
+      "hook": "Você sabe qual erro pode interditar sua drogaria na HORA da inspeção?",
+      "sub": "1 só já basta",
+      "cena": "Fiscal selando porta + farmacêutico de mãos na cabeça olhando do lado de dentro",
+      "slides": {
+        "t2": "Existem erros que NÃO geram notificação — geram interdição",
+        "i2": [
+          "Alguns erros são 'irregularidade grave'",
+          "O fiscal não te dá prazo pra arrumar",
+          "A drogaria é selada na hora",
+          "Você só reabre depois de comprovar regularização"
+        ],
+        "t3": "Os 4 erros que selam a porta na hora",
+        "l3": [
+          "Vender medicamento sem registro ANVISA",
+          "Manter medicamento vencido no estoque ativo",
+          "Funcionar sem RT presente em horário obrigatório",
+          "Termolábil fora de temperatura por horas"
+        ],
+        "t4": "O que acontece quando seu negócio é selado",
+        "it4": [
+          "🚨 Lacre na porta + cartaz INTERDITADO",
+          "💸 Receita zerada até regularizar (semanas)",
+          "🔒 Sua reputação no bairro destruída"
+        ],
+        "t5": "Sua drogaria está livre desses 4 erros?",
+        "ck": [
+          "Todo medicamento com registro ANVISA conferido",
+          "Estoque sem vencidos (varredura semanal)",
+          "RT presente no horário obrigatório",
+          "Termolábil monitorado 24h",
+          "Regulamento RDC sempre atualizado"
+        ],
+        "cta": "Diagnóstico anti-interdição: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "18s",
+        "s0_3": "Karine: \"Tem um erro que pode interditar sua drogaria NA HORA. Você sabe qual é?\"",
+        "s3_8": "Corte: \"Medicamento vencido à venda. RT ausente no horário obrigatório. Geladeira sem temperatura registrada.\"",
+        "s8_15": "Karine: \"Esses itens não geram prazo pra corrigir. Geram interdição imediata.\"",
+        "s15_18": "CTA: \"Salva esse vídeo. Vai checar agora.\"",
+        "trilha": "Urgência / alarme",
+        "cta_tela": "🚨 Checklist urgente: link na bio"
+      }
+    },
+    {
+      "num": 12,
+      "tier": "A",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Interdição",
+      "hook": "Você sabe o erro mais COMUM que leva drogarias a interdição?",
+      "sub": "a maioria comete",
+      "cena": "Drogaria com placa INTERDITADO + farmacêutico chocado segurando chaves",
+      "slides": {
+        "t2": "O erro mais comum é também o mais simples",
+        "i2": [
+          "Não é POP complexo nem SNGPC: é prazo de documento",
+          "8 em cada 10 interdições começam por aqui",
+          "É invisível pro dono, óbvio pro fiscal",
+          "Custa zero pra prevenir, milhares pra remediar"
+        ],
+        "t3": "Os 4 documentos que mais interditam por vencimento",
+        "l3": [
+          "AFE da ANVISA desatualizada (alteração contratual não comunicada)",
+          "Licença Sanitária Municipal expirada",
+          "Certificado de Responsabilidade Técnica do CRF vencido",
+          "Alvará de Funcionamento desatualizado"
+        ],
+        "t4": "O que acontece quando o fiscal pega documento vencido",
+        "it4": [
+          "🚨 Interdição na hora — placa amarela na porta",
+          "💸 Multa + custo de regularização (R$ 5.000 a R$ 50.000)",
+          "✅ Calendário de vencimentos da Farma Fácil = nunca atrasa"
+        ],
+        "t5": "Algum desses 4 está vencendo nos próximos 90 dias?",
+        "ck": [
+          "AFE atualizada",
+          "Licença Sanitária no prazo",
+          "CRT do CRF vigente",
+          "Alvará atualizado",
+          "Calendário de renovações ativo"
+        ],
+        "cta": "Mapeamento dos vencimentos da sua drogaria: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 13,
+      "tier": "S",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Interdição",
+      "hook": "Você sabe por qual motivo sua drogaria poderia ser interditada HOJE?",
+      "sub": "checklist relampago",
+      "cena": "Calendário marcado HOJE em vermelho + drogaria com cadeado + farmacêutico desesperado",
+      "slides": {
+        "t2": "Qualquer dia pode ser O dia",
+        "i2": [
+          "A fiscalização não escolhe drogaria pequena ou grande",
+          "Visitas de surpresa estão crescendo em 2026",
+          "Suas chances de receber visita este mês são reais",
+          "E você precisa estar preparada AGORA"
+        ],
+        "t3": "Os 4 motivos mais COMUNS de interdição relâmpago",
+        "l3": [
+          "AFE desatualizada por mudança não comunicada (90% nem percebe)",
+          "SNGPC sem transmissão há +30 dias",
+          "RT ausente em horário comercial",
+          "Medicamento vencido na prateleira"
+        ],
+        "t4": "Por que isso vira interdição na hora",
+        "it4": [
+          "🚨 São irregularidades classificadas como GRAVES",
+          "💸 Multa + lacre na porta + processo administrativo",
+          "✅ Com auditoria preventiva: você dorme tranquila"
+        ],
+        "t5": "Você está livre desses 4 motivos HOJE?",
+        "ck": [
+          "AFE atualizada (sem alteração pendente)",
+          "SNGPC transmitido este mês",
+          "RT presente nos horários",
+          "Estoque sem vencidos",
+          "POPs aplicados de fato"
+        ],
+        "cta": "Checklist anti-interdição grátis: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "20s",
+        "s0_3": "Karine: \"Por qual motivo sua drogaria poderia ser interditada HOJE?\"",
+        "s3_8": "Corte: \"Medicamento vencido. SNGPC com inconsistência grave. RT ausente no horário.\"",
+        "s8_15": "Karine: \"Eu visitei drogarias que foram interditadas por exatamente isso. Donos que achavam que estavam ok.\"",
+        "s15_20": "CTA: \"Me manda mensagem e eu faço um diagnóstico rápido com você.\"",
+        "trilha": "Drama / revelação",
+        "cta_tela": "🔴 Diagnóstico: link na bio"
+      }
+    },
+    {
+      "num": 14,
+      "tier": "S",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Interdição",
+      "hook": "Você sabe se sua drogaria está a UMA visita de receber uma autuação?",
+      "sub": "uma só",
+      "cena": "Fiscal subindo a calcada com prancheta + farmacêutico vendo pela vitrine, paralisado",
+      "slides": {
+        "t2": "Uma visita basta",
+        "i2": [
+          "A vigilância não dá segunda chance",
+          "Se algo grave for visto, é autuação na hora",
+          "Você não sabe quando ela vai bater na porta",
+          "E você não tem direito a 'me dá tempo'"
+        ],
+        "t3": "Os 4 sinais de que sua drogaria está VULNERÁVEL",
+        "l3": [
+          "Você não sabe quando o último POP foi revisado",
+          "SNGPC tem atraso recorrente",
+          "RT não está fixo (rotatividade alta)",
+          "Documentação tá em pastas espalhadas, não centralizada"
+        ],
+        "t4": "O preço de UMA visita malsucedida",
+        "it4": [
+          "🚨 Auto de infração + processo administrativo",
+          "💸 Multa que pode passar de R$ 80.000",
+          "🔒 Reputação no município abalada"
+        ],
+        "t5": "Sua drogaria está pronta pra UMA visita?",
+        "ck": [
+          "POPs revisados nos últimos 12 meses",
+          "SNGPC sem pendência",
+          "RT estável e conhecido pela equipe",
+          "Pasta de documentos centralizada",
+          "Histórico de auditorias internas"
+        ],
+        "cta": "Pre-visita simulada Farma Fácil: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "18s",
+        "s0_3": "Karine: \"Sua drogaria está a UMA visita de levar autuação. Você sente isso?\"",
+        "s3_8": "Corte: \"1 documento vencido. 1 transmissão atrasada. 1 POP desatualizado.\"",
+        "s8_15": "Karine: \"Uma visita surpresa é tudo que precisa pra mudar tudo. Antes ou depois?\"",
+        "s15_18": "CTA: \"Você prefere saber antes. Me chama.\"",
+        "trilha": "Tensão crescente",
+        "cta_tela": "⚡ Diagnóstico relâmpago: link na bio"
+      }
+    },
+    {
+      "num": 15,
+      "tier": "A",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Interdição",
+      "hook": "Você sabe qual erro pode DESTRUIR uma fiscalização em poucos minutos?",
+      "sub": "começa bem, termina mal",
+      "cena": "Fiscal sorrindo no início + na sequência segurando notificação enorme + farmacêutico chocado",
+      "slides": {
+        "t2": "Começa com o fiscal sorrindo. Termina com lacre na porta",
+        "i2": [
+          "Tudo parecia tranquilo no início",
+          "1 detalhe muda o tom da visita",
+          "O fiscal passa de auditor para autuador em 1 minuto",
+          "É reversível — se você souber o que fazer"
+        ],
+        "t3": "Os 4 erros que viram fiscalização do avesso",
+        "l3": [
+          "Tentar 'esconder' irregularidade que o fiscal já viu",
+          "Mostrar documento adulterado/rasurado",
+          "Funcionário improvisar resposta sem o RT",
+          "Recusar-se a abrir armário/gaveta solicitada"
+        ],
+        "t4": "Por que esses erros são fatais",
+        "it4": [
+          "🚨 Quebra de confiança = inspeção sai do roteiro",
+          "💸 Auto de infração com agravante de obstrução",
+          "✅ Treinamento Farma Fácil ensina como reagir"
+        ],
+        "t5": "Sua equipe sabe o que NÃO fazer numa fiscalização?",
+        "ck": [
+          "Equipe treinada pra atender fiscal",
+          "Documentos sempre originais",
+          "RT acessível por telefone se ausente",
+          "Postura colaborativa garantida",
+          "Roteiro de inspeção interno"
+        ],
+        "cta": "Treinamento equipe pra fiscalização: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 16,
+      "tier": "A",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Interdição",
+      "hook": "Você sabe o que pode estar IRREGULAR na sua drogaria agora mesmo?",
+      "sub": "5 itens críticos",
+      "cena": "Lupa sobre prateleira + 5 alertas vermelhos + farmacêutico de mão na boca",
+      "slides": {
+        "t2": "Itens silenciosos que ninguém revisa há tempos",
+        "i2": [
+          "Estão na sua drogaria há meses",
+          "Não dão sinal — só aparecem na fiscalização",
+          "Cada um vale autuação separada",
+          "É a soma deles que vira interdição"
+        ],
+        "t3": "Os 5 itens que MAIS aparecem em irregularidade",
+        "l3": [
+          "Termômetro da geladeira sem registro nas últimas 4 semanas",
+          "Manual de Boas Práticas com versão antiga (>2 anos)",
+          "Lista de medicamentos vencidos sem segregação física",
+          "POPs sem assinatura do RT atual",
+          "Lixo PGRSS misturado com lixo comum"
+        ],
+        "t4": "Quanto custa cada um na fiscalização",
+        "it4": [
+          "🚨 R$ 2.000 a R$ 10.000 cada item separado",
+          "💸 Soma facilmente passa R$ 30.000 numa visita",
+          "✅ Auditoria interna mensal encontra todos antes"
+        ],
+        "t5": "Quantos desses 5 sua drogaria tem hoje?",
+        "ck": [
+          "Termômetro com leitura semanal",
+          "Manual BPF atualizado (<2 anos)",
+          "Vencidos segregados em armário lacrado",
+          "POPs assinados pelo RT atual",
+          "PGRSS implementado e fiscalizado"
+        ],
+        "cta": "Auditoria interna mensal Farma Fácil: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 17,
+      "tier": "S",
+      "autor": "C",
+      "pilar": "atracao",
+      "tema": "Interdição",
+      "hook": "Você sabe quando a vigilância pode FECHAR sua drogaria sem aviso?",
+      "sub": "3 motivos comuns",
+      "cena": "Farmacêutico de mãos na cabeça olhando placa INTERDITADO sendo colada na porta",
+      "slides": {
+        "t2": "Fechamento sem aviso é mais comum do que você pensa",
+        "i2": [
+          "A vigilância NÃO precisa avisar pra interditar",
+          "Determinadas irregularidades disparam fechamento imediato",
+          "Você descobre quando vê o lacre",
+          "E isso acontece todo mês em alguma drogaria do estado"
+        ],
+        "t3": "Os 4 motivos que disparam fechamento na HORA",
+        "l3": [
+          "Funcionamento com AFE cassada ou inválida",
+          "Comércio de medicamento de uso restrito sem prescrição",
+          "Funcionamento sem RT presente em horário obrigatório",
+          "Termolábil fora da temperatura por +6h"
+        ],
+        "t4": "O que vem depois do lacre",
+        "it4": [
+          "🚨 Processo administrativo + multa pesada",
+          "💸 Receita ZERO até regularizar (média de 3 semanas)",
+          "🔒 Notícia se espalha — clientes fogem"
+        ],
+        "t5": "Sua drogaria está blindada contra fechamento?",
+        "ck": [
+          "AFE conferida e em conformidade hoje",
+          "Controlados só com receita válida",
+          "RT presente em todos os horários comerciais",
+          "Termolábil monitorado 24h",
+          "Equipe orientada sobre RDCs vigentes"
+        ],
+        "cta": "Auditoria anti-fechamento: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "20s",
+        "s0_3": "Karine: \"A vigilância pode FECHAR sua drogaria sem aviso prévio. Você sabia disso?\"",
+        "s3_8": "Corte: \"Interdição imediata em caso de risco à saúde pública. Sem prazo. Sem aviso.\"",
+        "s8_15": "Karine: \"Medicamento vencido no balcão é risco à saúde pública. Isso é interdição na hora.\"",
+        "s15_20": "CTA: \"Vai agora no seu balcão e confere. Validade de TUDO.\"",
+        "trilha": "Urgência / alarme",
+        "cta_tela": "⚠️ Checklist emergencial: link na bio"
+      }
+    },
+    {
+      "num": 18,
+      "tier": "B",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "SNGPC",
+      "hook": "Você sabe o motivo da ANVISA reprovar o arquivo de transmissão do SNGPC?",
+      "sub": "erro no .xml fatal",
+      "cena": "Tela com REJEITADO em vermelho + farmacêutico segurando cabeça olhando computador",
+      "slides": {
+        "t2": "O .xml é frágil e a ANVISA é implacável",
+        "i2": [
+          "Sistema próprio mas sem dó",
+          "Pequena inconsistência reprova o arquivo todo",
+          "Reprovou? Você fica com SNGPC em atraso",
+          "Atraso = motivo direto pra fiscalização"
+        ],
+        "t3": "Os 4 motivos mais comuns de reprovação do .xml",
+        "l3": [
+          "Lote/validade não bate com a nota fiscal de entrada",
+          "Receita médica com CID/CRM faltando",
+          "Quantidade de saída maior que entrada disponível",
+          "Cadastro do paciente incompleto (CPF/endereço)"
+        ],
+        "t4": "O que rola quando o .xml é reprovado 2x seguidas",
+        "it4": [
+          "🚨 Sistema bloqueia transmissão até regularizar",
+          "💸 Multa por SNGPC inativo (R$ 5.000+)",
+          "✅ Validação prévia Farma Fácil = aprovação 1ª tentativa"
+        ],
+        "t5": "Seu último arquivo SNGPC foi aprovado de primeira?",
+        "ck": [
+          "Arquivo aprovado última transmissão",
+          "Lotes batendo com NF de entrada",
+          "Receitas com CID e CRM completos",
+          "Saldos coerentes (saída ≤ entrada)",
+          "Cadastros de paciente completos"
+        ],
+        "cta": "Validação SNGPC antes de enviar: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 19,
+      "tier": "S",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "SNGPC",
+      "hook": "Você sabe o que acontece quando seu SNGPC está IRREGULAR e o fiscal descobre?",
+      "sub": "interdição em 24h",
+      "cena": "Fiscal apontando tela do SNGPC + farmacêutico aterrorizado tirando carteira",
+      "slides": {
+        "t2": "SNGPC irregular = interdição em 24h",
+        "i2": [
+          "O SNGPC é a vitrine da ANVISA pra sua drogaria",
+          "Atraso ou divergência é detectado AUTOMATICAMENTE",
+          "O fiscal já chega sabendo que tem algo errado",
+          "E ele NÃO vem pra ajudar — vem pra autuar"
+        ],
+        "t3": "Os 4 erros que mais pegam no SNGPC",
+        "l3": [
+          "Atraso na transmissão (>30 dias)",
+          "Divergência entre estoque físico e sistema",
+          "Receita controlada não cadastrada corretamente",
+          "RT não acompanhando transmissões"
+        ],
+        "t4": "O que acontece quando o fiscal encontra",
+        "it4": [
+          "🚨 Notificação + multa por movimentação irregular",
+          "💸 Multa pode passar de R$ 50.000",
+          "🔒 Suspensão de venda de controlados — receita despenca"
+        ],
+        "t5": "Seu SNGPC está blindado?",
+        "ck": [
+          "Transmissão em dia (todo mês até dia 8)",
+          "Estoque físico = estoque sistema (conferido mensalmente)",
+          "Receitas com cadastro completo",
+          "RT acompanhando transmissões",
+          "Backup das transmissões dos últimos 12 meses"
+        ],
+        "cta": "Diagnóstico SNGPC grátis: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "22s",
+        "s0_3": "Karine: \"O SNGPC irregular é o erro que mais vejo em drogaria autuada. E o mais fácil de evitar.\"",
+        "s3_8": "Corte: \"Transmissão atrasada. Inventário com divergência. Arquivo rejeitado pela ANVISA.\"",
+        "s8_17": "Karine: \"O fiscal vê tudo isso ANTES de chegar. Quando ele chega, já tem o auto pronto.\"",
+        "s17_22": "CTA: \"Seu SNGPC está em dia? Comenta aqui: EM DIA ou ATRASADO.\"",
+        "trilha": "Alerta / revelação",
+        "cta_tela": "📋 Revisão SNGPC: link na bio"
+      }
+    },
+    {
+      "num": 20,
+      "tier": "A",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "SNGPC",
+      "hook": "Você sabe o que acontece quando o Inventário do SNGPC está errado?",
+      "sub": "balanço não bate, multa entra",
+      "cena": "Pilha de caixas + planilha com X vermelho + farmacêutico de boca aberta",
+      "slides": {
+        "t2": "Inventário errado é gatilho automático de multa",
+        "i2": [
+          "A ANVISA cruza o seu inventário com SNGPC todo mês",
+          "Diferença de 1 unidade já chama atenção",
+          "Se tem padrão, abre processo de fiscalização",
+          "Não tem como 'ajustar' depois — o sistema guarda histórico"
+        ],
+        "t3": "Os 4 erros mais comuns no Inventário",
+        "l3": [
+          "Saldo final de medicamento controlado divergente",
+          "Lote de entrada não registrado mas em estoque",
+          "Lote vencido contado como saldo válido",
+          "Conferência sem assinatura do RT"
+        ],
+        "t4": "O que a ANVISA faz quando vê inventário errado",
+        "it4": [
+          "🚨 Notificação automática + visita de fiscalização",
+          "💸 Multa de R$ 5.000 a R$ 30.000 por divergência",
+          "✅ Inventário Farma Fácil: bate certinho com SNGPC"
+        ],
+        "t5": "Seu último inventário bateu 100% com o SNGPC?",
+        "ck": [
+          "Inventário fechado com 0 divergências",
+          "Lotes com entrada registrada",
+          "Vencidos segregados (não somam saldo)",
+          "Conferência assinada pelo RT",
+          "Conciliação trimestral feita"
+        ],
+        "cta": "Inventário SNGPC sem erro: me chama no WhatsApp pra metodologia."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 21,
+      "tier": "A",
+      "autor": "C",
+      "pilar": "atracao",
+      "tema": "SNGPC",
+      "hook": "Você sabe o que a vigilância faz quando seu SNGPC está atrasado?",
+      "sub": "interdição em 24h",
+      "cena": "Farmacêutico aterrorizado + fiscal apontando para o computador com tela vermelha",
+      "slides": {
+        "t2": "SNGPC atrasado é alerta vermelho automático",
+        "i2": [
+          "A ANVISA detecta atraso no mesmo dia",
+          "Vigilância recebe lista das drogarias com pendência",
+          "Visita pode acontecer antes mesmo da multa chegar",
+          "É o atalho mais rápido pra interdição"
+        ],
+        "t3": "Os 4 prazos do SNGPC que NÃO podem atrasar",
+        "l3": [
+          "Transmissão mensal — todo dia 10 do mês seguinte",
+          "Inventário trimestral fechado + assinado",
+          "Atualização cadastral em até 30 dias",
+          "Comunicação de furto/extravio em 72h"
+        ],
+        "t4": "O que acontece com 30 dias de atraso",
+        "it4": [
+          "🚨 Visita de fiscalização agendada automaticamente",
+          "💸 Multa diária + suspensão de venda de controlados",
+          "✅ Calendário Farma Fácil avisa 7 dias antes de cada prazo"
+        ],
+        "t5": "Você sabe quando é a próxima transmissão do SNGPC?",
+        "ck": [
+          "Transmissão mensal em dia (até dia 10)",
+          "Inventário trimestral fechado",
+          "Cadastros atualizados em <30 dias",
+          "Sem pendências de furto/extravio",
+          "Calendário de SNGPC ativo"
+        ],
+        "cta": "Gestão SNGPC sem atraso: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 22,
+      "tier": "C",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "POPs",
+      "hook": "Você sabe o MOMENTO CERTO de atualizar os POPs?",
+      "sub": "atrasou virou multa",
+      "cena": "Calendário com POPs VENCIDO em vermelho + farmacêutico de mão na cabeça segurando manual",
+      "slides": {
+        "t2": "POP desatualizado = drogaria desatualizada",
+        "i2": [
+          "A maioria atualiza só na hora da fiscalização",
+          "Atualizar correndo gera POP genérico",
+          "Genérico não cobre situação real",
+          "Fiscal pega na 1ª pergunta"
+        ],
+        "t3": "Os 4 momentos OBRIGATÓRIOS pra atualizar POPs",
+        "l3": [
+          "Mudou RT — todos os POPs precisam reassinatura",
+          "Nova RDC publicada — verificar impacto em até 30 dias",
+          "Mudança no layout/estrutura física da drogaria",
+          "Anualmente, mesmo sem mudanças (revisão programada)"
+        ],
+        "t4": "Por que POP desatualizado custa caro",
+        "it4": [
+          "🚨 Fiscal pergunta da prática real e POP não bate",
+          "💸 Multa por procedimento não conforme (R$ 3.000+)",
+          "✅ Revisão anual Farma Fácil = sempre alinhado"
+        ],
+        "t5": "Quando foi a última revisão dos seus POPs?",
+        "ck": [
+          "Última revisão há menos de 12 meses",
+          "POPs assinados pelo RT atual",
+          "Atualizados após mudança de RDC",
+          "Refletem prática real da drogaria",
+          "Acessíveis no balcão"
+        ],
+        "cta": "Revisão anual de POPs: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 23,
+      "tier": "A",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "POPs",
+      "hook": "Você sabe se seus POPs realmente estão prontos para uma Inspeção?",
+      "sub": "ter não é estar pronto",
+      "cena": "Fiscal folheando POP + farmacêutico nervoso vendo pagina em branco",
+      "slides": {
+        "t2": "Ter POP no papel não é estar pronto",
+        "i2": [
+          "Fiscal não lê — fiscal pergunta pra equipe",
+          "Se a equipe responde diferente do POP: virou problema",
+          "POP pronto = equipe treinada + documento alinhado",
+          "É a integração que falha, não o documento"
+        ],
+        "t3": "Os 4 sinais de POP REALMENTE pronto",
+        "l3": [
+          "Equipe responde igual ao POP em entrevista",
+          "POP impresso e acessível no balcão",
+          "Checklists derivados dos POPs em uso diário",
+          "RT consegue defender cada item se questionado"
+        ],
+        "t4": "Por que POPs 'só no papel' geram autuação",
+        "it4": [
+          "🚨 Equipe contradiz documento na entrevista",
+          "💸 Multa por procedimento não cumprido",
+          "✅ Treinamento Farma Fácil sincroniza POP + prática"
+        ],
+        "t5": "Sua equipe responderia igual ao POP?",
+        "ck": [
+          "POPs físicos no balcão",
+          "Equipe treinada nos procedimentos",
+          "Checklists diários derivados de POPs",
+          "RT alinhado com prática real",
+          "Última simulação interna feita"
+        ],
+        "cta": "Treinamento equipe + revisão de POPs: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 24,
+      "tier": "S",
+      "autor": "C",
+      "pilar": "atracao",
+      "tema": "POPs",
+      "hook": "Você sabe qual erro de POP pode te custar R$ 50 mil de multa?",
+      "sub": "quase ninguém revisa",
+      "cena": "Farmacêutico chocado segurando notificação de multa, fiscal ao lado com tablet",
+      "slides": {
+        "t2": "POP errado = porta aberta para multa",
+        "i2": [
+          "A maioria das drogarias usa POP genérico baixado da internet",
+          "Sem revisão, sem contextualização, sem aplicação real",
+          "O fiscal pede pra ver E pede pra demonstrar",
+          "Quando equipe não sabe seguir, vira autuação"
+        ],
+        "t3": "Os 4 erros de POP que mais geram multa pesada",
+        "l3": [
+          "POP de manipulação sem assinatura do RT",
+          "POP de termolábil sem registro de aferição diária",
+          "POP de descarte sem comprovação do PGRSS",
+          "POP de controlados sem treinamento documentado"
+        ],
+        "t4": "Por que isso custa R$ 50 mil",
+        "it4": [
+          "🚨 ANVISA classifica como 'descumprimento sistemático'",
+          "💸 Multa unitária por POP em desconformidade",
+          "✅ Você pode ter 14+ POPs — soma rápido"
+        ],
+        "t5": "Seus POPs estão à prova de auditoria?",
+        "ck": [
+          "Todos os POPs com assinatura RT vigente",
+          "Registros diários sendo preenchidos",
+          "Treinamentos em ata por POP",
+          "Lista mestra atualizada",
+          "Revisão anual documentada"
+        ],
+        "cta": "Auditoria POP-a-POP: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "20s",
+        "s0_3": "Karine: \"Um erro de POP. Cinquenta mil reais de multa. Aconteceu com uma cliente minha.\"",
+        "s3_8": "Corte: \"POP desatualizado. POP sem assinatura do RT. POP sem evidência de aplicação.\"",
+        "s8_15": "Karine: \"O fiscal não aceita POP bonito sem prova de que foi aplicado. Assinar não basta.\"",
+        "s15_20": "CTA: \"Seus POPs têm evidência de aplicação? Muito importante isso.\"",
+        "trilha": "Drama / revelação",
+        "cta_tela": "📄 Revisão de POPs: link na bio"
+      }
+    },
+    {
+      "num": 25,
+      "tier": "A",
+      "autor": "C",
+      "pilar": "atracao",
+      "tema": "POPs",
+      "hook": "Você sabe o que o fiscal procura PRIMEIRO no Manual de Boas Práticas?",
+      "sub": "copia e cola não engana",
+      "cena": "Fiscal folheando manual + farmacêutico nervoso ao lado, mordendo labio",
+      "slides": {
+        "t2": "Manual genérico copiado é uma armadilha",
+        "i2": [
+          "Fiscal já viu mil manuais iguais",
+          "Ele procura DETALHE específico da sua drogaria",
+          "Genérico levanta suspeita imediata",
+          "É o documento mais 'falsificado' das drogarias"
+        ],
+        "t3": "Os 4 detalhes que o fiscal procura no Manual",
+        "l3": [
+          "Endereço e CNPJ corretos no cabeçalho",
+          "Nome do RT atual + CRF vigente",
+          "Layout da drogaria descrito (medidas + ambientes)",
+          "POPs específicos referenciados (não só lista genérica)"
+        ],
+        "t4": "O que entrega manual copiado",
+        "it4": [
+          "🚨 Dados desatualizados (RT antigo, endereço errado)",
+          "💸 Autuação por documentação irregular",
+          "✅ Manual Farma Fácil é feito sob medida"
+        ],
+        "t5": "Seu Manual descreve a SUA drogaria de verdade?",
+        "ck": [
+          "Endereço/CNPJ corretos",
+          "RT atual identificado",
+          "Layout descrito com medidas",
+          "POPs específicos referenciados",
+          "Última revisão recente"
+        ],
+        "cta": "Manual de Boas Práticas customizado: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 26,
+      "tier": "B",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Documentos",
+      "hook": "Você sabe qual DOCUMENTO VENCIDO pode gerar problema com a vigilância?",
+      "sub": "tem mais de 1",
+      "cena": "Pasta com varios documentos com VENCIDO em vermelho + farmacêutico chocado",
+      "slides": {
+        "t2": "Não é só Licença que vence — outros documentos também",
+        "i2": [
+          "Tem 6 documentos com data de validade na drogaria",
+          "A maioria das drogarias controla só 2-3",
+          "Os outros vencem em silêncio",
+          "Fiscal pergunta TODOS — em ordem"
+        ],
+        "t3": "Os 4 documentos esquecidos que mais vencem",
+        "l3": [
+          "Certificado de calibração da geladeira (anual)",
+          "Atestado de saúde ocupacional dos funcionários (anual)",
+          "Treinamentos de boas práticas (vencimento varia)",
+          "Certificado de manutenção preventiva (extintor, ar-condicionado)"
+        ],
+        "t4": "Quanto cada vencimento custa",
+        "it4": [
+          "🚨 Notificação imediata por documento",
+          "💸 R$ 1.500 a R$ 8.000 por item vencido",
+          "✅ Painel de vencimentos Farma Fácil = zero atraso"
+        ],
+        "t5": "Quantos desses 4 estão vencidos hoje?",
+        "ck": [
+          "Calibração da geladeira em dia",
+          "ASOs dos funcionários atualizados",
+          "Treinamentos vigentes",
+          "Manutenções preventivas registradas",
+          "Painel de vencimentos ativo"
+        ],
+        "cta": "Mapeamento completo dos vencimentos: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 27,
+      "tier": "A",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Licença",
+      "hook": "Você sabe se sua LICENÇA SANITÁRIA está te protegendo de verdade?",
+      "sub": "ter não é proteger",
+      "cena": "Licença emoldurada na parede + fiscal apontando defeito + farmacêutico desconcertado",
+      "slides": {
+        "t2": "Ter licença não significa estar protegido",
+        "i2": [
+          "Licença é a porta de entrada — não a blindagem",
+          "Tem licença + irregular = risco maior, não menor",
+          "Fiscal compara licença com situação real",
+          "Discrepância vira processo administrativo"
+        ],
+        "t3": "Os 4 itens que a Licença EXIGE e ninguém checa",
+        "l3": [
+          "Atividade econômica licenciada bate com o que vende",
+          "Layout aprovado bate com o atual (sem reforma 'pirata')",
+          "Equipamentos declarados ainda existem",
+          "Horário de funcionamento conforme licença"
+        ],
+        "t4": "Por que licença pode VIRAR contra você",
+        "it4": [
+          "🚨 Discrepância licença vs realidade = fraude",
+          "💸 Multa + suspensão da Licença Sanitária",
+          "✅ Conferência Farma Fácil garante alinhamento total"
+        ],
+        "t5": "Sua drogaria opera 100% conforme a licença?",
+        "ck": [
+          "Atividades batendo com a licença",
+          "Layout fiel ao aprovado",
+          "Equipamentos declarados existentes",
+          "Horário conforme licença",
+          "Sem reformas não comunicadas"
+        ],
+        "cta": "Auditoria de licença vs realidade: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 28,
+      "tier": "S",
+      "autor": "C",
+      "pilar": "atracao",
+      "tema": "AFE",
+      "hook": "Você sabe que sua AFE pode ser CASSADA sem você perceber?",
+      "sub": "alteração contratual não comunicada",
+      "cena": "Farmacêutico segurando AFE rasgada + fiscal apontando placa de drogaria interditada",
+      "slides": {
+        "t2": "AFE não vence — mas pode ser cassada",
+        "i2": [
+          "AFE da ANVISA não tem data de validade",
+          "Mas alteração não comunicada = AFE inválida",
+          "Vigilância cruza dados com Receita Federal",
+          "Quando descobre, sua drogaria opera irregular"
+        ],
+        "t3": "Os 4 fatos que TODA drogaria deve atualizar na AFE",
+        "l3": [
+          "Mudança de razão social ou nome fantasia",
+          "Troca de responsável legal ou responsável técnico",
+          "Mudança de endereço (mesmo que do mesmo bairro)",
+          "Ampliação de atividades (controlados, manipulação, serviços)"
+        ],
+        "t4": "O que acontece se você não comunicar a ANVISA",
+        "it4": [
+          "🚨 AFE considerada inválida pela vigilância",
+          "💸 Multa + suspensão das atividades sob a AFE",
+          "✅ Atualização Farma Fácil: até 30 dias na ANVISA"
+        ],
+        "t5": "Houve alguma alteração na sua drogaria nos últimos 12 meses?",
+        "ck": [
+          "Razão social atual = AFE",
+          "RT atual cadastrado na AFE",
+          "Endereço da AFE bate com o real",
+          "Atividades licenciadas batem com as exercidas",
+          "Atualizações comunicadas em até 30 dias"
+        ],
+        "cta": "Atualização da AFE depois de alteração contratual: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "18s",
+        "s0_3": "Karine: \"Sua AFE pode ser CASSADA sem você perceber. Isso acontece mais do que você imagina.\"",
+        "s3_8": "Corte: \"Mudou de sócio? Mudou de endereço? Mudou de razão social? A AFE precisa ser atualizada.\"",
+        "s8_15": "Karine: \"AFE desatualizada funciona igual a AFE cassada para o fiscal. As consequências são as mesmas.\"",
+        "s15_18": "CTA: \"Quando foi a última vez que sua AFE foi verificada?\"",
+        "trilha": "Alerta / surpresa",
+        "cta_tela": "📋 Verificação de AFE: link na bio"
+      }
+    },
+    {
+      "num": 29,
+      "tier": "A",
+      "autor": "C",
+      "pilar": "atracao",
+      "tema": "Licença",
+      "hook": "Você sabe que sua Licença Sanitária pode estar VENCIDA agora mesmo?",
+      "sub": "vigilância chega sem aviso",
+      "cena": "Calendário marcado em vermelho + farmacêutico desesperado segurando documento",
+      "slides": {
+        "t2": "Licença vencida é como dirigir sem CNH",
+        "i2": [
+          "Você continua funcionando — até ser pego",
+          "É o item número 1 das visitas surpresa",
+          "Vence em silêncio, sem aviso",
+          "Renovar dá trabalho — operar com vencida dá multa pesada"
+        ],
+        "t3": "Os 4 sinais de que sua licença pode estar vencendo",
+        "l3": [
+          "Última renovação foi há mais de 11 meses",
+          "Endereço da licença não bate mais com o atual",
+          "Razão social mudou e você não comunicou",
+          "Não recebeu lembrete da prefeitura nesta janela"
+        ],
+        "t4": "O que a vigilância faz com licença vencida",
+        "it4": [
+          "🚨 Interdição imediata até regularização",
+          "💸 Multa + retroativo de funcionamento irregular",
+          "✅ Renovação programada Farma Fácil = sempre vigente"
+        ],
+        "t5": "Quando vence a sua Licença Sanitária?",
+        "ck": [
+          "Renovação no prazo correto",
+          "Endereço atual conferindo",
+          "Razão social atualizada",
+          "Pasta de renovação organizada",
+          "Lembrete 90 dias antes ativo"
+        ],
+        "cta": "Renovação programada da Licença: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 30,
+      "tier": "B",
+      "autor": "C",
+      "pilar": "atracao",
+      "tema": "AFE",
+      "hook": "Você sabe quanto tempo leva pra ATUALIZAR uma AFE depois de mudar algo?",
+      "sub": "mais do que você imagina",
+      "cena": "Farmacêutico esperando ao computador + carimbo ANVISA na tela com 'pendente' há meses",
+      "slides": {
+        "t2": "Atualizar AFE não é simples — e a ANVISA não tem pressa",
+        "i2": [
+          "Cada alteração contratual exige protocolo novo na ANVISA",
+          "Sistema da ANVISA tem fila de processamento",
+          "1 documento errado reprova o pedido inteiro",
+          "Drogaria opera com AFE desatualizada por meses"
+        ],
+        "t3": "Os 4 documentos que mais bloqueiam a atualização da AFE",
+        "l3": [
+          "Comprovante de regularidade fiscal federal atualizado",
+          "Certidão negativa do CRF (sem pendências)",
+          "Comprovante de pagamento da taxa correta da alteração",
+          "Declaração assinada do RT com CRF vigente"
+        ],
+        "t4": "Por que sozinho atrasa 4-6 meses",
+        "it4": [
+          "🚨 1 erro de protocolo reprova tudo (+60 dias)",
+          "💸 Drogaria fica funcionando com AFE inválida no intervalo",
+          "✅ Atualização Farma Fácil = aprovada na 1ª tentativa em 30 dias"
+        ],
+        "t5": "Você teve alguma alteração contratual no último ano?",
+        "ck": [
+          "Mudanças contratuais identificadas",
+          "Documentos fiscais em dia",
+          "CRF do RT vigente",
+          "Taxa correta calculada",
+          "Protocolo iniciado em até 30 dias da alteração"
+        ],
+        "cta": "Atualização de AFE em 30 dias: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 31,
+      "tier": "A",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "RT",
+      "hook": "Você sabe se o seu farmacêutico SUBSTITUTO pode gerar problema na fiscalização?",
+      "sub": "muita gente esquece",
+      "cena": "Cracha de RT no balcão vazio + fiscal entrando + outra farmacêutica sem CRF visível",
+      "slides": {
+        "t2": "Substituto é o ponto cego das drogarias",
+        "i2": [
+          "Não basta ter — precisa estar registrado no CRF",
+          "Vigilância confere CRF do substituto + horário",
+          "Maioria opera com substituto 'informal'",
+          "Informal = drogaria sem RT em parte do horário"
+        ],
+        "t3": "Os 4 cuidados com farmacêutico substituto",
+        "l3": [
+          "Registro formal do substituto no CRF da empresa",
+          "Horário do substituto declarado e cumprido",
+          "Substituto com CRF ativo (sem suspensão)",
+          "Comunicação ao CRF de qualquer mudança"
+        ],
+        "t4": "O que rola quando substituto está irregular",
+        "it4": [
+          "🚨 Drogaria considerada SEM RT no período",
+          "💸 Multa diária por funcionamento sem RT",
+          "✅ Cadastro Farma Fácil cuida de toda regularização"
+        ],
+        "t5": "Seu substituto está 100% regular hoje?",
+        "ck": [
+          "Substituto registrado no CRF",
+          "Horário declarado e cumprido",
+          "CRF ativo sem pendência",
+          "Comunicações ao CRF em dia",
+          "Escala visível no balcão"
+        ],
+        "cta": "Regularização do RT substituto: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 32,
+      "tier": "A",
+      "autor": "C",
+      "pilar": "atracao",
+      "tema": "RT",
+      "hook": "Você sabe quanto custa cada DIA sem responsável técnico na sua drogaria?",
+      "sub": "vigilância já sabe",
+      "cena": "Farmacêutica chocada olhando relogio + fiscal entrando pela porta",
+      "slides": {
+        "t2": "Cada dia sem RT custa mais do que você pensa",
+        "i2": [
+          "Não é só multa — é receita perdida",
+          "Drogaria sem RT não pode dispensar controlados",
+          "Vigilância detecta pelos registros do CRF",
+          "É falta gravíssima na legislação"
+        ],
+        "t3": "Os 4 prejuízos diários sem RT",
+        "l3": [
+          "Multa diária de R$ 1.500 a R$ 5.000",
+          "Não pode dispensar medicamento controlado (perde 30% da venda)",
+          "Risco de interdição preventiva pelo CRF",
+          "Suspensão automática do SNGPC após 30 dias"
+        ],
+        "t4": "Por que ausência de RT é tão crítica",
+        "it4": [
+          "🚨 Falta gravíssima na lei sanitária",
+          "💸 30 dias sem RT = facilmente R$ 50.000 de prejuízo",
+          "✅ Cobertura Farma Fácil garante RT em todos os horários"
+        ],
+        "t5": "Sua drogaria tem RT em 100% do horário aberto?",
+        "ck": [
+          "RT principal cobrindo horário base",
+          "Substituto pra férias/folgas",
+          "Escala documentada",
+          "Cadastro CRF atualizado",
+          "Sem janelas sem RT"
+        ],
+        "cta": "Cobertura completa de RT: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 33,
+      "tier": "A",
+      "autor": "C",
+      "pilar": "atracao",
+      "tema": "RT",
+      "hook": "Você sabe o que acontece quando o RT some sem comunicar o CRF?",
+      "sub": "drogaria responde",
+      "cena": "Farmacêutico de mão na cabeça olhando para cracha vazio + fiscal entrando",
+      "slides": {
+        "t2": "RT que some é dor de cabeça pra dois lados",
+        "i2": [
+          "Drogaria fica sem RT formalmente",
+          "CRF cobra explicação imediata",
+          "Sem comunicação em 30 dias = processo",
+          "É o tipo de problema que escala rápido"
+        ],
+        "t3": "Os 4 passos quando o RT some",
+        "l3": [
+          "Comunicar CRF da saída em até 24h",
+          "Substituir formalmente em até 30 dias",
+          "Manter operação só com substituto registrado",
+          "Atualizar AFE/Licença com novo RT"
+        ],
+        "t4": "O que acontece se a drogaria não comunicar",
+        "it4": [
+          "🚨 Operar sem RT registrado = falta gravíssima",
+          "💸 Multa + risco de cassação da Licença",
+          "✅ Trâmite Farma Fácil resolve em até 15 dias"
+        ],
+        "t5": "Seu RT está 100% formalmente vinculado?",
+        "ck": [
+          "RT atual registrado no CRF",
+          "Sem RT 'fantasma' no histórico",
+          "Substituições documentadas",
+          "AFE com RT atualizado",
+          "Licença com RT correto"
+        ],
+        "cta": "Substituição formal de RT em 15 dias: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 34,
+      "tier": "S",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Controlados",
+      "hook": "Você sabe o ERRO no receituário que pode gerar autuação IMEDIATA?",
+      "sub": "todo dia acontece",
+      "cena": "Fiscal segurando receita amassada + farmacêutico chocado de boca aberta",
+      "slides": {
+        "t2": "Receita controlada é zona de risco máximo",
+        "i2": [
+          "O fiscal sempre olha receituário primeiro",
+          "Erros de aceite geram autuação instantânea",
+          "Falta de campo obrigatório é considerada GRAVE",
+          "E o RT é responsável solidário"
+        ],
+        "t3": "Os 4 erros mais COMUNS no receituário",
+        "l3": [
+          "Aceitar receita sem CRM/CRO/CRMV completo",
+          "Aceitar receita rasurada ou sem assinatura",
+          "Não conferir validade da receita (30 dias)",
+          "Dispensar quantidade superior à prescrita"
+        ],
+        "t4": "Por que esses erros são autuação imediata",
+        "it4": [
+          "🚨 ANVISA classifica como infração GRAVE",
+          "💸 Multa por receita irregular + suspensão de venda",
+          "🔒 Cada erro = multa unitária"
+        ],
+        "t5": "Seu receituário está blindado?",
+        "ck": [
+          "Equipe treinada em conferência de receita",
+          "Carimbo de conferência em cada receita",
+          "Arquivo organizado por mês",
+          "Inventário mensal cruzado com SNGPC",
+          "RT validando processo periodicamente"
+        ],
+        "cta": "Treinamento de receituário Farma Fácil: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "20s",
+        "s0_3": "Karine: \"Tem um erro de receituário que gera autuação IMEDIATA. E a maioria das drogarias comete.\"",
+        "s3_8": "Corte: \"Receita sem data. Receita rasurada sem assinatura. Retenção obrigatória não feita.\"",
+        "s8_15": "Karine: \"Não é burocracia. É lei. E o fiscal tem que autuar quando encontra.\"",
+        "s15_20": "CTA: \"Vai checar seus últimos 10 receituários AGORA. Vai lá.\"",
+        "trilha": "Urgência / alerta",
+        "cta_tela": "📋 Checklist receituário: link na bio"
+      }
+    },
+    {
+      "num": 35,
+      "tier": "A",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Controlados",
+      "hook": "Você sabe o que acontece se o BALANÇO de controlados estiver errado?",
+      "sub": "missing virou multa",
+      "cena": "Planilha com diferença em vermelho + farmacêutico aterrorizado contando comprimidos",
+      "slides": {
+        "t2": "Balanço de controlados não admite 'mais ou menos'",
+        "i2": [
+          "Diferença de 1 unidade abre processo",
+          "Sistema da ANVISA cruza tudo automaticamente",
+          "Não tem desculpa de erro humano aceita",
+          "É o item que mais gera CPI nas drogarias"
+        ],
+        "t3": "Os 4 erros que arruinam o balanço",
+        "l3": [
+          "Saída anotada antes da entrega real ao paciente",
+          "Quebra/extravio sem registro formal",
+          "Fracionamento sem ajuste de saldo",
+          "Devolução de paciente não lançada de volta"
+        ],
+        "t4": "Por que balanço errado vira multa imediata",
+        "it4": [
+          "🚨 ANVISA presume desvio de medicamento controlado",
+          "💸 Multa de R$ 10.000 a R$ 50.000 + investigação",
+          "✅ Conciliação semanal Farma Fácil = balanço sempre certo"
+        ],
+        "t5": "Quando você fechou seu último balanço?",
+        "ck": [
+          "Conciliação semanal feita",
+          "Quebras/extravios formalizados",
+          "Fracionamentos com ajuste de saldo",
+          "Devoluções lançadas",
+          "Balanço fechado com 0 divergência"
+        ],
+        "cta": "Conciliação semanal de controlados: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 36,
+      "tier": "A",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Controlados",
+      "hook": "Você sabe quantas drogarias são autuadas por erros SIMPLES no controle de medicamentos?",
+      "sub": "8 em cada 10",
+      "cena": "Grafico subindo + farmacêutico chocado segurando notificação",
+      "slides": {
+        "t2": "Não são erros graves — são erros bobos repetidos",
+        "i2": [
+          "Pequenos hábitos viram problema gigante",
+          "8 em cada 10 autuações começam aqui",
+          "É invisível pro dono, óbvio pro fiscal",
+          "Resolve em 1 reunião de equipe"
+        ],
+        "t3": "Os 4 erros mais simples que mais autuam",
+        "l3": [
+          "Receita controlada sem carimbo do RT",
+          "Caixa de controlado destrancada na ausência do RT",
+          "Fracionamento sem registro no SNGPC",
+          "Saída de controlado sem dados completos do paciente"
+        ],
+        "t4": "Por que erros simples viram multa",
+        "it4": [
+          "🚨 Cada erro vale autuação separada",
+          "💸 Soma fácil passa R$ 20.000",
+          "✅ Treinamento de equipe Farma Fácil corrige em 1 dia"
+        ],
+        "t5": "Sua equipe comete algum desses 4 hoje?",
+        "ck": [
+          "Receitas com carimbo do RT",
+          "Caixa de controlado sempre trancada",
+          "Fracionamento com registro",
+          "Dados de paciente completos",
+          "Equipe treinada em controlados"
+        ],
+        "cta": "Treinamento equipe em controlados: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 37,
+      "tier": "A",
+      "autor": "C",
+      "pilar": "atracao",
+      "tema": "Controlados",
+      "hook": "Você sabe o que a vigilância faz com receita controlada mal arquivada?",
+      "sub": "multa por receita",
+      "cena": "Fiscal mostrando receita amassada + farmacêutico de mão na cabeça",
+      "slides": {
+        "t2": "Receita arquivada errado é como nota fiscal sumida",
+        "i2": [
+          "Vigilância pede receita aleatória pra conferir",
+          "Você tem 5 minutos pra achar",
+          "Não achou? Presume-se que não existe",
+          "Cada receita não localizada = autuação"
+        ],
+        "t3": "Os 4 cuidados com arquivo de receitas",
+        "l3": [
+          "Pasta separada por mês + tipo (B1, B2, A2)",
+          "Identificação clara: paciente + data + medicamento",
+          "Local seco, fechado e seguro (não no balcão)",
+          "Tempo de guarda: 5 anos no mínimo"
+        ],
+        "t4": "O que rola quando você não acha a receita",
+        "it4": [
+          "🚨 Presume-se venda irregular do controlado",
+          "💸 Multa por receita ausente (R$ 3.000 a R$ 8.000 cada)",
+          "✅ Sistema de arquivo Farma Fácil = sempre encontra"
+        ],
+        "t5": "Você acharia uma receita de janeiro em 5 minutos?",
+        "ck": [
+          "Pastas mensais organizadas",
+          "Tipos separados (B1/B2/A2)",
+          "Identificação visível",
+          "Local fechado e seguro",
+          "Guarda mínima de 5 anos"
+        ],
+        "cta": "Sistema de arquivo de receitas: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 38,
+      "tier": "S",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Medicamentos",
+      "hook": "Você sabe o que o fiscal faz quando encontra medicamento VENCIDO na drogaria?",
+      "sub": "interdição na hora",
+      "cena": "Fiscal segurando caixa de medicamento vencido + farmacêutico de mão na boca",
+      "slides": {
+        "t2": "Medicamento vencido = irregularidade grave",
+        "i2": [
+          "É uma das infrações que mais geram multa",
+          "Fiscal lacra o medicamento na hora",
+          "Pode pedir registro de descarte com PGRSS",
+          "E vai investigar há quanto tempo está vencido"
+        ],
+        "t3": "Os 4 lugares onde mais aparece medicamento vencido",
+        "l3": [
+          "Prateleira do balcão (pouco rotativo)",
+          "Geladeira de termolábil (controle visual falho)",
+          "Estoque de fundo (sem rotatividade FIFO)",
+          "Vitrine (esquecido em destaque)"
+        ],
+        "t4": "O que acontece quando o fiscal encontra",
+        "it4": [
+          "🚨 Auto de infração na hora",
+          "💸 Multa + interdição do lote inteiro",
+          "🔒 Investigação de práticas de controle de validade"
+        ],
+        "t5": "Sua drogaria está livre de vencidos?",
+        "ck": [
+          "Controle de validade FIFO implementado",
+          "Conferência semanal de prateleira",
+          "Conferência diária de termolábil",
+          "Estoque rotativo com sistema",
+          "PGRSS para descarte de vencidos"
+        ],
+        "cta": "IMPLEMENTAÇÃO FIFO + PGRSS: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "18s",
+        "s0_3": "Karine: \"O fiscal encontrou medicamento vencido na sua drogaria. O que acontece em seguida?\"",
+        "s3_8": "Corte: \"Auto de infração imediato. Interdição do lote. Possível interdição total.\"",
+        "s8_15": "Karine: \"Não tem como argumentar. Validade vencida é irregularidade objetiva.\"",
+        "s15_18": "CTA: \"Quando foi sua última verificação de validade no estoque?\"",
+        "trilha": "Drama / alerta",
+        "cta_tela": "⚠️ Checklist de validades: link na bio"
+      }
+    },
+    {
+      "num": 39,
+      "tier": "A",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Medicamentos",
+      "hook": "Você sabe se sua drogaria está vendendo medicamento de forma IRREGULAR sem perceber?",
+      "sub": "5 erros invisíveis",
+      "cena": "Lupa sobre prateleira + caixas com sinais de alerta + farmacêutico chocado ao fundo",
+      "slides": {
+        "t2": "Pequenos erros viram autuação grande",
+        "i2": [
+          "São erros que você não percebe na rotina",
+          "Cliente nem nota — fiscal sim",
+          "Cada um é falta separada",
+          "Soma deles vira processo"
+        ],
+        "t3": "Os 5 erros invisíveis na venda de medicamentos",
+        "l3": [
+          "Vender controlado sem reter receita original",
+          "Dispensar antibiótico sem reter receita branca",
+          "Vender medicamento vencido por 1 dia (sim, 1 dia)",
+          "Fracionar caixa não autorizada para fracionamento"
+        ],
+        "t4": "Por que esses erros são tão perigosos",
+        "it4": [
+          "🚨 Cada um é falta gravíssima na ANVISA",
+          "💸 Soma facilmente passa R$ 30.000",
+          "✅ Treinamento Farma Fácil elimina os 5 em 1 dia"
+        ],
+        "t5": "Sua drogaria tem certeza que evita os 5?",
+        "ck": [
+          "Controlados com receita retida",
+          "Antibióticos com receita branca",
+          "Vencidos segregados (zero venda)",
+          "Fracionamento só do autorizado",
+          "Equipe treinada nos 5 itens"
+        ],
+        "cta": "Diagnóstico dos 5 erros invisíveis: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 40,
+      "tier": "A",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Medicamentos",
+      "hook": "Você sabe o que o fiscal faz quando encontra medicamentos sem RASTREABILIDADE?",
+      "sub": "lote some, multa surge",
+      "cena": "Fiscal apontando código de barras + farmacêutico aterrorizado folheando livro de entrada",
+      "slides": {
+        "t2": "Sem rastreabilidade, medicamento vira contrabando",
+        "i2": [
+          "Lote precisa estar ligado a NF de entrada",
+          "Fiscal escolhe um lote aleatório no estoque",
+          "Não rastreou? Origem desconhecida",
+          "Origem desconhecida = produto retido + multa"
+        ],
+        "t3": "Os 4 cuidados de rastreabilidade",
+        "l3": [
+          "NF de entrada com lote/validade no sistema",
+          "Conferência de lote antes do estoque (separado por lote)",
+          "Saída registrada por lote (cliente/paciente)",
+          "Recolhimento de lote: protocolo escrito"
+        ],
+        "t4": "O que rola sem rastreabilidade",
+        "it4": [
+          "🚨 Medicamento sem origem é apreendido na hora",
+          "💸 Multa + perda total do lote suspeito",
+          "✅ Sistema de rastreabilidade Farma Fácil = entrada por lote"
+        ],
+        "t5": "Você consegue dizer de onde veio cada lote?",
+        "ck": [
+          "NFs com lote/validade lançados",
+          "Estoque organizado por lote",
+          "Saídas registradas por lote",
+          "Protocolo de recolhimento",
+          "Conferência mensal feita"
+        ],
+        "cta": "Implantação de rastreabilidade: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 41,
+      "tier": "S",
+      "autor": "C",
+      "pilar": "atracao",
+      "tema": "Medicamentos",
+      "hook": "Você sabe que medicamento sem registro pode interditar sua drogaria HOJE?",
+      "sub": "fiscal não negocia",
+      "cena": "Fiscal apontando para prateleira + farmacêutico desesperado tirando caixa",
+      "slides": {
+        "t2": "Medicamento sem registro = interdição imediata",
+        "i2": [
+          "É uma das infrações mais graves da legislação",
+          "Fiscal NÃO negocia, não dá prazo",
+          "Lacra a drogaria E o medicamento na hora",
+          "Investiga toda a cadeia de fornecimento"
+        ],
+        "t3": "Os 4 tipos de medicamento sem registro mais COMUNS",
+        "l3": [
+          "Importado sem registro ANVISA",
+          "Manipulado sem origem comprovada",
+          "Amostra grátis fora do uso permitido",
+          "Genérico vencido revalidado por terceiro"
+        ],
+        "t4": "Por que isso vira interdição",
+        "it4": [
+          "🚨 Risco à saúde pública = nível MÁXIMO de gravidade",
+          "💸 Multa + processo civil + criminal",
+          "🔒 RT responde junto com proprietário"
+        ],
+        "t5": "Sua drogaria está livre desses riscos?",
+        "ck": [
+          "Todo medicamento com registro ANVISA verificado",
+          "Notas fiscais arquivadas com lote/validade",
+          "Fornecedores cadastrados e regulares",
+          "Manipulados só de farmácias com AFE",
+          "Sem amostra grátis vendida"
+        ],
+        "cta": "Auditoria de origem dos medicamentos: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "20s",
+        "s0_3": "Karine: \"Medicamento sem registro na ANVISA pode interditar sua drogaria HOJE.\"",
+        "s3_8": "Corte: \"Produto importado irregular. Suplemento sem registro. Genérico de marca suspeita.\"",
+        "s8_15": "Karine: \"O fiscal confere o registro de qualquer produto que tiver no balcão. Um produto errado já basta.\"",
+        "s15_20": "CTA: \"Você sabe verificar o registro de um produto? Me chama que te ensino.\"",
+        "trilha": "Alerta / educação",
+        "cta_tela": "🔍 Verificação de registros: link na bio"
+      }
+    },
+    {
+      "num": 42,
+      "tier": "A",
+      "autor": "C",
+      "pilar": "atracao",
+      "tema": "Medicamentos",
+      "hook": "Você sabe que rotulagem errada de medicamento pode FECHAR sua loja?",
+      "sub": "fiscal autua na hora",
+      "cena": "Fiscal apontando rotulo + farmacêutico chocado segurando frasco",
+      "slides": {
+        "t2": "Rótulo é a identidade legal do medicamento",
+        "i2": [
+          "Falta 1 dado obrigatório = produto irregular",
+          "Fracionado mal rotulado é o erro #1",
+          "Manipulado e fracionado têm regras diferentes",
+          "É a fiscalização mais rápida do fiscal"
+        ],
+        "t3": "Os 4 dados OBRIGATÓRIOS no rótulo de fracionado",
+        "l3": [
+          "Nome do medicamento + concentração + forma",
+          "Lote e validade originais (não da fração)",
+          "Data do fracionamento + nome do farmacêutico",
+          "Identificação do paciente + número da receita"
+        ],
+        "t4": "Por que rótulo errado fecha drogaria",
+        "it4": [
+          "🚨 Medicamento mal rotulado = produto irregular",
+          "💸 Multa + apreensão + processo administrativo",
+          "✅ Modelos de rótulo Farma Fácil cumprem 100% da norma"
+        ],
+        "t5": "Seu fracionamento tem TODOS os 4 dados?",
+        "ck": [
+          "Nome + concentração + forma",
+          "Lote e validade originais",
+          "Data + farmacêutico",
+          "Paciente + receita",
+          "Modelo padrão usado"
+        ],
+        "cta": "Modelos de rotulagem regularizados: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 43,
+      "tier": "B",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Temperatura",
+      "hook": "Você sabe se sua AFERIÇÃO de temperatura está sendo feita da forma correta?",
+      "sub": "errar parece fácil",
+      "cena": "Termometro mal posicionado + fiscal anotando + farmacêutico de mão na boca",
+      "slides": {
+        "t2": "Aferir temperatura errado é não aferir",
+        "i2": [
+          "Não basta ter termômetro — precisa de método",
+          "Maioria afere 1x por dia (errado)",
+          "Norma exige 2x: manhã e tarde",
+          "Sem registro escrito não conta"
+        ],
+        "t3": "Os 4 cuidados na aferição de temperatura",
+        "l3": [
+          "Termômetro calibrado anualmente (com certificado)",
+          "Aferição 2x ao dia: 8h e 14h (mínimo)",
+          "Registro em planilha + assinatura do responsável",
+          "Faixa correta: 2°C a 8°C (geladeira) / 15°C a 30°C (ambiente)"
+        ],
+        "t4": "Por que aferição errada vira multa",
+        "it4": [
+          "🚨 Termolábil exposto a temperatura errada perde eficácia",
+          "💸 Multa por desvio de Boas Práticas (R$ 5.000+)",
+          "✅ Sistema de aferição Farma Fácil = automático e auditável"
+        ],
+        "t5": "Sua aferição está 100% correta hoje?",
+        "ck": [
+          "Termômetro calibrado anualmente",
+          "Aferição 2x ao dia",
+          "Planilha assinada",
+          "Faixas de temperatura corretas",
+          "Histórico de 12 meses arquivado"
+        ],
+        "cta": "Sistema de controle de temperatura: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 44,
+      "tier": "B",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Temperatura",
+      "hook": "Você sabe por que o fiscal pede comprovação de CALIBRAÇÃO dos equipamentos?",
+      "sub": "sem prova, multa",
+      "cena": "Fiscal segurando termometro + farmacêutico desesperado procurando certificado",
+      "slides": {
+        "t2": "Sem prova de calibração, nada vale",
+        "i2": [
+          "Termômetro pode estar errado e você não sabe",
+          "Calibração comprova que a leitura é confiável",
+          "Sem certificado, prova é zero",
+          "Fiscal não aceita 'eu calibrei semana passada'"
+        ],
+        "t3": "Os 4 equipamentos que precisam de calibração",
+        "l3": [
+          "Termômetro da geladeira (anual)",
+          "Termo-higrômetro do ambiente (anual)",
+          "Balança (se houver — anual)",
+          "Equipamentos de manipulação (semestral)"
+        ],
+        "t4": "O que rola sem certificado de calibração",
+        "it4": [
+          "🚨 Toda leitura é considerada não confiável",
+          "💸 Multa por equipamento não validado",
+          "✅ Calendário Farma Fácil agenda calibrações em série"
+        ],
+        "t5": "Seus 4 equipamentos têm certificado vigente?",
+        "ck": [
+          "Termômetro geladeira calibrado",
+          "Termo-higrômetro calibrado",
+          "Balança calibrada (se houver)",
+          "Equipamentos de manipulação",
+          "Certificados arquivados"
+        ],
+        "cta": "Calendário de calibrações em série: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 45,
+      "tier": "A",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Temperatura",
+      "hook": "Você sabe qual erro no ARMAZENAMENTO pode gerar notificação imediata?",
+      "sub": "1 caixa fora do lugar",
+      "cena": "Fiscal apontando prateleira + caixa visivelmente fora + farmacêutico chocado",
+      "slides": {
+        "t2": "Armazenamento errado destrói medicamento e drogaria",
+        "i2": [
+          "Detalhe de organização vira autuação",
+          "Estoque mal feito = vencido + perda + multa",
+          "Termolábil é o item de maior risco",
+          "Armazenamento por tipo é norma, não escolha"
+        ],
+        "t3": "Os 4 erros de armazenamento que mais geram multa",
+        "l3": [
+          "Termolábil junto com não-termolábil",
+          "Vencido misturado com vigente (sem segregação)",
+          "Controlado em armário não trancado/sem RT",
+          "Empilhamento acima do permitido (esmaga embalagem)"
+        ],
+        "t4": "Por que armazenamento errado é gravíssimo",
+        "it4": [
+          "🚨 Comprometimento da integridade do medicamento",
+          "💸 Multa + perda total do lote afetado",
+          "✅ Layout de armazenamento Farma Fácil = padrão ANVISA"
+        ],
+        "t5": "Seu estoque está organizado em 4 zonas?",
+        "ck": [
+          "Termolábil em geladeira separada",
+          "Vencidos em armário lacrado",
+          "Controlados em cofre/armário com chave",
+          "Empilhamento dentro do limite",
+          "Mapa do estoque atualizado"
+        ],
+        "cta": "Reorganização do estoque: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 46,
+      "tier": "A",
+      "autor": "C",
+      "pilar": "atracao",
+      "tema": "Temperatura",
+      "hook": "Você sabe que termolábil mal armazenado é MULTA + INTERDIÇÃO?",
+      "sub": "fiscal mede a temperatura",
+      "cena": "Fiscal com termometro na geladeira + farmacêutico chocado vendo temperatura alta",
+      "slides": {
+        "t2": "Termolábil exige cadeia de frio sem falha",
+        "i2": [
+          "Insulina, vacina, hormônios — qualquer falha invalida",
+          "Geladeira doméstica não atende norma",
+          "Falta de luz por 2h pode arruinar tudo",
+          "Fiscal mede temperatura ali na hora"
+        ],
+        "t3": "Os 4 requisitos OBRIGATÓRIOS pra termolábil",
+        "l3": [
+          "Geladeira específica (não doméstica) com termômetro acoplado",
+          "No-break ou plano de contingência pra falta de luz",
+          "Mapeamento térmico anual (3 pontos)",
+          "Lista de medicamentos termolábeis atualizada"
+        ],
+        "t4": "O que rola se a temperatura sair da faixa",
+        "it4": [
+          "🚨 Lote inteiro tem que ser descartado",
+          "💸 Multa + custo do lote (R$ 10.000+ em insulina)",
+          "✅ Cadeia de frio Farma Fácil = monitoramento automático"
+        ],
+        "t5": "Seu termolábil tem cadeia de frio comprovada?",
+        "ck": [
+          "Geladeira específica (não doméstica)",
+          "Termômetro acoplado registrando",
+          "Plano contingência pra falta de luz",
+          "Mapeamento térmico anual",
+          "Lista de termolábeis ativa"
+        ],
+        "cta": "Implantação de cadeia de frio: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 47,
+      "tier": "B",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "PGRSS",
+      "hook": "Você sabe qual erro no DESCARTE de resíduos pode virar dor de cabeça na fiscalização?",
+      "sub": "saco trocado vira multa",
+      "cena": "Fiscal apontando lixeira errada + farmacêutico de mão na cabeça",
+      "slides": {
+        "t2": "Descartar errado é cometer crime ambiental",
+        "i2": [
+          "Resíduo de saúde tem 4 categorias diferentes",
+          "Misturar é multa direta",
+          "Empresa coletora errada também é problema seu",
+          "É o item que mais gera fiscalização cruzada (Vigilância + Ambiental)"
+        ],
+        "t3": "Os 4 grupos de resíduo que NÃO podem misturar",
+        "l3": [
+          "Grupo A (biológico): saco branco leitoso",
+          "Grupo B (químico): caixa rígida específica",
+          "Grupo D (comum): saco preto",
+          "Grupo E (perfurocortante): caixa amarela rígida"
+        ],
+        "t4": "O que rola misturando lixo",
+        "it4": [
+          "🚨 Multa Vigilância + Multa Ambiental (cumulativas)",
+          "💸 R$ 5.000 a R$ 50.000 por categoria misturada",
+          "✅ Plano PGRSS Farma Fácil organiza os 4 grupos"
+        ],
+        "t5": "Sua drogaria descarta nas 4 categorias certas?",
+        "ck": [
+          "Saco branco pra biológico",
+          "Caixa rígida pra químico",
+          "Saco preto pra comum",
+          "Caixa amarela pra perfurocortante",
+          "Empresa coletora licenciada"
+        ],
+        "cta": "PGRSS implementado e funcionando: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 48,
+      "tier": "A",
+      "autor": "C",
+      "pilar": "atracao",
+      "tema": "PGRSS",
+      "hook": "Você sabe por que 70% das drogarias tomam multa por PGRSS?",
+      "sub": "ninguém te avisa",
+      "cena": "Lixeira de medicamentos + farmacêutico assustado segurando notificação",
+      "slides": {
+        "t2": "70% acham que têm PGRSS — só 30% realmente têm",
+        "i2": [
+          "PGRSS no papel não basta — precisa ser executado",
+          "Vigilância pede comprovante de coleta mensal",
+          "Sem comprovante = ninguém recolhe = multa",
+          "É o problema que ninguém te avisa"
+        ],
+        "t3": "Os 4 elementos de PGRSS REAL (não só no papel)",
+        "l3": [
+          "Documento PGRSS atualizado e assinado",
+          "Empresa coletora licenciada com contrato",
+          "Manifestos mensais de coleta arquivados",
+          "Treinamento da equipe em descarte (anual)"
+        ],
+        "t4": "Por que PGRSS é o item mais multado",
+        "it4": [
+          "🚨 Tem documento mas sem comprovante de coleta",
+          "💸 Multa + retroativo (até 3 anos sem coleta = R$ 30.000)",
+          "✅ Pacote PGRSS Farma Fácil = 4 elementos completos"
+        ],
+        "t5": "Seu PGRSS é REAL ou só no papel?",
+        "ck": [
+          "Documento PGRSS atualizado",
+          "Empresa coletora com contrato",
+          "Manifestos mensais arquivados",
+          "Equipe treinada em descarte",
+          "Coleta acontecendo de fato"
+        ],
+        "cta": "PGRSS completo e funcionando: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 49,
+      "tier": "A",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Equipe",
+      "hook": "Você sabe se sua EQUIPE está cometendo erros que podem gerar autuação?",
+      "sub": "você não vê tudo",
+      "cena": "Balconista no atendimento (sem ver) + farmacêutico aterrorizado vendo de longe + fiscal entrando",
+      "slides": {
+        "t2": "Você não vê tudo que sua equipe faz",
+        "i2": [
+          "Erros de equipe são erros da drogaria (legalmente)",
+          "Fiscal entrevista funcionário e cruza com POPs",
+          "Pequenos atalhos viram autuação grande",
+          "É o ponto cego de 90% das drogarias"
+        ],
+        "t3": "Os 4 erros silenciosos da equipe",
+        "l3": [
+          "Vender controlado para 'amigo' sem receita",
+          "Dispensar medicamento sem orientação obrigatória",
+          "Atender sem o RT presente (ou sem substituto)",
+          "Aceitar receita rasurada/incompleta"
+        ],
+        "t4": "Quanto cada erro custa",
+        "it4": [
+          "🚨 Falta gravíssima na lei farmacêutica",
+          "💸 Multa por funcionário envolvido + responsabilidade do dono",
+          "✅ Treinamento Farma Fácil elimina os 4 em 1 dia"
+        ],
+        "t5": "Sua equipe sabe os 4 erros pra evitar?",
+        "ck": [
+          "Equipe treinada em controlados",
+          "Orientação obrigatória cumprida",
+          "RT/substituto presente sempre",
+          "Receitas conferidas (sem rasura)",
+          "POPs revisados com equipe"
+        ],
+        "cta": "Treinamento completo da equipe: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 50,
+      "tier": "A",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Equipe",
+      "hook": "Você sabe se o BALCONISTA da sua drogaria está fazendo algo que não poderia?",
+      "sub": "todo dia, na sua frente",
+      "cena": "Balconista entregando algo + farmacêutico chocado vendo + fiscal observando da porta",
+      "slides": {
+        "t2": "Balconista atendendo errado é multa do dono",
+        "i2": [
+          "Lei é clara: orientação só pelo farmacêutico",
+          "Balconista pode pegar/cobrar — não pode prescrever",
+          "É o erro mais comum em drogaria de bairro",
+          "Cliente nem nota, fiscal pega na hora"
+        ],
+        "t3": "Os 4 atos que SÓ o farmacêutico pode fazer",
+        "l3": [
+          "Orientar uso, dose e interação medicamentosa",
+          "Aplicar medicamento injetável",
+          "Aferir pressão e glicemia (serviço farmacêutico)",
+          "Dispensar medicamento controlado"
+        ],
+        "t4": "O que rola se balconista fizer alguma das 4",
+        "it4": [
+          "🚨 Exercício ilegal da profissão farmacêutica",
+          "💸 Multa + cassação do CRF do RT (responde por omissão)",
+          "✅ POP Farma Fácil delimita papéis de balconista"
+        ],
+        "t5": "Sua equipe sabe o que SÓ farmacêutico faz?",
+        "ck": [
+          "Orientações com farmacêutico presente",
+          "Injetáveis só com farmacêutico",
+          "Aferição só por farmacêutico",
+          "Controlados só com RT",
+          "POP de papéis claro"
+        ],
+        "cta": "Definição clara de papéis: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 51,
+      "tier": "B",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Equipe",
+      "hook": "Você sabe o que pode acontecer se sua DOCUMENTAÇÃO DE TREINAMENTO estiver incompleta?",
+      "sub": "pasta vazia, multa cheia",
+      "cena": "Pasta de treinamento com folhas em branco + fiscal verificando + farmacêutico nervoso",
+      "slides": {
+        "t2": "Treinou mas não documentou: não treinou",
+        "i2": [
+          "Vigilância pede prova documentada de treinamento",
+          "Sem ata, sem assinatura, sem foto: zero validade",
+          "Maioria das drogarias treina e não registra",
+          "É o item silencioso que mais gera autuação"
+        ],
+        "t3": "Os 4 elementos do registro de treinamento válido",
+        "l3": [
+          "Lista de presença com assinatura de cada um",
+          "Conteúdo abordado (slides ou apostila)",
+          "Carga horária + data + local",
+          "Avaliação de aprendizado (questionário)"
+        ],
+        "t4": "Por que treinamento sem registro é problema",
+        "it4": [
+          "🚨 Equipe 'sem treinamento' do ponto de vista legal",
+          "💸 Multa por funcionário não treinado",
+          "✅ Pacote Farma Fácil = treina + documenta + arquiva"
+        ],
+        "t5": "Seus últimos 3 treinamentos têm os 4 elementos?",
+        "ck": [
+          "Lista de presença assinada",
+          "Conteúdo arquivado",
+          "Carga horária registrada",
+          "Avaliação aplicada",
+          "Pasta de treinamentos organizada"
+        ],
+        "cta": "Treinamento + documentação completa: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 52,
+      "tier": "C",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Estrutura",
+      "hook": "Você sabe se sua SALA de serviços farmacêuticos está realmente regular?",
+      "sub": "metro errado virou multa",
+      "cena": "Fiscal medindo sala com trena + farmacêutico nervoso ao fundo",
+      "slides": {
+        "t2": "Sala de serviços tem regras de metro e equipamento",
+        "i2": [
+          "Não pode ser improvisada no canto da loja",
+          "Norma exige medidas mínimas (2,2 m² no mínimo)",
+          "Equipamentos obrigatórios: maca, pia, lixeira específica",
+          "Sem isso = sala não pode oferecer serviço"
+        ],
+        "t3": "Os 4 requisitos da sala de serviços farmacêuticos",
+        "l3": [
+          "Área mínima 2,2 m² com privacidade visual",
+          "Lavatório de mãos com saboneteira e toalheiro de papel",
+          "Maca/cadeira de procedimento + esfigmomanômetro",
+          "Lixeira branca pra resíduo biológico (Grupo A)"
+        ],
+        "t4": "O que rola sem os requisitos",
+        "it4": [
+          "🚨 Notificação por serviço farmacêutico irregular",
+          "💸 Suspensão dos serviços + multa",
+          "✅ Adequação Farma Fácil em até 30 dias"
+        ],
+        "t5": "Sua sala atende os 4 requisitos da norma?",
+        "ck": [
+          "Área mínima 2,2 m²",
+          "Lavatório com saboneteira",
+          "Maca/cadeira + esfigmo",
+          "Lixeira biológica branca",
+          "Privacidade visual garantida"
+        ],
+        "cta": "Adequação da sala de serviços: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 53,
+      "tier": "A",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Delivery",
+      "hook": "Você sabe qual erro no DELIVERY da drogaria pode chamar atenção da vigilância?",
+      "sub": "regra que poucos sabem",
+      "cena": "Motoboy entregando sacola + fiscal observando + farmacêutico chocado lendo notificação",
+      "slides": {
+        "t2": "Delivery de medicamento tem regra que ninguém te conta",
+        "i2": [
+          "Não basta ter motoboy — tem norma",
+          "Controlado NÃO pode ir por delivery (regra)",
+          "Termolábil exige caixa térmica + termômetro",
+          "Receita tem que voltar pra drogaria"
+        ],
+        "t3": "Os 4 cuidados OBRIGATÓRIOS no delivery farmacêutico",
+        "l3": [
+          "Não entregar controlado por delivery (proibido)",
+          "Termolábil em caixa térmica com termômetro",
+          "Receita original retida no momento da entrega",
+          "Comprovante de entrega com assinatura do paciente"
+        ],
+        "t4": "O que rola se quebrar uma dessas 4",
+        "it4": [
+          "🚨 Delivery sem norma = dispensação irregular",
+          "💸 Multa + suspensão do serviço de entrega",
+          "✅ POP de delivery Farma Fácil cobre as 4 regras"
+        ],
+        "t5": "Seu delivery cumpre as 4 regras?",
+        "ck": [
+          "Controlado fora do delivery",
+          "Termolábil em caixa térmica",
+          "Receitas retidas no entregue",
+          "Comprovantes assinados arquivados",
+          "POP de delivery escrito"
+        ],
+        "cta": "POP de delivery regulamentado: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 54,
+      "tier": "S",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Escândalo",
+      "hook": "Você sabe quais SITUAÇÕES sua drogaria pode ser exposta em um escândalo?",
+      "sub": "viralizar é o pior cenário",
+      "cena": "Tela de celular com materia sobre drogaria + farmacêutico aterrorizado escondendo o rosto",
+      "slides": {
+        "t2": "Escândalo público destrói a drogaria mais rápido que multa",
+        "i2": [
+          "Reclame Aqui, redes sociais, jornal local",
+          "Uma reclamação viraliza em 24h",
+          "Cliente perdido vale 10 negativos",
+          "Sua reputação é construída em anos e perdida em 1 post"
+        ],
+        "t3": "As 4 situações que mais viram escândalo público",
+        "l3": [
+          "Vender medicamento controlado sem receita correta",
+          "Recusar atendimento ou cobrar fora do tabelado",
+          "Erro de dispensação que cause dano à saúde",
+          "Atendimento agressivo registrado em vídeo"
+        ],
+        "t4": "O custo real de um escândalo",
+        "it4": [
+          "🚨 Vigilância recebe denúncia automática + visita",
+          "💸 Receita despenca por boicote da comunidade",
+          "🔒 Reabertura sem reputação leva anos"
+        ],
+        "t5": "Sua drogaria está blindada contra escândalo?",
+        "ck": [
+          "Equipe treinada em atendimento ao cliente",
+          "Protocolo de aceitação de receita controlada",
+          "Sistema de queixas internas funcionando",
+          "Auditoria de atendimento periódica",
+          "Comunicação institucional preparada para crise"
+        ],
+        "cta": "Plano anti-escândalo Farma Fácil: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "22s",
+        "s0_3": "Karine: \"Sua drogaria pode virar notícia. Por motivos que você nunca imaginou.\"",
+        "s3_8": "Corte: \"Venda de controlado sem receita. Medicamento adulterado. Funcionário sem treinamento documentado.\"",
+        "s8_17": "Karine: \"Escândalos sanitários destroem a reputação que você levou anos construindo. Em 24 horas.\"",
+        "s17_22": "CTA: \"O que você faz hoje pra proteger sua reputação? Me conta.\"",
+        "trilha": "Drama / revelação",
+        "cta_tela": "🛡️ Proteção regulatória: link na bio"
+      }
+    },
+    {
+      "num": 55,
+      "tier": "A",
+      "autor": "K",
+      "pilar": "atracao",
+      "tema": "Custo",
+      "hook": "Você sabe o que pode fazer sua drogaria PERDER DINHEIRO em uma fiscalização?",
+      "sub": "cifras que assustam",
+      "cena": "Fiscal saindo com auto + farmacêutico segurando cabeça olhando valor de R$ 80.000",
+      "slides": {
+        "t2": "Multa não é o único custo de uma fiscalização",
+        "i2": [
+          "Multa é só a parte visível",
+          "Há custos ocultos que pesam mais",
+          "Reabilitação custa caro e demora",
+          "É um dos prejuízos mais subestimados"
+        ],
+        "t3": "Os 4 custos de uma fiscalização ruim",
+        "l3": [
+          "Multa direta (R$ 5.000 a R$ 50.000 média)",
+          "Suspensão temporária (perda de receita diária)",
+          "Honorários de advogado + custas processuais",
+          "Custo de reabilitação (refazer documentos, treinamentos)"
+        ],
+        "t4": "Quanto isso custa de verdade",
+        "it4": [
+          "🚨 Drogaria média: R$ 80.000 em 6 meses pós-fiscalização",
+          "💸 Reabilitação dura 3-12 meses",
+          "✅ Prevenção Farma Fácil custa <5% disso"
+        ],
+        "t5": "Sua drogaria aguenta R$ 80.000 de prejuízo?",
+        "ck": [
+          "Sem multas pendentes",
+          "Sem suspensões em curso",
+          "Sem processos administrativos abertos",
+          "Drogaria 100% regular",
+          "Plano preventivo ativo"
+        ],
+        "cta": "Plano preventivo Farma Fácil: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 56,
+      "tier": "S",
+      "autor": "C",
+      "pilar": "atracao",
+      "tema": "Custo",
+      "hook": "Você sabe qual erro silencioso de POP custa R$ 50 mil em multa?",
+      "sub": "ninguém revisa anualmente",
+      "cena": "Farmacêutico chocado segurando multa + fiscal apontando POP rasgado",
+      "slides": {
+        "t2": "POP que ninguém revisa custa caro",
+        "i2": [
+          "POP foi feito uma vez e nunca mais tocado",
+          "RT mudou e o POP continua com nome do antigo",
+          "Equipe nova nunca foi treinada nele",
+          "Quando o fiscal pede comprovação, ninguém sabe"
+        ],
+        "t3": "Os 4 erros silenciosos de POP mais multados",
+        "l3": [
+          "POP sem assinatura do RT atual",
+          "POP sem data de revisão anual",
+          "POP sem registro de treinamento da equipe",
+          "POP genérico copiado de outra drogaria"
+        ],
+        "t4": "Por que esses erros somam R$ 50 mil",
+        "it4": [
+          "🚨 ANVISA multa por cada POP em desconformidade",
+          "💸 Drogaria média tem 14+ POPs — multa multiplicada",
+          "✅ Revisão anual ativa custa muito menos"
+        ],
+        "t5": "Seus POPs estão protegidos?",
+        "ck": [
+          "Todos os POPs assinados pelo RT atual",
+          "Data de última revisão até 12 meses",
+          "Treinamento documentado por POP",
+          "POPs personalizados pra sua drogaria",
+          "Lista mestra atualizada e visível"
+        ],
+        "cta": "Revisão completa de POPs: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "20s",
+        "s0_3": "Karine: \"Um POP mal feito. Cinquenta mil reais de multa. Já vi isso acontecer.\"",
+        "s3_8": "Corte: \"POP genérico copiado da internet. POP sem evidência de aplicação. POP sem assinatura do RT.\"",
+        "s8_15": "Karine: \"POP é procedimento OPERACIONAL padrão. Se não tá sendo operado, não existe pra o fiscal.\"",
+        "s15_20": "CTA: \"Seus POPs são reais ou são só papel? Me diz nos comentários.\"",
+        "trilha": "Revelação / urgência",
+        "cta_tela": "📄 Auditoria de POPs: link na bio"
+      }
+    },
+    {
+      "num": 57,
+      "tier": "S",
+      "autor": "C",
+      "pilar": "autoridade",
+      "tema": "Karine",
+      "hook": "Você sabe o que a Karine viu quando entrou em uma drogaria interditada?",
+      "sub": "3 erros, 1 prejuízo",
+      "cena": "Karine seria de bracos cruzados na frente de drogaria com placa INTERDITADO",
+      "slides": {
+        "t2": "O cenário sempre se repete",
+        "i2": [
+          "Dono em desespero, equipe paralisada",
+          "Cliente vendo o lacre da rua",
+          "Histórico de avisos ignorados há meses",
+          "E sempre os mesmos 3 erros básicos"
+        ],
+        "t3": "Os 3 erros que SEMPRE estão presentes em interdição",
+        "l3": [
+          "AFE desatualizada ou Licença vencida há +6 meses",
+          "SNGPC sem transmissão há +60 dias",
+          "RT não comunicado ao CRF nas mudanças"
+        ],
+        "t4": "Por que essas drogarias chegaram nesse ponto",
+        "it4": [
+          "🚨 Acharam que 'mais um mês não dá nada'",
+          "💸 Quando perceberam, era tarde",
+          "✅ Prevenção custa centavos perto da remediação"
+        ],
+        "t5": "Sua drogaria tem algum desses 3 sinais?",
+        "ck": [
+          "AFE em conformidade conferida HOJE",
+          "Licença Sanitária vigente",
+          "SNGPC sem atraso",
+          "RT atualizado no CRF",
+          "Calendário de vencimentos visível"
+        ],
+        "cta": "Diagnóstico preventivo Karine: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "25s",
+        "s0_3": "Karine: \"Entrei numa drogaria interditada semana passada. Vou te contar o que vi.\"",
+        "s3_12": "Karine (narrativa): \"A drogaria era bonita. Organizada. O dono tinha 12 anos no negócio. Mas tinha 3 erros que ele nunca soube.\"",
+        "s12_20": "Karine: \"Mapa de temperatura chutado por anos. SNGPC com divergência não resolvida. POP do antigo responsável técnico.\"",
+        "s20_25": "CTA: \"Esses erros estão na sua drogaria agora? Me chama antes que o fiscal chegue.\"",
+        "trilha": "Narrativa / drama",
+        "cta_tela": "🔍 Diagnóstico: link na bio"
+      }
+    },
+    {
+      "num": 58,
+      "tier": "C",
+      "autor": "C",
+      "pilar": "autoridade",
+      "tema": "FarmaFacil",
+      "hook": "Você sabe quantos R$ a Farma Fácil já economizou de drogarias em multa?",
+      "sub": "número do trimestre",
+      "cena": "Karine sorrindo discreta + grafico subindo + papel de multa rasgado",
+      "slides": {
+        "t2": "Os números do trimestre falam por si",
+        "i2": [
+          "Cada cliente Farma Fácil é blindagem ativa",
+          "Calculamos quanto cada um deixou de pagar",
+          "Trimestre passado bateu recorde",
+          "Não é estimativa — é dado real"
+        ],
+        "t3": "Os 4 indicadores do último trimestre Farma Fácil",
+        "l3": [
+          "R$ 1,2 milhão economizados em multas evitadas",
+          "100% das fiscalizações dos clientes passaram limpo",
+          "Tempo médio de regularização: 22 dias",
+          "Atualizações de AFE: 100% protocoladas no prazo"
+        ],
+        "t4": "Por que esses números importam pra você",
+        "it4": [
+          "🚨 Sua drogaria pode estar fora dessa estatística",
+          "💸 Cada multa evitada = +R$ 8.000 no caixa",
+          "✅ Entrar pra Farma Fácil = entrar pros 100%"
+        ],
+        "t5": "Sua drogaria entra nesses números?",
+        "ck": [
+          "Sem multa nos últimos 12 meses",
+          "Documentos sempre vigentes",
+          "Fiscalização tranquila",
+          "AFE atualizada no prazo",
+          "Pertence a um plano preventivo"
+        ],
+        "cta": "Entre pros 100% que passam limpo: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 59,
+      "tier": "A",
+      "autor": "C",
+      "pilar": "autoridade",
+      "tema": "Karine",
+      "hook": "Você sabe quais 3 erros TODA drogaria comete antes de chamar a Farma Fácil?",
+      "sub": "Karine viu mais de 200",
+      "cena": "Karine de jaleco com tablet + 3 icones de alerta vermelho",
+      "slides": {
+        "t2": "200+ drogarias atendidas, 3 erros recorrentes",
+        "i2": [
+          "Esses 3 aparecem em quase 100% das drogarias",
+          "É como se fosse padrão da indústria",
+          "Ninguém te avisa porque é silencioso",
+          "Resolve em 1 mês de assessoria"
+        ],
+        "t3": "Os 3 erros recorrentes em TODA drogaria nova",
+        "l3": [
+          "Manual de Boas Práticas genérico/copiado",
+          "Sem rotina formal de aferição de temperatura",
+          "PGRSS no papel mas sem coleta documentada"
+        ],
+        "t4": "Por que ninguém te avisou desses 3",
+        "it4": [
+          "🚨 Vigilância só avisa após autuação",
+          "💸 Cada um custa R$ 5.000 a R$ 15.000 sozinho",
+          "✅ Diagnóstico Farma Fácil identifica em 30min"
+        ],
+        "t5": "Sua drogaria tem algum desses 3?",
+        "ck": [
+          "Manual customizado pra sua drogaria",
+          "Aferição de temperatura formal",
+          "PGRSS com coleta real",
+          "Diagnóstico inicial feito",
+          "Plano de adequação ativo"
+        ],
+        "cta": "Diagnóstico dos 3 erros: me chama no WhatsApp (gratuito)."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 60,
+      "tier": "B",
+      "autor": "C",
+      "pilar": "autoridade",
+      "tema": "ANVISA",
+      "hook": "Você sabe o que mudou na fiscalização da ANVISA em 2026?",
+      "sub": "Bruna explica em 6 slides",
+      "cena": "Bruna seria de jaleco + tela mostrando RDC nova destacada",
+      "slides": {
+        "t2": "2026 trouxe 4 mudanças que pegaram drogarias desprevenidas",
+        "i2": [
+          "Novas RDCs publicadas em janeiro/fevereiro",
+          "Vigilância já cobra os novos requisitos",
+          "Maioria das drogarias ainda opera no padrão de 2025",
+          "Adequação tem prazo — e o relógio já começou"
+        ],
+        "t3": "Os 4 pontos que mudaram em 2026",
+        "l3": [
+          "Rastreabilidade obrigatória de termolábil (RDC nova)",
+          "PGRSS com manifestos digitais (papel não vale mais)",
+          "Sistema de receita controlada eletrônica integrada",
+          "Comunicação de extravio em 24h (era 72h)"
+        ],
+        "t4": "Por que isso é urgente pra você",
+        "it4": [
+          "🚨 Fiscal já cobra os 4 novos pontos",
+          "💸 Multa por não adequação chega a R$ 25.000 por item",
+          "✅ Atualização Farma Fácil já implementa as 4 RDCs novas"
+        ],
+        "t5": "Sua drogaria está adequada às mudanças de 2026?",
+        "ck": [
+          "Rastreabilidade de termolábil ativa",
+          "PGRSS com manifesto digital",
+          "Receita controlada eletrônica",
+          "Comunicação de extravio em 24h",
+          "RT atualizado nas novas RDCs"
+        ],
+        "cta": "Adequação às RDCs 2026: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 61,
+      "tier": "B",
+      "autor": "C",
+      "pilar": "autoridade",
+      "tema": "Karine",
+      "hook": "Você sabe por que algumas drogarias PASSAM em vistoria sem multa nenhuma?",
+      "sub": "Karine entrega o método",
+      "cena": "Karine sorrindo discreta + drogaria organizada + checklist verde",
+      "slides": {
+        "t2": "Não é sorte — é método aplicado",
+        "i2": [
+          "Karine atende 200+ drogarias e analisa o padrão",
+          "As que passam têm 4 hábitos em comum",
+          "Não tem segredo — tem disciplina",
+          "É replicável em qualquer drogaria"
+        ],
+        "t3": "O método dos 4 hábitos das drogarias 'à prova de fiscal'",
+        "l3": [
+          "Auditoria interna mensal (autoavaliação documentada)",
+          "Calendário fixo de vencimentos com lembrete",
+          "Treinamento trimestral da equipe (com registro)",
+          "Pasta única de documentos sempre atualizada"
+        ],
+        "t4": "Por que esses 4 hábitos funcionam",
+        "it4": [
+          "🚨 Eliminam 90% dos motivos comuns de autuação",
+          "💸 Custo: 1h/mês de operação",
+          "✅ Pacote Farma Fácil implementa os 4 em 30 dias"
+        ],
+        "t5": "Sua drogaria pratica os 4 hábitos?",
+        "ck": [
+          "Auditoria interna mensal",
+          "Calendário de vencimentos",
+          "Treinamento trimestral",
+          "Pasta única atualizada",
+          "Disciplina de rotina ativa"
+        ],
+        "cta": "Implantação do método dos 4 hábitos: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 62,
+      "tier": "S",
+      "autor": "C",
+      "pilar": "autoridade",
+      "tema": "Karine",
+      "hook": "Você sabe qual documento já viu salvar drogaria de R$ 80 mil em multa?",
+      "sub": "guarde com a vida",
+      "cena": "Karine seria segurando documento + ao fundo papel de multa cortado pela metade",
+      "slides": {
+        "t2": "Um documento bem feito vira escudo legal",
+        "i2": [
+          "Em fiscalização, documento conta mais que palavra",
+          "O fiscal aceita prova documental",
+          "Sem ela, ele assume o pior",
+          "Com ela, você desarma autuação"
+        ],
+        "t3": "Os 4 documentos que MAIS salvam drogaria",
+        "l3": [
+          "Mapa de temperatura mensal completo (termolábil)",
+          "Registros de treinamento de equipe (atas assinadas)",
+          "Inventário de controlados mensal cruzado com SNGPC",
+          "Histórico de manutenção de equipamentos (calibração)"
+        ],
+        "t4": "Por que esses documentos valem R$ 80 mil",
+        "it4": [
+          "🚨 Sem eles, autuação é certa",
+          "💸 Com eles, você comprova boa-fé e regularidade",
+          "✅ Documentação preventiva custa <1% da multa"
+        ],
+        "t5": "Sua documentação está blindada?",
+        "ck": [
+          "Mapa de temperatura completo último mês",
+          "Atas de treinamento assinadas e arquivadas",
+          "Inventário de controlados mensal",
+          "Calibração de termômetros documentada",
+          "Histórico em pasta única e acessível"
+        ],
+        "cta": "Pacote documental anti-multa: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "22s",
+        "s0_3": "Karine: \"Esse documento já salvou uma drogaria de R$ 80 mil de multa. Você tem ele?\"",
+        "s3_8": "Corte: \"Manual de Boas Práticas. Atualizado. Assinado. Acessível no balcão.\"",
+        "s8_17": "Karine: \"O fiscal chegou. Pediu o Manual. Estava perfeito. Atenuou a multa de R$ 80 mil pra R$ 12 mil. Verdade.\"",
+        "s17_22": "CTA: \"Seu Manual está pronto pra essa situação? Me manda mensagem.\"",
+        "trilha": "Revelação positiva / esperança",
+        "cta_tela": "📋 Revisão de Manual: link na bio"
+      }
+    },
+    {
+      "num": 63,
+      "tier": "S",
+      "autor": "C",
+      "pilar": "conexao",
+      "tema": "História",
+      "hook": "Você sabe quantas drogarias eu vi FECHAR em 2025 por documentação?",
+      "sub": "número que assusta",
+      "cena": "Karine seria de jaleco + porta de drogaria fechada com cadeado ao fundo",
+      "slides": {
+        "t2": "O ano de 2025 foi pesado pra drogarias informais",
+        "i2": [
+          "Vi 23 drogarias fecharem por irregularidade documental",
+          "A maioria tinha mais de 10 anos no bairro",
+          "Nenhuma achou que ia acontecer com ela",
+          "Todas avisaram tarde demais pra resolver"
+        ],
+        "t3": "Os 4 padrões que se repetiram em todas as 23",
+        "l3": [
+          "AFE desatualizada e LICENÇA vencida sem regularização",
+          "SNGPC abandonado por mais de 90 dias",
+          "RT informal (sem registro adequado)",
+          "Documentação espalhada e perdida"
+        ],
+        "t4": "O que essas drogarias me ensinaram",
+        "it4": [
+          "🚨 Negligência documental é o assassino #1",
+          "💸 Reabrir custa 10x mais que prevenir",
+          "✅ Prevenção é serviço barato — só precisa começar"
+        ],
+        "t5": "Sua drogaria está repetindo esses padrões?",
+        "ck": [
+          "AFE em conformidade e Licença vigente",
+          "SNGPC ativo este mês",
+          "RT formal e documentado",
+          "Pasta de documentos centralizada",
+          "Calendário de vencimentos visível"
+        ],
+        "cta": "Não seja a 24ª. Me chama no WhatsApp pra prevenir."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "25s",
+        "s0_3": "Karine: \"Sabe quantas drogarias eu vi fechar por documentação em 2025? Vou te contar.\"",
+        "s3_12": "Karine (narrativa): \"Uma delas era do João. 8 anos de drogaria. Filhos dependendo. Fechou por 3 documentos que pareciam detalhe.\"",
+        "s12_20": "Karine: \"Não era falta de dinheiro. Era falta de informação. E de alguém que dissesse antes.\"",
+        "s20_25": "CTA: \"Comenta aqui se você já passou por algo parecido. Ou se quer evitar.\"",
+        "trilha": "Narrativa emocional",
+        "cta_tela": "❤️ Me chama: link na bio"
+      }
+    },
+    {
+      "num": 64,
+      "tier": "S",
+      "autor": "C",
+      "pilar": "conexao",
+      "tema": "História",
+      "hook": "Você sabe o que o dono da drogaria me disse quando perdeu o AFE?",
+      "sub": "ele não dormiu mais",
+      "cena": "Karine ouvindo cliente cabisbaixo na mesa + papel AFE rejeitado entre eles",
+      "slides": {
+        "t2": "Foi uma das piores conversas que tive",
+        "i2": [
+          "Ele tinha 22 anos de drogaria no bairro",
+          "Achou que ia ter aviso antes do vencimento",
+          "Quando descobriu, tentou renovar correndo",
+          "Levou 8 meses pra reabrir — e a fila de clientes já tinha mudado"
+        ],
+        "t3": "As 4 frases que ele me disse e nunca esqueci",
+        "l3": [
+          "'Eu confiei que o sistema avisaria'",
+          "'Achei que tinha mais tempo'",
+          "'Não sabia que era tão rápido perder'",
+          "'Tô voltando do zero, com 50 anos'"
+        ],
+        "t4": "O que essa história ensina",
+        "it4": [
+          "🚨 AFE pode ser CASSADA sem aviso prévio formal",
+          "💸 Reabrir custa anos de receita",
+          "✅ Prevenção é o serviço mais barato que existe"
+        ],
+        "t5": "Você não quer estar no lugar dele",
+        "ck": [
+          "Conformidade da AFE conferida hoje",
+          "Plano de renovação com 6 meses de antecedência",
+          "Parceria com assessoria regulatória",
+          "Backup digital de todos os documentos",
+          "Calendário compartilhado com toda equipe"
+        ],
+        "cta": "Não passe pelo que ele passou. Me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "22s",
+        "s0_3": "Karine: \"O dono da drogaria me disse uma coisa quando perdeu a AFE. Nunca esqueci.\"",
+        "s3_10": "Karine: \"Ele disse: 'Karine, eu achei que era burocracia. Achei que não ia acontecer comigo.'\",",
+        "s10_18": "Karine: \"Aconteceu com ele. Acontece com mais gente do que você imagina. E acontece com quem acha que não vai acontecer.\",",
+        "s18_22": "CTA: \"Não espera chegar nesse ponto. Me chama antes.\",",
+        "trilha": "Narrativa emocional / reflexão",
+        "cta_tela": "💬 Me chama: link na bio"
+      }
+    },
+    {
+      "num": 65,
+      "tier": "S",
+      "autor": "C",
+      "pilar": "conexao",
+      "tema": "História",
+      "hook": "Você sabe a história da farmacêutica que quase perdeu o CRF por não saber disso?",
+      "sub": "1 detalhe muda tudo",
+      "cena": "Farmacêutica chorando segurando documento CRF + Karine ao lado consolando",
+      "slides": {
+        "t2": "Ela era responsável técnica há 8 anos",
+        "i2": [
+          "Sempre cuidou da drogaria com excelência",
+          "Mudou de drogaria e esqueceu de comunicar o CRF",
+          "Em 60 dias, recebeu processo administrativo",
+          "Quase perdeu o registro profissional pra sempre"
+        ],
+        "t3": "Os 4 erros do RT que mais geram processo",
+        "l3": [
+          "Mudança de drogaria sem comunicar CRF em 30 dias",
+          "Acumular RT de drogarias sem permissão",
+          "Não estar presente no horário declarado",
+          "Não acompanhar transmissões SNGPC"
+        ],
+        "t4": "O que aconteceu com ela",
+        "it4": [
+          "🚨 Processo administrativo no CRF",
+          "💸 Multa + risco de cassação do CRF",
+          "✅ Conseguiu reverter porque tinha histórico limpo"
+        ],
+        "t5": "VOCÊ (RT) está protegida?",
+        "ck": [
+          "CRF atualizado a cada mudança",
+          "Anotação de RT correta no CRF",
+          "Presença documentada no horário declarado",
+          "Acompanhamento ativo do SNGPC",
+          "Histórico de boas práticas arquivado"
+        ],
+        "cta": "Auditoria de CRF do RT: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "25s",
+        "s0_3": "Karine: \"Essa farmacêutica quase perdeu o CRF por não saber de uma coisa simples.\"",
+        "s3_12": "Karine: \"Ela era RT de uma drogaria irregular. Não sabia. O dono não contou. O fiscal chegou e o auto foi no nome dela.\",",
+        "s12_20": "Karine: \"RT responde legalmente pelo que acontece na drogaria. Mesmo que você não tenha autorizado.\",",
+        "s20_25": "CTA: \"Você sabe exatamente o que está acontecendo na drogaria que você assina? Me conta.\",",
+        "trilha": "Narrativa / alerta profissional",
+        "cta_tela": "⚠️ Proteção do CRF: link na bio"
+      }
+    },
+    {
+      "num": 66,
+      "tier": "C",
+      "autor": "C",
+      "pilar": "conexao",
+      "tema": "História",
+      "hook": "Você sabe o que aprendi atendendo 200+ drogarias em 5 anos?",
+      "sub": "ninguém te conta isso",
+      "cena": "Karine seria com livro aberto + ao fundo fotos de varias drogarias atendidas",
+      "slides": {
+        "t2": "5 anos. 200+ drogarias. 4 lições inegociáveis",
+        "i2": [
+          "Cada drogaria me ensinou algo diferente",
+          "Mas 4 padrões aparecem SEMPRE",
+          "É o que eu não sabia no começo",
+          "Ninguém te conta porque ninguém viu de tantos lados"
+        ],
+        "t3": "As 4 lições que mudaram minha forma de atender",
+        "l3": [
+          "Drogaria que demora pra agir paga 10x mais",
+          "Equipe alinhada vale mais que documento perfeito",
+          "Pequeno detalhe (ex: termômetro) define vistoria",
+          "RT engajado é metade do trabalho — sem isso nada funciona"
+        ],
+        "t4": "Por que eu compartilho essas 4 lições",
+        "it4": [
+          "💔 Vejo drogaria pagar caro por desconhecimento",
+          "🎯 Quero que você não pague esse preço",
+          "✅ Aplicar essas 4 lições é o que entrego em todo plano"
+        ],
+        "t5": "Qual dessas 4 lições mais te toca?",
+        "ck": [
+          "Atuação preventiva (não reativa)",
+          "Equipe alinhada e treinada",
+          "Atenção ao detalhe operacional",
+          "RT engajado e ativo",
+          "Plano contínuo de melhoria"
+        ],
+        "cta": "Quer ver essas 4 lições aplicadas na sua drogaria? Me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 67,
+      "tier": "B",
+      "autor": "C",
+      "pilar": "venda",
+      "tema": "CTA",
+      "hook": "Você sabe se sua drogaria precisa de DIAGNÓSTICO regulatório agora?",
+      "sub": "85% descobre tarde",
+      "cena": "Farmacêutico chocado olhando relatorio + Karine apontando pontos críticos",
+      "slides": {
+        "t2": "85% descobre que precisa quando já é tarde",
+        "i2": [
+          "Maioria pensa que está tudo certo",
+          "Diagnóstico revela o que ninguém vê na rotina",
+          "É o passo mais barato (gratuito) e mais valioso",
+          "Quem faz, evita problema futuro garantido"
+        ],
+        "t3": "Os 4 sinais de que sua drogaria PRECISA de diagnóstico",
+        "l3": [
+          "Última fiscalização foi há mais de 12 meses",
+          "Mudou RT/endereço/razão social no último ano",
+          "Recebeu denúncia ou reclamação no Procon",
+          "Não tem auditoria interna formalizada"
+        ],
+        "t4": "O que você ganha com o diagnóstico Farma Fácil",
+        "it4": [
+          "🛡️ Mapa completo de pendências em 30 minutos",
+          "⚡ Plano de ação priorizado por urgência",
+          "✅ Custo: ZERO (diagnóstico é gratuito)"
+        ],
+        "t5": "Sua drogaria tem algum desses 4 sinais?",
+        "ck": [
+          "Última fiscalização <12 meses",
+          "Sem mudanças recentes não comunicadas",
+          "Sem denúncias abertas",
+          "Auditoria interna ativa",
+          "Plano de melhoria contínua"
+        ],
+        "cta": "Diagnóstico GRATUITO em 30min: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 68,
+      "tier": "A",
+      "autor": "C",
+      "pilar": "venda",
+      "tema": "Custo",
+      "hook": "Você sabe quanto custa cada DIA sem assessoria farmacêutica?",
+      "sub": "três tipos de multa por mês",
+      "cena": "Calendário com X em vermelho cada dia + farmacêutico aterrorizado contando dinheiro",
+      "slides": {
+        "t2": "Cada dia sem assessoria custa em 3 frentes",
+        "i2": [
+          "Não é só o risco da multa direta",
+          "É também perda silenciosa de receita",
+          "E é o tempo do dono gasto em problema regulatório",
+          "Os 3 somados pesam mais que mensalidade da assessoria"
+        ],
+        "t3": "Os 3 custos diários sem assessoria",
+        "l3": [
+          "Risco de multa: R$ 200/dia (probabilidade × valor médio)",
+          "Tempo do dono: 2h/dia em assuntos regulatórios = R$ 300",
+          "Perda de venda por não vender controlado regularmente: R$ 150/dia"
+        ],
+        "t4": "Soma dos 3 custos vs assessoria",
+        "it4": [
+          "🚨 Sem assessoria: R$ 650/dia em risco e tempo",
+          "💸 Em 30 dias = R$ 19.500 escondidos",
+          "✅ Assessoria Farma Fácil: fração disso, blindagem 24/7"
+        ],
+        "t5": "Qual desses 3 custos pesa mais no seu mês?",
+        "ck": [
+          "Sem multa nos últimos 12 meses",
+          "Tempo do dono focado em vendas",
+          "Controlados vendendo regularmente",
+          "Sem retrabalho regulatório",
+          "Assessoria mensal ativa"
+        ],
+        "cta": "Plano de assessoria mensal: me chama no WhatsApp pra valor."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 69,
+      "tier": "A",
+      "autor": "C",
+      "pilar": "venda",
+      "tema": "AFE",
+      "hook": "Você sabe que ATUALIZAR sua AFE sozinho pode te ATRASAR 6 meses?",
+      "sub": "nós fazemos em 30 dias",
+      "cena": "Farmacêutica frustrada na frente do computador da ANVISA + Karine seria do lado entregando documentos prontos",
+      "slides": {
+        "t2": "Atualizar AFE sozinho é uma corrida de obstáculos",
+        "i2": [
+          "Sistema da ANVISA tem fila + exigências em série",
+          "1 documento errado reprova tudo",
+          "Cada reprovação adiciona 60 dias na fila",
+          "Drogaria fica meses operando com AFE desatualizada"
+        ],
+        "t3": "Os 4 motivos pelos quais sozinho atrasa",
+        "l3": [
+          "Documentos exigidos mudam — você não acompanha",
+          "Erro de protocolo só identifica após 30-60 dias",
+          "Pagamento da taxa errada = recomeçar",
+          "Falta de declaração técnica do RT no formato correto"
+        ],
+        "t4": "O que muda com Farma Fácil",
+        "it4": [
+          "🛡️ Conhecimento atualizado dos requisitos ANVISA",
+          "⚡ Atualização aprovada na 1ª tentativa = 30 dias",
+          "✅ Drogaria continua operando regular sem atrasos"
+        ],
+        "t5": "Sua próxima atualização de AFE é em quanto tempo?",
+        "ck": [
+          "Mudanças contratuais já mapeadas",
+          "Documentos preparados antes",
+          "Taxa correta calculada",
+          "Declaração do RT pronta",
+          "Atualização iniciada em até 30 dias"
+        ],
+        "cta": "Atualização de AFE em 30 dias: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 70,
+      "tier": "S",
+      "autor": "C",
+      "pilar": "venda",
+      "tema": "Custo",
+      "hook": "Você sabe quanto custa REGULARIZAR depois que a vigilância já interditou?",
+      "sub": "10x mais caro",
+      "cena": "Drogaria com cadeado + farmacêutico chocado vendo orcamento + cifrao grande",
+      "slides": {
+        "t2": "Regularização pós-interdição = remediação ao quadrado",
+        "i2": [
+          "O custo médio é 10x maior que prevenção",
+          "Você paga multa, perde receita e ainda gasta pra reabrir",
+          "O processo demora semanas a meses",
+          "Reputação no bairro fica abalada pra sempre"
+        ],
+        "t3": "As 4 contas que entram quando você é interditada",
+        "l3": [
+          "Multa principal (média de R$ 30-80 mil)",
+          "Receita ZERADA enquanto interditada (3-12 semanas)",
+          "Honorários advocatícios e consultoria emergencial",
+          "Reposição de estoque vencido durante o lacre"
+        ],
+        "t4": "Por que prevenir custa 10x menos",
+        "it4": [
+          "🚨 Assessoria preventiva = R$ 500-2.000/mês",
+          "💸 Interdição = R$ 50-300 mil em prejuízo total",
+          "✅ Conta simples: vale a pena prevenir"
+        ],
+        "t5": "Vale mais prevenir do que remediar?",
+        "ck": [
+          "Auditoria preventiva trimestral",
+          "Pacote regulatório mensal",
+          "Atualização contínua das RDCs",
+          "Treinamento de equipe regular",
+          "Plano de contingência caso fiscal venha"
+        ],
+        "cta": "Plano preventivo Farma Fácil: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "20s",
+        "s0_3": "Karine: \"Sabe quanto custa regularizar uma drogaria DEPOIS que a vigilância interditou?\"",
+        "s3_8": "Corte: \"Multa: de R$ 5.000 a R$ 50.000. Assessoria emergencial: 3x mais cara. Receita parada: todo dia conta.\",",
+        "s8_15": "Karine: \"Uma cliente minha gastou R$ 42 mil num processo que custaria R$ 8 mil antes da interdição.\",",
+        "s15_20": "CTA: \"Antes ou depois? Você decide. Me chama antes.\",",
+        "trilha": "Impacto financeiro",
+        "cta_tela": "💰 Diagnóstico preventivo: link na bio"
+      }
+    },
+    {
+      "num": 71,
+      "tier": "A",
+      "autor": "C",
+      "pilar": "venda",
+      "tema": "CTA",
+      "hook": "Você sabe que sua drogaria pode estar IRREGULAR agora sem você saber?",
+      "sub": "auditoria gratuita",
+      "cena": "Farmacêutico assustado olhando lupa sobre documentos + alerta vermelho",
+      "slides": {
+        "t2": "Maioria descobre quando é tarde demais",
+        "i2": [
+          "Irregularidade silenciosa é o pior tipo",
+          "Não dá sinal — só aparece na fiscalização",
+          "30 minutos de auditoria revelam tudo",
+          "Diagnóstico é o investimento de retorno mais alto que existe"
+        ],
+        "t3": "Os 4 pontos que a auditoria gratuita Farma Fácil cobre",
+        "l3": [
+          "Documentação principal (AFE atualizada, Licença vigente, CRT vigente)",
+          "Operação diária (controlados, termolábil, equipe)",
+          "Estrutura física (sala de serviços, estoque, descarte)",
+          "Procedimentos (POPs, treinamento, registros)"
+        ],
+        "t4": "O que você recebe na auditoria Farma Fácil",
+        "it4": [
+          "🛡️ Relatório completo de 4 áreas em 30 minutos",
+          "⚡ Plano de ação por ordem de urgência",
+          "✅ Sem compromisso, sem custo, sem enrolação"
+        ],
+        "t5": "Quer saber se SUA drogaria está regular hoje?",
+        "ck": [
+          "Documentação principal vigente",
+          "Operação diária regular",
+          "Estrutura física conforme",
+          "Procedimentos atualizados",
+          "Relatório de auditoria recente"
+        ],
+        "cta": "Auditoria GRATUITA de 30min: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe"
+    },
+    {
+      "num": 72,
+      "tier": "S",
+      "autor": "C",
+      "pilar": "venda",
+      "tema": "CTA",
+      "hook": "Você sabe por que 8 em 10 drogarias chamam a Farma Fácil DEPOIS da multa?",
+      "sub": "não seja a 9a",
+      "cena": "Farmacêutico aterrorizado segurando multa + Karine seria com a mão estendida",
+      "slides": {
+        "t2": "O padrão se repete em quase todas as ligações",
+        "i2": [
+          "O dono sempre achou que 'depois resolve'",
+          "Aí veio o fiscal e a multa",
+          "Aí virou desespero",
+          "Aí ligaram pra Farma Fácil"
+        ],
+        "t3": "As 4 frases que mais ouço na primeira ligação",
+        "l3": [
+          "'Achei que tinha mais tempo'",
+          "'Não sabia que era tão grave'",
+          "'Como faço pra não fechar?'",
+          "'Quanto custa pra resolver agora?'"
+        ],
+        "t4": "O custo real de chamar DEPOIS",
+        "it4": [
+          "🚨 10x mais caro que prevenção",
+          "💸 Receita já perdida durante o problema",
+          "✅ Stress, processo administrativo, advogado"
+        ],
+        "t5": "Você quer ser a 9ª ou a primeira a prevenir?",
+        "ck": [
+          "Diagnóstico antes do problema",
+          "Pacote de prevenção mensal",
+          "Equipe treinada continuamente",
+          "Documentos sempre atualizados",
+          "Vida tranquila sem susto de fiscal"
+        ],
+        "cta": "Não seja a 9ª. Me chama no WhatsApp pra prevenir."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "22s",
+        "s0_3": "Karine: \"8 em cada 10 drogarias me procuram DEPOIS da multa. Por que não antes?\"",
+        "s3_8": "Corte: \"Porque parecia caro. Porque achavam que estava ok. Porque foi adiando.\",",
+        "s8_17": "Karine: \"Sem exceção: quem me procura depois do problema paga mais, demora mais e sofre mais. Do que quem veio antes.\",",
+        "s17_22": "CTA: \"Você é o antes ou o depois? Me chama AGORA.\",",
+        "trilha": "Revelação estatística",
+        "cta_tela": "📞 Me chama: link na bio"
+      }
+    },
+    {
+      "num": 73,
+      "tier": "S",
+      "autor": "KC",
+      "pilar": "autoridade",
+      "tema": "Karine",
+      "hook": "Você sabe os 5 sinais que dizem 'sua drogaria precisa de assessoria — AGORA'?",
+      "sub": "Karine viu em 200+ drogarias",
+      "cena": "Karine farmacêutica de jaleco apontando lista de 5 itens em folha + drogaria desfocada ao fundo",
+      "slides": {
+        "t2": "Esses 5 sinais aparecem ANTES da multa chegar",
+        "i2": [
+          "Karine identificou esse padrão atendendo 200+ drogarias",
+          "Quem percebe e age, evita 90% dos problemas",
+          "Quem ignora, paga em multa em até 12 meses",
+          "São silenciosos — quase ninguém vê na rotina"
+        ],
+        "t3": "Os 5 sinais que pedem assessoria URGENTE",
+        "l3": [
+          "Você não sabe a data exata da última fiscalização",
+          "Mudou alguma coisa no contrato (RT/endereço/atividade) e não comunicou ANVISA",
+          "Equipe responde diferente do POP quando perguntada",
+          "Sem rotina formal de aferição de temperatura registrada"
+        ],
+        "t4": "O que rola se você ignorar os 5 sinais",
+        "it4": [
+          "🚨 Vigilância chega despreparada e encontra TODOS de uma vez",
+          "💸 Soma das autuações chega fácil a R$ 50.000",
+          "✅ Diagnóstico Farma Fácil identifica os 5 em 30min"
+        ],
+        "t5": "Sua drogaria tem algum desses 5 sinais hoje?",
+        "ck": [
+          "Última fiscalização documentada",
+          "Alterações contratuais comunicadas à ANVISA",
+          "Equipe alinhada com os POPs",
+          "Rotina de aferição de temperatura ativa",
+          "PGRSS implementado com coleta documentada"
+        ],
+        "cta": "Diagnóstico GRATUITO dos 5 sinais: me chama no WhatsApp."
+      },
+      "familia_hook": "voce_sabe",
+      "roteiro_reel": {
+        "duracao": "22s",
+        "s0_3": "Karine: \"Tem 5 sinais que dizem que sua drogaria precisa de assessoria AGORA. Vou te contar.\",",
+        "s3_10": "Corte: \"1. Não sabe quando foi a última atualização de POP. 2. SNGPC vive atrasando. 3. O RT está difícil de contactar.\",",
+        "s10_17": "Corte: \"4. Última fiscalização gerou notificação. 5. Você está gerenciando no 'achismo' regulatório.\",",
+        "s17_22": "CTA: \"Quantos desses 5 você reconheceu na sua drogaria? Me conta.\",",
+        "trilha": "Lista / revelação",
+        "cta_tela": "🚨 Assessoria urgente: link na bio"
+      }
+    },
+    {
+      "num": 74,
+      "tier": "S",
+      "autor": "KC",
+      "pilar": "atracao",
+      "tema": "Vigilância",
+      "familia_hook": "o_que_acontece_se",
+      "hook": "O que acontece se a vigilância chegar na sua drogaria AGORA?",
+      "sub": "a maioria não está pronta",
+      "cena": "Fiscal chegando de surpresa + farmacêutico paralisado com cliente na frente",
+      "roteiro_reel": {
+        "duracao": "22s",
+        "s0_3": "Karine olha câmera: \"O que acontece se a vigilância chegar na sua drogaria agora? Vou simular.\"",
+        "s3_10": "Corte: \"Fiscal pede RT. RT está? Manual de BPF no balcão? SNGPC sem atraso? Geladeira com temperatura registrada hoje?\"",
+        "s10_18": "Karine: \"Se você hesitou em qualquer uma dessas, a fiscalização já começou mal.\"",
+        "s18_22": "CTA: \"Responde aqui: PRONTA ou NÃO PRONTA?\"",
+        "trilha": "Urgência / suspense",
+        "cta_tela": "🔴 Diagnóstico: link na bio"
+      },
+      "slides": {
+        "t2": "Você tem 30 segundos pra reunir tudo",
+        "i2": [
+          "O fiscal não avisa. Não espera.",
+          "Ele pede os documentos enquanto você ainda está cumprimentando",
+          "Qualquer hesitação vira anotação",
+          "E anotação vira multa"
+        ],
+        "t3": "O que ele pede nos primeiros 30 segundos",
+        "l3": [
+          "Identificação do RT (avental + crachá visível)",
+          "Licença Sanitária vigente (onde está?)",
+          "AFE atual da ANVISA",
+          "Manual de Boas Práticas acessível"
+        ],
+        "t4": "O que acontece se você não tiver",
+        "it4": [
+          "🚨 Auto de infração imediato — sem segunda chance",
+          "💸 Multa de R$ 2.000 a R$ 15.000 por item faltante",
+          "✅ Com pasta Farma Fácil: tudo em 30 segundos"
+        ],
+        "t5": "Se o fiscal chegasse agora, você passaria?",
+        "ck": [
+          "RT identificado e no local",
+          "Licença Sanitária impressa e visível",
+          "AFE atualizada em pasta",
+          "Manual de BPF acessível no balcão",
+          "Geladeira com temperatura do dia registrada"
+        ],
+        "cta": "Quer simular a fiscalização na sua drogaria? Me chama no WhatsApp."
+      }
+    },
+    {
+      "num": 75,
+      "tier": "S",
+      "autor": "KC",
+      "pilar": "atracao",
+      "tema": "SNGPC",
+      "familia_hook": "o_que_acontece_se",
+      "hook": "O que acontece se o seu SNGPC ficar 30 dias sem transmitir?",
+      "sub": "o sistema te vê antes do fiscal",
+      "cena": "Tela do computador com erro de transmissão + farmacêutico preocupado",
+      "roteiro_reel": {
+        "duracao": "20s",
+        "s0_3": "Karine: \"O que acontece se seu SNGPC ficar 30 dias sem transmitir? Deixa eu te contar.\"",
+        "s3_10": "Corte: \"A ANVISA detecta o atraso. Gera alerta automático. Envia pra vigilância local.\"",
+        "s10_17": "Karine: \"Você não recebe aviso. A visita vem. E quando chega, a multa já está calculada.\"",
+        "s17_20": "CTA: \"Último dia de transmissão do seu SNGPC: qual foi?\"",
+        "trilha": "Alerta / tecnologia",
+        "cta_tela": "📋 Regularização SNGPC: link na bio"
+      },
+      "slides": {
+        "t2": "30 dias sem transmissão é crime regulatório",
+        "i2": [
+          "SNGPC é obrigação legal — não é opcional",
+          "Atraso de 30+ dias gera alerta automático na ANVISA",
+          "Você não recebe aviso — eles agem diretamente",
+          "A visita fiscal vem sem pré-aviso"
+        ],
+        "t3": "O que acontece na sequência",
+        "l3": [
+          "Alerta automático enviado para vigilância estadual",
+          "Vistoria programada sem aviso prévio",
+          "Auto de infração por irregularidade no SNGPC",
+          "Possível suspensão do módulo (interdição de controlados)"
+        ],
+        "t4": "O custo de 30 dias de atraso",
+        "it4": [
+          "🚨 Multa de R$ 5.000 a R$ 30.000",
+          "💸 Interdição parcial dos medicamentos controlados",
+          "✅ Com monitoramento Farma Fácil: zero atraso"
+        ],
+        "t5": "Seu SNGPC está em dia?",
+        "ck": [
+          "Transmissão feita dentro do prazo este mês",
+          "Arquivo validado e aceito pela ANVISA",
+          "Inventário sem divergência",
+          "Equipamento de transmissão funcionando",
+          "Backup dos arquivos de transmissão"
+        ],
+        "cta": "Verificação urgente do SNGPC: me chama no WhatsApp."
+      }
+    },
+    {
+      "num": 76,
+      "tier": "A",
+      "autor": "KC",
+      "pilar": "atracao",
+      "tema": "POPs",
+      "familia_hook": "o_que_acontece_se",
+      "hook": "O que acontece se o fiscal pegar um POP com o nome do antigo farmacêutico?",
+      "sub": "POP é documentação viva, não arquivo morto",
+      "cena": "Fiscal segurando POP antigo + farmacêutico atual ao fundo constrangido",
+      "slides": {
+        "t2": "POP com nome errado é POP inválido pro fiscal",
+        "i2": [
+          "POP não é papel — é procedimento assinado e vigente",
+          "Se o RT que assinou não está mais lá, é documento irregular",
+          "O fiscal identifica isso nos primeiros 2 minutos",
+          "E autua na hora — sem possibilidade de recurso"
+        ],
+        "t3": "O que o fiscal anota quando vê POP desatualizado",
+        "l3": [
+          "Procedimento sem RT responsável atual",
+          "Data de revisão ultrapassada (mais de 1 ano)",
+          "Evidência de não aplicação (sem registros de uso)",
+          "Assinatura de profissional não vinculado"
+        ],
+        "t4": "O custo de um POP \"esquecido\"",
+        "it4": [
+          "🚨 Auto de infração por documentação irregular",
+          "💸 Multa pode superar R$ 10.000 por POP",
+          "✅ Com revisão Farma Fácil: POPs sempre vigentes"
+        ],
+        "t5": "Seus POPs têm seu nome e data de hoje?",
+        "ck": [
+          "RT atual assina todos os POPs vigentes",
+          "Data de revisão dentro de 12 meses",
+          "Evidência de aplicação registrada",
+          "Lista mestra de POPs atualizada",
+          "Backup de revisões anteriores arquivado"
+        ],
+        "cta": "Revisão de POPs: me chama no WhatsApp."
+      }
+    },
+    {
+      "num": 77,
+      "tier": "A",
+      "autor": "KC",
+      "pilar": "atracao",
+      "tema": "Autuação",
+      "familia_hook": "o_que_acontece_se",
+      "hook": "O que acontece se você receber uma autuação e não souber como responder?",
+      "sub": "o prazo é curto e o erro custa caro",
+      "cena": "Dono de drogaria com auto de infração na mão + expressão de desespero",
+      "slides": {
+        "t2": "Resposta errada = multa confirmada + agravamento",
+        "i2": [
+          "Prazo para recurso: geralmente 15 a 20 dias úteis",
+          "Resposta sem embasamento técnico é automaticamente negada",
+          "Cada erro na defesa pode ser usado contra você",
+          "Silêncio também é interpretado como admissão"
+        ],
+        "t3": "O que FAZER nas primeiras 48h depois de receber",
+        "l3": [
+          "Leia o auto linha por linha — identifique o(s) artigo(s)",
+          "Fotografe tudo que estava no local no momento",
+          "Reúna toda documentação relacionada ao item autuado",
+          "Contrate assessoria técnica especializada IMEDIATAMENTE"
+        ],
+        "t4": "O que acontece se a resposta for errada ou tardia",
+        "it4": [
+          "🚨 Multa confirmada — sem possibilidade de redução",
+          "💸 Risco de agravamento por reincidência registrada",
+          "✅ Com Farma Fácil: defesa técnica em 48h"
+        ],
+        "t5": "Você sabe o que fazer se receber um auto amanhã?",
+        "ck": [
+          "Tem o contato da assessoria técnica salvo",
+          "Sabe identificar artigos da RDC 44/2009",
+          "Tem documentação organizada para resposta rápida",
+          "Conhece o prazo de recurso do seu estado",
+          "Tem backup de todas as transmissões SNGPC"
+        ],
+        "cta": "Recebeu auto de infração? Me chama AGORA — prazo corre."
+      }
+    },
+    {
+      "num": 78,
+      "tier": "A",
+      "autor": "KC",
+      "pilar": "venda",
+      "tema": "Custo",
+      "familia_hook": "o_que_acontece_se",
+      "hook": "O que acontece com o faturamento da sua drogaria no mês que é interditada?",
+      "sub": "o número vai te assustar",
+      "cena": "Drogaria com placa INTERDITADA + caixa registradora em zero",
+      "slides": {
+        "t2": "Interdição não para só a venda — para tudo",
+        "i2": [
+          "Sem venda = sem faturamento",
+          "Funcionários continuam custando",
+          "Aluguel não para de correr",
+          "Contas fixas continuam vindo"
+        ],
+        "t3": "O custo real de 30 dias interditada",
+        "l3": [
+          "Faturamento médio perdido: R$ 40.000 a R$ 200.000",
+          "Multa regulatória: R$ 5.000 a R$ 50.000",
+          "Assessoria emergencial: 3x o preço normal",
+          "Clientes perdidos para concorrência: difícil recuperar"
+        ],
+        "t4": "Isso acontece com quem?",
+        "it4": [
+          "🚨 Com quem postergou a regularização por \"estar ok\"",
+          "💸 Com quem achou que assessoria era gasto, não investimento",
+          "✅ Nunca com quem tem acompanhamento preventivo"
+        ],
+        "t5": "Quanto sua drogaria fatura por mês?",
+        "ck": [
+          "Tem assessoria farmacêutica ativa",
+          "Documentação 100% atualizada",
+          "Não tem notificação pendente",
+          "Fez auditoria preventiva nos últimos 6 meses",
+          "Sabe exatamente o que o fiscal vai encontrar"
+        ],
+        "cta": "Proteja seu faturamento: me chama no WhatsApp pra diagnóstico gratuito."
+      }
+    },
+    {
+      "num": 79,
+      "tier": "S",
+      "autor": "KC",
+      "pilar": "atracao",
+      "tema": "Vigilância",
+      "familia_hook": "x_erros",
+      "hook": "3 erros que eu vejo em TODA drogaria autuada (e como evitar cada um)",
+      "sub": "não é coincidência — é padrão",
+      "cena": "Karine com expressão séria segurando três dedos + plano de fundo de drogaria autuada",
+      "roteiro_reel": {
+        "duracao": "25s",
+        "s0_3": "Karine: \"3 erros que aparecem em TODA drogaria autuada que eu já vi. Todo. Single. One.\"",
+        "s3_10": "Corte: \"Erro 1: POP sem evidência de aplicação. Erro 2: SNGPC com atraso não justificado.\"",
+        "s10_18": "Corte: \"Erro 3: RT com CRF não anotado na drogaria durante o horário obrigatório.\"",
+        "s18_25": "Karine: \"Os 3 são evitáveis. Os 3 são fáceis de corrigir. Os 3 custam caro quando o fiscal chega.\"",
+        "trilha": "Lista / revelação",
+        "cta_tela": "📋 Checklist: link na bio"
+      },
+      "slides": {
+        "t2": "Esses 3 erros são responsáveis por 80% das autuações",
+        "i2": [
+          "Não são acidentes — são padrões repetidos",
+          "Aparecem em drogarias de 1 ano e de 15 anos",
+          "Pequenas e grandes cometem os mesmos",
+          "Todos são corrigíveis em menos de uma semana"
+        ],
+        "t3": "Os 3 erros que aparecem em TODA autuação",
+        "l3": [
+          "1. POP existe mas não tem evidência de aplicação",
+          "2. SNGPC com atraso acumulado não justificado",
+          "3. RT ausente no horário obrigatório sem substituto anotado"
+        ],
+        "t4": "Por que eles se repetem tanto",
+        "it4": [
+          "🚨 Porque parecem detalhes — até o fiscal chegar",
+          "💸 Multa média por esses 3: R$ 18.000 a R$ 45.000",
+          "✅ Correção preventiva: menos de R$ 2.000 com assessoria"
+        ],
+        "t5": "Quantos desses 3 erros sua drogaria tem HOJE?",
+        "ck": [
+          "POPs com registros de aplicação (atas, assinaturas)",
+          "SNGPC transmitido sem atraso acumulado",
+          "RT anotado e presente no horário obrigatório",
+          "Substituto de RT documentado no CRF",
+          "Auditoria desses 3 pontos feita nos últimos 3 meses"
+        ],
+        "cta": "Auditoria dos 3 erros na sua drogaria: me chama no WhatsApp."
+      }
+    },
+    {
+      "num": 80,
+      "tier": "S",
+      "autor": "KC",
+      "pilar": "atracao",
+      "tema": "Fiscal",
+      "familia_hook": "x_erros",
+      "hook": "5 sinais de que sua drogaria vai receber visita fiscal esse mês",
+      "sub": "o fiscal não chega por acaso",
+      "cena": "Calendário marcado com X vermelho + drogaria ao fundo com fiscal entrando",
+      "roteiro_reel": {
+        "duracao": "25s",
+        "s0_3": "Karine: \"5 sinais de que a vigilância já está de olho na sua drogaria. Presta atenção.\"",
+        "s3_12": "Corte: \"1. Você teve uma denúncia recente. 2. SNGPC em atraso por mais de 15 dias. 3. Sua Licença venceu nos últimos 90 dias.\"",
+        "s12_20": "Corte: \"4. Houve autuação na sua rua ou bairro. 5. Você não passou por fiscalização em mais de 18 meses.\"",
+        "s20_25": "Karine: \"Quantos desses 5 você reconheceu? Me conta nos comentários.\"",
+        "trilha": "Suspense / alerta",
+        "cta_tela": "🔴 Diagnóstico preventivo: link na bio"
+      },
+      "slides": {
+        "t2": "Fiscal não chega por coincidência",
+        "i2": [
+          "Há um sistema de priorização de vistorias",
+          "Algumas situações sobem você no ranking automaticamente",
+          "E quando você está no topo da fila, a visita vem rápido",
+          "Saber os sinais te dá tempo de agir"
+        ],
+        "t3": "Os 5 sinais que sobem você na fila",
+        "l3": [
+          "1. Denúncia anônima registrada (qualquer origem)",
+          "2. SNGPC em atraso por 15+ dias",
+          "3. Licença Sanitária vencida há menos de 90 dias",
+          "4. Autuações recentes no bairro (operação regional)",
+          "5. Sem vistoria há mais de 18 meses (ciclo rotativo)"
+        ],
+        "t4": "O que fazer se você tem algum desses sinais",
+        "it4": [
+          "🚨 Não espere — cada dia conta",
+          "💸 Regularizar antes custa 5x menos",
+          "✅ Auditoria preventiva da Farma Fácil identifica e corrige"
+        ],
+        "t5": "Quantos desses 5 sinais sua drogaria tem?",
+        "ck": [
+          "Nenhuma denúncia registrada nos últimos 6 meses",
+          "SNGPC em dia (sem atraso acumulado)",
+          "Licença Sanitária vigente e renovada",
+          "Sem autuações nos últimos 12 meses",
+          "Fiscalização nos últimos 18 meses sem pendência"
+        ],
+        "cta": "Quantos desses sinais você tem? Me conta no WhatsApp e vejo o risco."
+      }
+    },
+    {
+      "num": 81,
+      "tier": "A",
+      "autor": "KC",
+      "pilar": "autoridade",
+      "tema": "Documentação",
+      "familia_hook": "x_erros",
+      "hook": "7 documentos que o fiscal SEMPRE pede (e que 6 em 10 drogarias não têm prontos)",
+      "sub": "segundos pra entregar ou multa na hora",
+      "cena": "Fiscal com checklist extenso + farmacêutico revirando arquivo desesperado",
+      "slides": {
+        "t2": "Em 60 segundos ele já sabe se você é problema ou não",
+        "i2": [
+          "O fiscal tem checklist padronizado",
+          "Falta 1 documento = anotação imediata",
+          "Falta 3+ = autuação praticamente certa",
+          "Quanto mais rápido você entrega, melhor a impressão"
+        ],
+        "t3": "Os 7 documentos que ele SEMPRE pede",
+        "l3": [
+          "1. AFE vigente (ANVISA)",
+          "2. Licença Sanitária dentro do prazo",
+          "3. Identificação do RT (avental + crachá + CRF)",
+          "4. Manual de Boas Práticas Farmacêuticas",
+          "5. POPs de pelo menos 5 processos críticos",
+          "6. PGRSS implementado e sinalizado",
+          "7. Comprovante de transmissão SNGPC atual"
+        ],
+        "t4": "O que acontece quando um desses falta",
+        "it4": [
+          "🚨 Auto de infração por item faltante",
+          "💸 Multa acumulativa por cada documento ausente",
+          "✅ Com pasta Farma Fácil: 7 documentos em 30 segundos"
+        ],
+        "t5": "Você consegue entregar os 7 em 60 segundos?",
+        "ck": [
+          "AFE impressa e atualizada",
+          "Licença Sanitária vigente e acessível",
+          "RT identificado e presente",
+          "Manual de BPF no balcão",
+          "POPs dos processos críticos organizados",
+          "PGRSS implementado e sinalizado",
+          "Comprovante SNGPC do mês atual"
+        ],
+        "cta": "Quer a pasta com os 7 documentos organizada? Me chama no WhatsApp."
+      }
+    },
+    {
+      "num": 82,
+      "tier": "A",
+      "autor": "KC",
+      "pilar": "atracao",
+      "tema": "PGRSS",
+      "familia_hook": "x_erros",
+      "hook": "4 erros de PGRSS que aparecem em 70% das drogarias autuadas",
+      "sub": "resíduo errado = multa certa",
+      "cena": "Lixeira de saúde mal sinalizada + fiscal apontando para ela",
+      "slides": {
+        "t2": "PGRSS é o item mais reprovado em fiscalização",
+        "i2": [
+          "70% das drogarias autuadas têm algum erro de PGRSS",
+          "A maioria nem sabe o que está errado",
+          "Parece burocracia — até o fiscal chegar",
+          "E os erros são sempre os mesmos 4"
+        ],
+        "t3": "Os 4 erros de PGRSS mais comuns",
+        "l3": [
+          "1. Lixeira sem identificação de grupo (A, B, D, E)",
+          "2. Descarte de medicamento vencido em lixo comum",
+          "3. Sem contrato com empresa coletora licenciada",
+          "4. PGRSS escrito mas nunca implementado na prática"
+        ],
+        "t4": "O que esses 4 erros custam",
+        "it4": [
+          "🚨 Auto de infração ambiental + sanitário (dupla autuação)",
+          "💸 Multa de R$ 5.000 a R$ 25.000 por item",
+          "✅ PGRSS correto da Farma Fácil resolve tudo isso"
+        ],
+        "t5": "Sua drogaria tem os 4 erros de PGRSS?",
+        "ck": [
+          "Lixeiras identificadas por grupo (A, B, D, E)",
+          "Descarte de medicamentos em coletor específico",
+          "Contrato com empresa coletora licenciada",
+          "PGRSS implementado e não só escrito",
+          "Equipe treinada no descarte correto"
+        ],
+        "cta": "Revisão de PGRSS gratuita: me chama no WhatsApp."
+      }
+    },
+    {
+      "num": 83,
+      "tier": "S",
+      "autor": "KC",
+      "pilar": "atracao",
+      "tema": "Fiscalização",
+      "familia_hook": "mito_verdade",
+      "hook": "\"Drogaria pequena não é fiscalizada\" — isso é verdade ou mito?",
+      "sub": "o fiscal não escolhe pelo tamanho",
+      "cena": "Drogaria pequena de bairro com fiscal na porta + dono surpreso",
+      "roteiro_reel": {
+        "duracao": "20s",
+        "s0_3": "Karine: \"Drogaria pequena não é fiscalizada. Isso é verdade ou mito? Vou te contar.\"",
+        "s3_10": "Corte: \"MITO. A vigilância tem ciclo rotativo que inclui TODAS as drogarias. Tamanho não importa.\"",
+        "s10_17": "Karine: \"Na verdade, drogaria pequena costuma estar MENOS preparada. Por isso recebe mais autuação percentualmente.\"",
+        "s17_20": "CTA: \"Você acreditava nesse mito? Comenta aqui.\"",
+        "trilha": "Revelação / surpresa",
+        "cta_tela": "🔍 Diagnóstico gratuito: link na bio"
+      },
+      "slides": {
+        "t2": "MITO — e esse mito já custou muito caro pra muita gente",
+        "i2": [
+          "A vigilância tem ciclo de vistorias pra TODAS as drogarias",
+          "Tamanho não é critério de seleção",
+          "Denúncias anônimas chegam pra todos os portes",
+          "Drogaria pequena geralmente está MENOS documentada"
+        ],
+        "t3": "O que a realidade mostra",
+        "l3": [
+          "Drogarias de bairro lideram em autuações por documentação",
+          "Baixo faturamento não exclui do ciclo de fiscalização",
+          "Multa de R$ 10.000 fecha drogaria pequena",
+          "Fiscal não tem cotas — o ciclo é geográfico"
+        ],
+        "t4": "Por que esse mito é perigoso",
+        "it4": [
+          "🚨 Te dá falsa segurança por anos — até o fiscal aparecer",
+          "💸 Quando chega, você não está pronta e a multa é máxima",
+          "✅ Preparação preventiva não depende do tamanho"
+        ],
+        "t5": "Você ainda acreditava nesse mito?",
+        "ck": [
+          "Documentação completa (sem exceção por tamanho)",
+          "SNGPC em dia (mesmo sendo pequena)",
+          "RT documentado e presente",
+          "POPs implementados (mesmo que simples)",
+          "Auditoria feita independente do porte"
+        ],
+        "cta": "Drogaria pequena bem preparada passa em qualquer fiscalização. Me chama no WhatsApp."
+      }
+    },
+    {
+      "num": 84,
+      "tier": "A",
+      "autor": "KC",
+      "pilar": "atracao",
+      "tema": "RT",
+      "familia_hook": "mito_verdade",
+      "hook": "\"Farmacêutico só precisa aparecer de vez em quando\" — verdade ou mito perigoso?",
+      "sub": "RT ausente = multa certa",
+      "cena": "Drogaria sem farmacêutico + fiscal anotando a ausência",
+      "slides": {
+        "t2": "MITO PERIGOSO — e que já fechou muita drogaria",
+        "i2": [
+          "RT é Responsável Técnico — a palavra RESPONSÁVEL é literal",
+          "A legislação exige presença ativa, não apenas assinatura",
+          "Ausência injustificada é autuação imediata",
+          "E o RT responde pessoalmente — não só a drogaria"
+        ],
+        "t3": "O que a lei diz de verdade",
+        "l3": [
+          "RT deve estar presente durante TODO o horário de funcionamento",
+          "Ausência precisa ter substituto anotado no CRF",
+          "Substituto tem as mesmas responsabilidades",
+          "Fiscal pode pedir comprovação de presença a qualquer momento"
+        ],
+        "t4": "O custo da ausência do RT",
+        "it4": [
+          "🚨 Auto de infração por ausência injustificada",
+          "💸 Multa para a drogaria + processo no CRF para o RT",
+          "✅ Gestão de RT correta: presença documentada + substituto"
+        ],
+        "t5": "Seu RT está presente conforme a lei?",
+        "ck": [
+          "RT presente no horário de funcionamento",
+          "Substituto de RT anotado no CRF",
+          "Livro de controle de presença atualizado",
+          "Horário do RT fixado na drogaria",
+          "Sem autuação por ausência nos últimos 2 anos"
+        ],
+        "cta": "Gestão de RT correta: me chama no WhatsApp antes que o fiscal chegue."
+      }
+    },
+    {
+      "num": 85,
+      "tier": "A",
+      "autor": "KC",
+      "pilar": "atracao",
+      "tema": "Autuação",
+      "familia_hook": "mito_verdade",
+      "hook": "\"Primeiro auto de infração não precisa pagar\" — isso tem fundamento?",
+      "sub": "depende do que o fiscal encontrar",
+      "cena": "Dono com auto de infração pensando que não precisa pagar + expressão de surpresa",
+      "slides": {
+        "t2": "DEPENDE — e a diferença pode te custar muito",
+        "i2": [
+          "Primeiro auto não garante redução automática",
+          "Irregularidade que representa risco à saúde: multa imediata",
+          "Recurso existe — mas precisa de base técnica",
+          "Sem defesa bem feita, primeiro auto vira multa integral"
+        ],
+        "t3": "Quando o primeiro auto PODE ser atenuado",
+        "l3": [
+          "Irregularidade documental sem risco imediato à saúde",
+          "Defesa técnica apresentada no prazo (15 a 20 dias úteis)",
+          "Empresa sem histórico de autuações anteriores",
+          "Documentação complementar apresentada com a defesa"
+        ],
+        "t4": "Quando NÃO tem redução (mesmo sendo o primeiro)",
+        "it4": [
+          "🚨 Risco à saúde pública (medicamento vencido, condição insalubre)",
+          "💸 Reincidência em item específico já notificado",
+          "✅ Assessoria técnica aumenta chance de atenuação em 70%"
+        ],
+        "t5": "Você saberia defender um auto de infração?",
+        "ck": [
+          "Tem assessoria técnica para apoio em autuações",
+          "Conhece o prazo de defesa do seu estado",
+          "Tem documentação organizada para resposta rápida",
+          "Sabe identificar artigos da legislação sanitária",
+          "Tem histórico limpo de autuações anteriores"
+        ],
+        "cta": "Recebeu auto de infração? Me chama — defesa técnica em 48h."
+      }
+    },
+    {
+      "num": 86,
+      "tier": "S",
+      "autor": "KC",
+      "pilar": "conexao",
+      "tema": "Caso real",
+      "familia_hook": "caso_real",
+      "hook": "A drogaria que quase fechou por um erro que o dono nunca imaginaria",
+      "sub": "12 anos de negócio, 3 documentos errados",
+      "cena": "Karine com expressão séria + plano de fundo de drogaria com porta fechada",
+      "roteiro_reel": {
+        "duracao": "28s",
+        "s0_4": "Karine: \"Vou te contar sobre o Marcos. 12 anos de drogaria. Nunca teve problema com fiscal. Até o dia que teve.\"",
+        "s4_14": "Karine: \"O mapa de temperatura estava sendo preenchido sem medir. Todo dia o funcionário chutava. Por 4 anos.\"",
+        "s14_22": "Karine: \"Quando o fiscal chegou e pediu os mapas, o padrão estava lá. E o fiscal sabia reconhecer.\"",
+        "s22_28": "CTA: \"Esse erro está acontecendo na sua drogaria agora? Comenta aqui: SIM ou NÃO.\"",
+        "trilha": "Narrativa emocional",
+        "cta_tela": "🔍 Diagnóstico preventivo: link na bio"
+      },
+      "slides": {
+        "t2": "Marcos tinha 12 anos de negócio. Achava que sabia tudo.",
+        "i2": [
+          "Drogaria bem localizada, clientela fiel",
+          "Nunca tinha sido autuado em 12 anos",
+          "Achava que estava ok porque ninguém tinha reclamado",
+          "Até o dia que o fiscal chegou com um checklist novo"
+        ],
+        "t3": "Os 3 erros que o Marcos nunca soube que tinha",
+        "l3": [
+          "Mapa de temperatura preenchido sem medir (por 4 anos)",
+          "POP assinado por RT que tinha saído 2 anos antes",
+          "Inventário de controlados com divergência mensal não resolvida"
+        ],
+        "t4": "O que aconteceu depois",
+        "it4": [
+          "🚨 Auto de infração triplicado (3 itens simultâneos)",
+          "💸 Multa de R$ 38.000 + prazo de adequação de 30 dias",
+          "✅ Karine fez a defesa técnica — conseguiu reduzir para R$ 14.000"
+        ],
+        "t5": "Esses erros estão na sua drogaria agora?",
+        "ck": [
+          "Mapa de temperatura medido (não chutado) todos os dias",
+          "POPs assinados pelo RT atual",
+          "Inventário de controlados sem divergência",
+          "Auditoria feita nos últimos 6 meses",
+          "Assessoria técnica ativa"
+        ],
+        "cta": "Não espera o seu caso virar história. Me chama no WhatsApp antes."
+      }
+    },
+    {
+      "num": 87,
+      "tier": "A",
+      "autor": "KC",
+      "pilar": "conexao",
+      "tema": "Caso real",
+      "familia_hook": "caso_real",
+      "hook": "O que aconteceu com a drogaria que recusou a assessoria por achar cara",
+      "sub": "o economizado não compensou o perdido",
+      "cena": "Karine olhando para câmera com expressão séria + calculadora ao lado",
+      "slides": {
+        "t2": "Uma cliente me procurou 6 meses depois da recusa",
+        "i2": [
+          "Em janeiro ela recusou a assessoria — disse que era caro",
+          "Em julho a vigilância autuou em R$ 52.000",
+          "Tentou se defender sozinha — defesa mal feita",
+          "Em setembro me ligou desesperada"
+        ],
+        "t3": "O que custou a \"economia\" de 6 meses",
+        "l3": [
+          "Assessoria que recusou em janeiro: R$ 1.800/mês",
+          "Custo acumulado de 6 meses: R$ 10.800",
+          "Multa que recebeu: R$ 52.000",
+          "Assessoria emergencial pós-autuação: R$ 8.000"
+        ],
+        "t4": "A conta que ela não fez em janeiro",
+        "it4": [
+          "🚨 Economizar R$ 10.800 custou R$ 60.000",
+          "💸 Sem contar os dias de estresse e risco de fechar",
+          "✅ Assessoria preventiva é seguro — não é gasto"
+        ],
+        "t5": "Você está fazendo essa mesma conta agora?",
+        "ck": [
+          "Tem assessoria ativa (não espera autuação)",
+          "Sabe o custo mensal vs risco anual",
+          "Documentação em dia (sem acúmulo de pendência)",
+          "Fez auditoria preventiva nos últimos 6 meses",
+          "Não está na fila de fiscalização por SNGPC atrasado"
+        ],
+        "cta": "Diagnóstico gratuito: veja quanto sua drogaria está em risco agora. Me chama no WhatsApp."
+      }
+    },
+    {
+      "num": 88,
+      "tier": "A",
+      "autor": "KC",
+      "pilar": "autoridade",
+      "tema": "Caso real",
+      "familia_hook": "caso_real",
+      "hook": "Como uma drogaria passou na fiscalização com 0 autuações sendo tudo organizado em 30 dias",
+      "sub": "regularização possível — vi acontecer",
+      "cena": "Karine sorrindo com dono de drogaria aliviado + documentos organizados na mão",
+      "slides": {
+        "t2": "A Ana tinha 8 pendências quando me chamou",
+        "i2": [
+          "SNGPC atrasado 40 dias, POPs desatualizados",
+          "PGRSS nunca implementado de verdade",
+          "RT substituto sem anotação no CRF",
+          "Manual de BPF desatualizado desde 2023"
+        ],
+        "t3": "O que fizemos em 30 dias",
+        "l3": [
+          "Semana 1: SNGPC regularizado + anotação do substituto",
+          "Semana 2: POPs reescritos e assinados pelo RT atual",
+          "Semana 3: PGRSS implementado + equipe treinada",
+          "Semana 4: Manual BPF atualizado + simulação de fiscalização"
+        ],
+        "t4": "O resultado",
+        "it4": [
+          "✅ Fiscal chegou na semana seguinte ao final do processo",
+          "✅ Zero autuações — a pasta foi entregue em 60 segundos",
+          "✅ Fiscal comentou: \"Uma das mais organizadas que visitei esse ano\""
+        ],
+        "t5": "Sua drogaria pode chegar nesse nível em 30 dias",
+        "ck": [
+          "SNGPC em dia",
+          "POPs assinados pelo RT atual",
+          "PGRSS implementado e sinalizado",
+          "Manual BPF atualizado",
+          "RT e substituto documentados no CRF"
+        ],
+        "cta": "Quer esse resultado em 30 dias? Me chama no WhatsApp — começo pela auditoria gratuita."
+      }
+    }
+  ],
+  "hooks_customizados": [
+    1,
+    3,
+    5,
+    6,
+    7,
+    10,
+    11,
+    13,
+    14,
+    17,
+    19,
+    24,
+    28,
+    34,
+    38,
+    41,
+    54,
+    56,
+    57,
+    62,
+    63,
+    64,
+    65,
+    70,
+    72
+  ],
+  "historico": [
+    {
+      "data": "2026-04-26",
+      "acao": "Correcao de acentos em todos os campos textuais (hook/sub/cena/tema/slides)",
+      "mudancas": 181
+    },
+    {
+      "data": "2026-04-26",
+      "acao": "Customizacao de slides para os 47 hooks que estavam sem slides — cada hook agora tem t2/i2/t3/l3/t4/it4/t5/ck/cta especifico alinhado com a pergunta da capa",
+      "hooks_atualizados": 47
+    },
+    {
+      "data": "2026-04-27",
+      "acao": "Correcao informativa AFE — AFE da ANVISA NAO vence/expira. Reescritura dos hooks #28, #30, #69 e correcoes pontuais nos slides de #3, #5, #12, #13, #17, #26, #57, #58, #63, #64, #71. Linguagem agora correta: AFE pode ser CASSADA, deve ser ATUALIZADA com alteracao contratual; LICENCA SANITARIA sim vence.",
+      "hooks_alterados": 22
+    }
+  ],
+  "familias": {
+    "voce_sabe": 73,
+    "o_que_acontece_se": 5,
+    "x_erros": 4,
+    "mito_verdade": 3,
+    "caso_real": 3
+  }
+}
